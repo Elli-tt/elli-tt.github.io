@@ -1,6 +1,13 @@
 ### Other Plugins
 
-- Abyss
+- <details>
+  <summary>Abyss</summary>
+    <img border="0" alt="ABYSS" src="https://cdn.discordapp.com/attachments/785780982656663562/785789014531768353/unknown.png" width="100" height="200" class="center">
+    <h4><b>Abyss</b></h4>
+    <p>Abyss Plugin</p>
+  </details>
+
+
 - Herbiboar
 - Farm Run
 
