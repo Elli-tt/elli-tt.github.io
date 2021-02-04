@@ -2,6 +2,8 @@
 
 [Click here to join our Discord.](https://discord.gg/aRptk29m) 
 
+![[Discord Logo](https://discord.gg/aRptk29m)](https://cdn.icon-icons.com/icons2/2108/PNG/512/discord_icon_130958.png)
+
 ### Free Plugins
 
 - [Airs](https://elli-tt.github.io/airs) 
