@@ -25,6 +25,6 @@
 <img border="0" alt="GITHUB" src="https://image.flaticon.com/icons/png/512/25/25231.png" width="50" height="50" class="center">
 </a>
 <a href="https://discord.com/invite/aRptk29m">
-<img border="0" alt="DISCORD" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/91_Discord_logo_logos-512.png" width="50" height="50" class="center">
+<img border="0" alt="DISCORD" src="https://cdn.iconscout.com/icon/free/png-256/discord-1-555369.png" width="50" height="50" class="center">
 </a>
 </p>
