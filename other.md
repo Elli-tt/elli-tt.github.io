@@ -11,10 +11,27 @@
   </figure>
 </details>
 
+<details>
+  <summary>Herbiboar</summary>
+  <figure>
+  <img border="0" alt="HERBIBOAR" src="https://cdn.discordapp.com/attachments/790923023985278977/790925431053352990/unknown.png" width="500" height="500" class="center">
+  <figcaption>
+    Harvests herbiboar for you.
+    LIFETIME: $5 Paypal/BTC or 13m RSGP
+  </figcaption>
+  </figure>
+</details>
 
-- Herbiboar
-- Farm Run
-
+<details>
+  <summary>Farm Run</summary>
+  <figure>
+  <img border="0" alt="FARM_RUN" src="https://i.imgur.com/NpQStF0.png" width="500" height="500" class="center">
+  <figcaption>
+    Does farm runs for you.
+    FREE
+  </figcaption>
+  </figure>
+</details>
 
 <p align="center">
 <a href="https://elli-tt.github.io/">
