@@ -333,6 +333,7 @@ p, address {
 }
 
 .tm-gallery-page {
+  padding: 20px 20px;
   max-width: 280px;
   margin-left: auto;
   margin-right: auto;
@@ -387,7 +388,14 @@ p, address {
 }
 
 .tm-gallery-item {
+  padding: 20px 20px;
   max-width: 280px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.tm-gallery-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .tm-gallery-img {
