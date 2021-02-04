@@ -17,5 +17,5 @@
 - Tutorial
 - ZMI
 
-[![HOME](https://image.flaticon.com/icons/png/512/60/60817.png)](https://elli-tt.github.io/)
+[![HOME](/images/home.png)](https://elli-tt.github.io/)
 
