@@ -6,10 +6,11 @@
 </a>
 </p>
 
-### [Free Plugins](https://elli-tt.github.io/free)
 
+## Plugins
 
-### [Supporter Plugins](https://elli-tt.github.io/supporter)
+### [Free](https://elli-tt.github.io/free)
 
+### [Supporter](https://elli-tt.github.io/supporter)
 
-### [Other Plugins](https://elli-tt.github.io/other)
+### [Other](https://elli-tt.github.io/other)
