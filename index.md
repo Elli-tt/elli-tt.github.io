@@ -4,7 +4,7 @@
 
 ### Free Plugins
 
-- Airs
+- [Airs](https://elli-tt.github.io/airs) 
 - Barbarian
 - Cooker
 - Firemaker
