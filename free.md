@@ -17,5 +17,7 @@
 - Tutorial
 - ZMI
 
+<p align="center">
+  [HOME](https://elli-tt.github.io)
+</p>
 
-[HOME](https://elli-tt.github.io)
