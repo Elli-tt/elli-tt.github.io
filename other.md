@@ -3,8 +3,11 @@
 <details>
   <summary>Abyss</summary>
   <figure>
-  <img border="0" alt="ABYSS" src="https://cdn.discordapp.com/attachments/785780982656663562/785789014531768353/unknown.png" width="100" height="100" class="center">
-  <figcaption>An automated Abyss plugin.</figcaption>
+  <img border="0" alt="ABYSS" src="https://cdn.discordapp.com/attachments/785780982656663562/785789014531768353/unknown.png" width="500" height="500" class="center">
+  <figcaption>
+    Crafts runes through the Abyss.
+    LIFETIME: $15 Paypal/BTC or 40m RSGP
+  </figcaption>
   </figure>
 </details>
 
