@@ -18,6 +18,5 @@
 - ZMI
 
 <p align="center">
-  [HOME](https://elli-tt.github.io)
+  [![HOME](https://image.flaticon.com/icons/png/512/60/60817.png)](https://elli-tt.github.io/)
 </p>
-
