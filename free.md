@@ -19,4 +19,4 @@
 
 [![HOME](/images/home.png)](https://elli-tt.github.io/)
 [![GITHUB](/images/github.png)](https://github.com/Elli-tt/)
-[![DISCORD](/images/discord.png)](https://discord.gg/aRptk29m/)
+[![DISCORD](/images/discord.png)](https://discord.com/invite/aRptk29m)
