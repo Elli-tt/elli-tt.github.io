@@ -8,8 +8,7 @@
       </div>
     </div>
     <div class="portfolio-flex-row">
-      {% for pvm in site.tags %}
-      {% for post in tag[1] %}
+      {% for post in site.categories.pvm %}
       <div class="portfolio-flex-item portfolio-item">
         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
           <div class="caption">
@@ -20,7 +19,6 @@
           <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
         </a>
       </div>
-      {% endfor %}
       {% endfor %}
     </div>
   </div>
