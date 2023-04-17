@@ -1,6 +1,6 @@
-var faSplat = {
+var faDiscord = {
   prefix: 'fac',
-  iconName: 'splat',
+  iconName: 'discord',
   icon: [
     64, 64,
     [],
@@ -9,4 +9,4 @@ var faSplat = {
   ]
 }
 
-FontAwesome.library.add(faSplat)
+FontAwesome.library.add(faDiscord)
