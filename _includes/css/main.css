@@ -70,10 +70,12 @@ hr.star-light:after {
 
 hr.star-primary {
     border-color: #{{ site.color.secondary }};
+    background-color: #fff;
 }
 
 hr.star-primary:after {
     color: #{{ site.color.secondary }};
+    background-color: #fff;
 }
 
 .img-centered {
