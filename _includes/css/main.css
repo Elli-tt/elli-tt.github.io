@@ -206,7 +206,7 @@ section.success {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -263,21 +263,21 @@ section.success {
       justify-content: center;
     }
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 100%;
-      max-width: 100%;
+      flex: 1 0 15%;
+      max-width: 15%;
     }
   }
   @media (min-width: 960px) {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 100%;
-      max-width: 100%;
+      flex: 1 0 45%;
+      max-width: 45%;
     }
   }
   /* A large grid might need four columns on widescreen layouts */
    @media (min-width: 1380px) {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 100%;
-      max-width: 100%;
+      flex: 1 0 65%;
+      max-width: 65%;
     }
   } 
 
