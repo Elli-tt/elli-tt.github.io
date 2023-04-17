@@ -261,20 +261,20 @@ section.success {
       justify-content: center;
     }
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 10%;
+      flex: 1 0 33%;
       max-width: 10%;
     }
   }
   @media (min-width: 960px) {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 40%;
+      flex: 1 0 33%;
       max-width: 40%;
     }
   }
   /* A large grid might need four columns on widescreen layouts */
    @media (min-width: 1380px) {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 60%;
+      flex: 50%;
       max-width: 60%;
     }
   } 
