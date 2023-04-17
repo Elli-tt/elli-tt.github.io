@@ -263,21 +263,22 @@ section.success {
       justify-content: center;
     }
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 33%;
-      max-width: 50%;
+      flex: 33%;
+      max-width: 33%;
     }
   }
   @media (min-width: 960px) {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 33%;
-      max-width: 65%;
+      flex: 33%;
+      max-width: 33%;
     }
   }
   /* A large grid might need four columns on widescreen layouts */
    @media (min-width: 1380px) {
     .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 50%;
-      max-width: 100%;
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
     }
   } 
 
