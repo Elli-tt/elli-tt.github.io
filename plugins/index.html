@@ -10,7 +10,7 @@ description: "分享正在看和看过想看的一些Plugins"
 	   {% if posts.plugin%}
 		<div class="post-list-item">
 				<div class="post-list-item-container">
-					 <div class="item-thumb  bg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');"></div>
+					 <div class="item-thumb  bg-{{posts.background }}" style="background-image:url('{{ posts.background-image }}');"></div>
           	<a href="{{ posts.url }}">
 	             <div class="item-desc">
 		<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
