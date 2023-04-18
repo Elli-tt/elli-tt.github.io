@@ -1,7 +1,7 @@
 ---
 layout: blog
 plugin: true
-background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-16/91630214.jpg
+background-image: https://oldschool.runescape.wiki/images/thumb/Vorkath%27s_head_detail.png/130px-Vorkath%27s_head_detail.png
 category: Plugins
 title: liberxue读过书|在读的书
 tags:

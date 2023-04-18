@@ -1,11 +1,11 @@
 ---
 layout: blog
 plugin: true
-title:  "《美丽新世界》之幸福和自由思考"
-background: green
-background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-15/78939382.jpg
-date:   2017-07-03 23:13:54
-category: Plugins
+title:  "ElVorkath"
+background: cyan
+background-image: https://oldschool.runescape.wiki/images/thumb/Vorkath%27s_head_detail.png/130px-Vorkath%27s_head_detail.png
+price:   $15/month
+category: PVM
 tags:
 - 美丽新世界 
 ---
