@@ -1,6 +1,6 @@
 ---
 layout: blog
-book: true
+plugin: true
 background: blue
 background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-15/48174506.jpg
 title:  "瓦尔登湖liberxue一些所感所想和笔记书签"
