@@ -9,13 +9,13 @@ share:            true
 # 分页
 paginate: 15
 paginate_path: "liberxuepage:num"
-plugins: [jekyll-paginate]
+gems: [jekyll-paginate]
 links:
   - name:         首页
     url:          /
     external:     false
-  - name:         Plugins
-    url:          /plugins
+  - name:         PVM
+    url:          /pvm
     external:     false
   - name:         旅游
     url:          /road
