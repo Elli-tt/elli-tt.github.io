@@ -34,14 +34,14 @@
         </div>
     </div>
 </header>
-<div class="post-header-thumb bg-white}">
+<div class="post-header-thumb bg-white">
 	<div class="post-header-thumb-op"></div>
 	<div class="post-header-thumb">
 		<div class="post-header-thumb-container">
     <h1 class="post-title" itemprop="name headline">
 	{{ page.title }}</h1>
 		 <div class="post-data">  
-     <a href="/tags#{{ page.category }}" title="访问 {{ page.category }}" data-hover="博客分类: {{ page.category }}">博客分类: {{ page.category }}</a>
+     <a href="/tags#{{ page.category }}" title="example12 {{ page.category }}" data-hover="example13: {{ page.category }}">example14: {{ page.category }}</a>
     <a> {{page.price}} </a> 
 			</div>
             <div class="post-tags">
@@ -49,14 +49,14 @@
       {% assign tags_list = page.tags %}
       {% if tags_list.first[0] == null %}
       {% for tag in tags_list %} 
-          <a href="/tags#{{ tag }}" title="访问{{ tag }}" data-hover="{{ tag }}">
+          <a href="/tags#{{ tag }}" title="example11{{ tag }}" data-hover="{{ tag }}">
           {{ tag }} <span>({{ site.tags[tag].size }})</span>
           {% unless forloop.last %}{% endunless %}
 </a>
       {% endfor %}
       {% else %}
       {% for tag in tags_list %} 
-          <a href="/tags#{{ tag[0] }}" title="访问 {{ tag[0] }}" data-hover="{{tag[0]}}">
+          <a href="/tags#{{ tag[0] }}" title="example10 {{ tag[0] }}" data-hover="{{tag[0]}}">
             {{ tag[0] }} <span>({{ tag[1].size }})</span>
             {% unless forloop.last %}{% endunless %}
           </a>
@@ -71,9 +71,6 @@
 	<div class="post-header">
 		<h1 class="post-title" itemprop="name headline">
 			{{ page.title }}</h1>
-		<div class="post-data">
-				<time datetime="{{ page.date | date: '%F %H:%M:%S'}}" itemprop="datePublished">{{ page.date | date: "%F %H:%M:%S"}}</time>
-		</div>
 	</div>
 	<div id="post-content" class="post-content" itemprop="articleBody">
          <p class="post-tags">
@@ -98,7 +95,7 @@
 </p>
 {{ content }}
 		<p class="post-info">
-			本文由 <a href="/">liberxue</a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external nofollow">知识共享署名4.0</a> 国际许可协议进行许可<br>本站文章除注明转载/出处外，均为本站原创或翻译，转载前请务必署名<br>最后编辑时间为:{{ page.date | date: "%F %H:%M:%S"}}</p>
+			example1 <a href="/">liberxue</a> example2 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external nofollow">example3</a> example4<br>example5<br>example16/p>
 	</div>
 </article>
 
@@ -204,8 +201,8 @@ var postDirectoryBuild = function() {
             li = document.createElement('li');
             link = document.createElement('a');
             link.href = '#' + titleId[i];
-            link.title = '访问' + titleId[i];
-            link.title = '访问' + titleId[i];
+            link.title = 'Title' + titleId[i];
+            link.title = 'Title2' + titleId[i];
             link.innerHTML = !isDirNum ? contentArr[i] :
                 dirNum.join('.') + ' ' + contentArr[i] ;
             li.appendChild(link);
