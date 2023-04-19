@@ -19,16 +19,6 @@
                     </div>
                 </div>
             </div>
-            <div class="meta-item meta-posts">
-                <h3 class="meta-title">META</h3>
-     <!--置顶-->
-    {% for post in site.posts limit:15 %}
-      {% if post.istop %}
-      <li><a href="{{ post.url }}" title="Posts {{ post.title }}" data-hover="{{ post.title }}">{{ post.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-        <!--置顶-->
-            </div>
             <div class="meta-item meta-comments">
                 <h3 class="meta-title">META 2</h3>
   {% for post in site.posts limit:14 %}        
