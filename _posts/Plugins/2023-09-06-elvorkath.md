@@ -41,14 +41,12 @@ tags:
 
 > <a href="https://bit.ly/VorkathGuide">https://bit.ly/VorkathGuide</a>
 
-## Purchase Information
-
 # Stripe Payments
-> $15 per month
+- $15 per month
 > Purchase through the checkout link below attaching your purchase to your discord account.
-<a href="https://pluginshop.link/ElPlugins">https://pluginshop.link/ElPlugins</a>
+- <a href="https://pluginshop.link/ElPlugins">https://pluginshop.link/ElPlugins</a>
 
 # iDeal Link
-> $15 per month
+- $15 per month
 > Please visit the Discord server after and tell us you have purchased.
-<a href="https://buy.stripe.com/28o8wwevsbSA5La28u">https://buy.stripe.com/28o8wwevsbSA5La28u</a>
+- <a href="https://buy.stripe.com/28o8wwevsbSA5La28u">https://buy.stripe.com/28o8wwevsbSA5La28u</a>

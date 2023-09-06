@@ -71,14 +71,12 @@ Below is a list of all RLPL Plugins currently on offer from El.
 
 > If you purchase any plugin subscriptions from ElPlugins, you get automatic free access to RLPL for the duration of your subscription - RLPL is a plugin loader for Runelite
 
-## Purchase Information
-
 # Stripe Payments
-> $15 per month
+- $15 per month
 > Purchase through the checkout link below attaching your purchase to your discord account.
-<a href="https://pluginshop.link/ElPlugins">https://pluginshop.link/ElPlugins</a>
+- <a href="https://pluginshop.link/ElPlugins">https://pluginshop.link/ElPlugins</a>
 
 # iDeal Link
-> iDeal Direct Link
+- $15 per month
 > Please visit the Discord server after and tell us you have purchased.
-<a href="https://buy.stripe.com/6oEdQQ874bSAb5ufZh">https://buy.stripe.com/6oEdQQ874bSAb5ufZh</a>
+- <a href="https://buy.stripe.com/6oEdQQ874bSAb5ufZh">https://buy.stripe.com/6oEdQQ874bSAb5ufZh</a>

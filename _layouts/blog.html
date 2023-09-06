@@ -20,7 +20,7 @@
             <span class="icon-search"></span>
             <form id="cb-search-btn" role="search">
          <span class="search-box">
-         <input type="text" class="input" id="cb-search-content" required="true" placeholder="标题 标签..." maxlength="30" autocomplete="off">
+         <input type="text" class="input" id="cb-search-content" required="true" placeholder="Search..." maxlength="30" autocomplete="off">
         </span>
             </form>
         </div>
@@ -41,7 +41,7 @@
     <h1 class="post-title" itemprop="name headline">
 	{{ page.title }}</h1>
 		 <div class="post-data">  
-     <a href="/tags#{{ page.category }}" title="example12 {{ page.category }}" data-hover="example13: {{ page.category }}">example14: {{ page.category }}</a>
+     <a href="/tags#{{ page.category }}" title="{{ page.category }}" data-hover="{{ page.category }}">{{ page.category }}</a>
     <a> {{page.price}} </a> 
 			</div>
             <div class="post-tags">
@@ -94,8 +94,6 @@
     {% endunless %} 
 </p>
 {{ content }}
-		<p class="post-info">
-			example1 <a href="/">liberxue</a> example2 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external nofollow">example3</a> example4<br>example5<br>example16/p>
 	</div>
 </article>
 
