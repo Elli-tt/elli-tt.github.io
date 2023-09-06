@@ -11,6 +11,10 @@ tags:
 ---
 
 ### Zulrah
+
+
+
+
     Do not use this on your hardcore ironman account.
 
 ## Features
@@ -47,4 +51,4 @@ https://pluginshop.link/ElPlugins
 # iDeal Link
 iDeal Direct Link
 Please visit the Discord server after and tell us you have purchased.
-https://buy.stripe.com/bIYdQQbjg5uc6Pe14r
+https://buy.stripe.com/6oEdQQ874bSAb5ufZh
