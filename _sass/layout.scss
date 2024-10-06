@@ -246,14 +246,14 @@ nav > ul li a:active {
 	grid-area: i;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 140px;
+	padding-top: 75px;
 	align-content: flex-start;
 }
 
 @media only screen and (max-width: 992px) {
 
 	.appInfo {
-		padding-top: 50px;
+		padding-top: 75px;
 		justify-content: center;
 	}
 
@@ -397,51 +397,6 @@ nav > ul li a:active {
 	width: 349px;
 	height: 215px;
 }
-
-@media only screen and (max-width: 1070px) {
-
-	.iphonePreview {
-		background-size: 370px auto;
-	}
-
-	.videoContainer {
-		width: 322px;
-		height: 215px;
-		margin-left: 24px;
-		margin-top: 23px;
-	}
-	
-	.videoContainer > video {
-		width: 322px;
-		height: 215px;
-	}
-	
-} 
-
-@media only screen and (max-width: 992px) {
-
-	.iphonePreview {
-		display: flex;
-		background-size: 260px auto;
-		background-position: center 0;
-		margin-top: 47px;
-		justify-content: center;
-		padding-bottom: 75px;
-	}
-
-	.videoContainer {
-		width: 226px;
-		height: 215px;
-		margin-left: 0px;
-		margin-top: 23px;
-	}
-
-	.videoContainer > video {
-		width: 226px;
-		height: 215px;
-	}
-	
-} 
 
 
 // Feature List
