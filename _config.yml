@@ -96,14 +96,14 @@ app_title_color                           : "#ffffff"
 app_price_color                           : "#ffffff"
 app_description_color                     : "#ffffff"
 
-feature_title_color                       : "#000000"
-feature_text_color                        : "#666666"
+feature_title_color                       : "#ffffff"
+feature_text_color                        : "#ffffff"
 
 feature_icons_foreground_color            : "#353535"
-feature_icons_background_color            : "#5E313C"
+feature_icons_background_color            : "#23A6B3"
 
 social_icons_foreground_color             : "#353535"
-social_icons_background_color             : "#5E313C"
+social_icons_background_color             : "#23A6B3"
 
 footer_text_color                         : "#666666"
 
