@@ -358,7 +358,6 @@ nav > ul li a:active {
 .iphonePreview {
 	grid-area: p;
 	background-image: url($device-color);
-	background-size: 400px auto;
 	background-repeat: no-repeat;
 	margin-top: 100px;
 }
@@ -366,13 +365,13 @@ nav > ul li a:active {
 .videoContainer {
 	width: 349px;
 	height: 215px;
-	margin-left: 26px;
-	margin-top: 23px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 .videoContainer > video {
-	width: 349px;
-	height: 215px;
+	width: 408px;
+	height: 234px;
 }
 
 
