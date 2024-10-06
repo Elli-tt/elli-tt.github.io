@@ -246,7 +246,7 @@ nav > ul li a:active {
 	grid-area: i;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 140px;
+	padding-top: 80px;
 	align-content: flex-start;
 }
 
@@ -388,14 +388,14 @@ nav > ul li a:active {
 
 .videoContainer {
 	width: 349px;
-	height: 275px;
+	height: 215px;
 	margin-left: 26px;
 	margin-top: 23px;
 }
 
 .videoContainer > video {
 	width: 349px;
-	height: 275px;
+	height: 215px;
 }
 
 @media only screen and (max-width: 1070px) {
