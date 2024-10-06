@@ -171,12 +171,12 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 }
 
 .markdown-body .pl-md {
-  background-color: #ffeef0;
+  background-color: #353535;
   color: #b31d28;
 }
 
 .markdown-body .pl-mi1 {
-  background-color: #f0fff4;
+  background-color: #353535;
   color: #22863a;
 }
 
@@ -439,11 +439,11 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 }
 
 .markdown-body .bg-white {
-  background-color: #fff!important;
+  background-color: #353535!important;
 }
 
 .markdown-body .bg-gray-light {
-  background-color: #fafbfc!important;
+  background-color: #353535!important;
 }
 
 .markdown-body .text-gray-light {
@@ -572,7 +572,7 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 }
 
 .markdown-body kbd {
-  background-color: #fafbfc;
+  background-color: #353535;
   border: 1px solid #c6cbd1;
   border-bottom-color: #959da5;
   border-radius: 3px;
@@ -682,21 +682,21 @@ Markdown CSS adopted from https://github.com/sindresorhus/github-markdown-css
 
 .markdown-body table td,
 .markdown-body table th {
-  border: 1px solid #dfe2e5;
+  border: 1px solid #353535;
   padding: 6px 13px;
 }
 
 .markdown-body table tr {
-  background-color: #fff;
+  background-color: #353535;
   border-top: 1px solid #c6cbd1;
 }
 
 .markdown-body table tr:nth-child(2n) {
-  background-color: #f6f8fa;
+  background-color: #353535;
 }
 
 .markdown-body img {
-  background-color: #fff;
+  background-color: #353535;
   box-sizing: content-box;
   max-width: 100%;
 }
