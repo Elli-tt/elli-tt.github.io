@@ -40,12 +40,12 @@ features                                  :
     description                           : Runs on a custom loader for RuneLite called RLPL.
     fontawesome_icon_name                 : magic
     
-  - title                                 : Fully Automated
-    description                           : The plugins have a fully automated mode.
+  - title                                 : Multiple Modes
+    description                           : The plugins have a FULL AUTO and a SMART CLICK (Manual) mode.
     fontawesome_icon_name                 : mobile
 
-  - title                                 : Smart Click
-    description                           : Click, Scroll or press a Key on your PC and the plugin will correctly redirect your action to the game.
+  - title                                 : Jagex Launcher
+    description                           : Client supports all Username, Email and JL logins.
     fontawesome_icon_name                 : play-circle
 
   - title                                 : Frequent Updates
