@@ -4,8 +4,6 @@ title: Splash
 include_in_header: false
 ---
 
-## [![Click here to join the Discord!](/assets/appstore.png)](https://discord.com/invite/Fa4BdBvg2c)
-
-## or
-
-## [Continue to site...](https://elli-tt.github.io)
+| # [Join our Discord](https://discord.com/invite/Fa4BdBvg2c) | # [Continue to site...](https://elli-tt.github.io) |
+| ----------- | ----------- |
+| [![Click here to join the Discord!](/assets/discordjoin.png)](https://discord.com/invite/Fa4BdBvg2c) | [![Continue to the website!](/assets/elplugins.png)](https://elli-tt.github.io) |
