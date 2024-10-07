@@ -352,6 +352,20 @@ nav > ul li a:active {
 }
 
 
+// Splash
+
+.splashDiscord {
+	grid-area: p;
+	background-image: "/assets/discordjoin.png";
+	background-repeat: no-repeat;
+}
+
+.splashWebsite {
+	grid-area: i;
+	background-image: "/assets/elpluginssplash.png";
+	background-repeat: no-repeat;
+}
+
 
 // iPhone Device Preview
 
