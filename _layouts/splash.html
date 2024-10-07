@@ -9,11 +9,20 @@
 
 <body class="subPageBody">
     <div class="headerBackground subPageHeaderBackground">
-        <div class="container subPageContainer">
-        {% include splashheader.html %}
-            <article class="page markdown-body">
-                {{ content }}
-            </article>
+        <div class="container">
+            {% include splashheader.html %}
+            <div class="iphonePreview">
+                <a href="https://elli-tt.github.io">
+                    <img scr="/assets/elpluginssplash.png" alt="Continue to the website.">
+                </a>
+            </div>
+            <div class="appInfo">
+                <a href="https://https://discord.com/invite/Fa4BdBvg2c">
+                    <img scr="/assets/discordjoin.png" alt="Join our discord.">
+                </a>
+            </div>
+            {% include footer.html %}
+            {% include appstoreimages.html %}
         </div>
     </div>
 </body>
