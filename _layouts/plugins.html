@@ -1,0 +1,154 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body class="subPageBody">
+    <div class="headerBackground subPageHeaderBackground">
+        <div class="container subPageContainer">
+            {% include header.html %}
+        </div>
+         <!-- Control buttons -->
+<div id="myBtnContainer" class="center">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('pvm')"><div class="emojiSmall">🐲</div>PVM</button>
+    <button class="btn" onclick="filterSelection('combat')"><div class="emojiSmall">⚔️</div>Combat</button>
+    <button class="btn" onclick="filterSelection('minigame')"><div class="emojiSmall">🎲</div>Minigame</button>
+    <button class="btn" onclick="filterSelection('skilling')"><div class="emojiSmall">🪓</div>Skilling</button>
+    <button class="btn" onclick="filterSelection('utility')"><div class="emojiSmall">🔧</div>Utility</button>
+  </div>
+  
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <div class="container2">
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Abyss</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Agility</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Amethyst</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Astrals</div>
+    <div class="filterDiv utility"><div class="emoji">🔧</div>Auto Hop</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Auto Prayer</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Bankstander</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Blast Furnace</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Blast Furnace Pumper</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Bloods</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Boss Helper</div>
+    <div class="filterDiv utility"><div class="emoji">🔧</div>Break Handler</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Cannon Reloader</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Castle Wars</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Chop Fletch</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Combat</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Construction</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Cosmics</div>
+    <div class="filterDiv utility"><div class="emoji">🔧</div>Cox Scouter</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Eater</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Fight Caves</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Fighter</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Firemaker</div>
+    <div class="filterDiv pvm"><div class="emoji">🐲</div>Gauntlet</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Gem Mine</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Giants Foundry</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Guardians Of The Rift</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Herbiboar</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Herblore</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Hunter</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Karambwan</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Lavas</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Looter</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Mage Training Arena</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Mahogany Homes</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Minnows</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>MLM</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Nightmare Zone</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Pest Control</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Planks</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Pot Drinker</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Prayer Chaos Temple</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Pyramid Plunder</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Ranging Guild</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Reset Aggro</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Rogues Den</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Rumours</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Scurrius</div>
+    <div class="filterDiv utility"><div class="emoji">🔧</div>Shopper</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Skiller</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Stun Alch Tele</div>
+    <div class="filterDiv utility"><div class="emoji">🔧</div>Super Profiles</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Teaks</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Temple Trekking</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Tempoross</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Thiever</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Tick Cooker</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Tick Fisher</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Tick Miner</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Tick Woodcutter</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Tithe Farm</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Trawler</div>
+    <div class="filterDiv utility"><div class="emoji">🔧</div>Utils</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Varrock Cleaner</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Volcanic Mine</div>
+    <div class="filterDiv pvm"><div class="emoji">🐲</div>Vorkath</div>
+    <div class="filterDiv utility"><div class="emoji">🔧</div>Walker</div>
+    <div class="filterDiv combat"><div class="emoji">⚔️</div>Warriors Guild</div>
+    <div class="filterDiv utility"><div class="emoji">🔧</div>Widgets</div>
+    <div class="filterDiv minigame"><div class="emoji">🎲</div>Wintertodt</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>Wrath</div>
+    <div class="filterDiv skilling"><div class="emoji">🪓</div>ZMI</div>
+    <div class="filterDiv pvm"><div class="emoji">🐲</div>Zulrah</div>
+  </div> 
+    </div>
+
+    <script>
+        filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+        </script>
+</body>
+
+</html>
