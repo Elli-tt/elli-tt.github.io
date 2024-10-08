@@ -28,6 +28,30 @@
 
 }
 
+a:link {
+	color: rgb(255, 255, 255);
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:visited {
+	color: rgb(255, 255, 255);
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: rgb(255, 255, 255);
+	background-color: transparent;
+	text-decoration: underline;
+  }
+  
+  a:active {
+	color: rgb(255, 255, 255);
+	background-color: transparent;
+	text-decoration: underline;
+  }
+
 .subPageHeaderBackground {
 	background-color: #303030;
 	border: 5px solid #303030;
