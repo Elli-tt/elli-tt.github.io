@@ -29,7 +29,7 @@
 }
 
 .subPageHeaderBackground {
-	background-color: #fff;
+	background-color: #303030;
 }
 
 .container {					// Set up the container for the site content
@@ -354,38 +354,40 @@ nav > ul li a:active {
 
 // Splash
 
-.splashDiscord {
-	grid-area: p;
-	background-image: "/assets/discordjoin.png";
-	background-repeat: no-repeat;
-}
+.splashRow::after {
+	content: "";
+	clear: both;
+	display: table;
+	justify-content: center;
+  }
 
-.splashWebsite {
-	grid-area: i;
-	background-image: "/assets/elpluginssplash.png";
-	background-repeat: no-repeat;
-}
+.splashColumn {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+  }
+
+  @media screen and (max-width: 500px) {
+	.column {
+	  width: 100%;
+	}
+  }
 
 
 // iPhone Device Preview
 
 .iphonePreview {
 	grid-area: p;
-	background-image: url($device-color);
-	background-repeat: no-repeat;
-	margin-top: 100px;
 }
 
 .videoContainer {
-	width: 349px;
-	height: 215px;
-	margin-left: 20px;
-	margin-top: 20px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	width: 100%;
 }
 
 .videoContainer > video {
-	width: 408px;
-	height: 234px;
+	width: 100%;
 }
 
 
