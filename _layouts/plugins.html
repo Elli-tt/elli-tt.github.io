@@ -14,16 +14,21 @@
         </div>
          <!-- Control buttons -->
 <div id="myBtnContainer" class="center">
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn active" onclick="filterSelection('all')"><div class="emojiSmall">🤖</div>Show all</button>
     <button class="btn" onclick="filterSelection('pvm')"><div class="emojiSmall">🐲</div>PVM</button>
     <button class="btn" onclick="filterSelection('combat')"><div class="emojiSmall">⚔️</div>Combat</button>
     <button class="btn" onclick="filterSelection('minigame')"><div class="emojiSmall">🎲</div>Minigame</button>
     <button class="btn" onclick="filterSelection('skilling')"><div class="emojiSmall">🪓</div>Skilling</button>
     <button class="btn" onclick="filterSelection('utility')"><div class="emojiSmall">🔧</div>Utility</button>
   </div>
+
+  <div id="myBtnContainer" class="center">
+    <input type="text" id="myInput" class="myInput" onkeyup="myFunction()" placeholder="🔎 Search Plugins">
+  </div>
+
   
   <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-  <div class="container2">
+  <div id="myUL" class="container2">
     <div class="filterDiv skilling"><div class="emoji">🪓</div>Abyss</div>
     <div class="filterDiv skilling"><div class="emoji">🪓</div>Agility</div>
     <div class="filterDiv skilling"><div class="emoji">🪓</div>Amethyst</div>
@@ -97,7 +102,7 @@
     <div class="filterDiv skilling"><div class="emoji">🪓</div>Wrath</div>
     <div class="filterDiv skilling"><div class="emoji">🪓</div>ZMI</div>
     <div class="filterDiv pvm"><div class="emoji">🐲</div>Zulrah</div>
-  </div> 
+</div> 
     </div>
 
     <script>
@@ -148,7 +153,26 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-        </script>
+
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  x = document.getElementsByClassName("filterDiv");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < x.length; i++) {
+    txtValue = x[i].textContent || x[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        w3AddClass(x[i], "show");
+    } else {
+        w3RemoveClass(x[i], "show");
+    }
+  }
+}
+
+</script>
 </body>
 
 </html>
