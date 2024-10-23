@@ -5,7 +5,7 @@ include_in_header: true
 ---
 
 **Last updated**  
-6 October 2024
+23 October 2024
 
 
 
@@ -19,7 +19,7 @@ We are El Plugins ('Company', 'we', 'us', or 'our').
 
  
 
-We operate the website https://discord.gg/elplugins (the 'Site'), as well as any other related products and services that refer or link to these legal terms (the 'Legal Terms') (collectively, the 'Services').
+We operate the website https://discord.gg/Fa4BdBvg2c/ (the 'Site'), as well as any other related products and services that refer or link to these legal terms (the 'Legal Terms') (collectively, the 'Services').
 
  
 
@@ -27,7 +27,7 @@ We provide a service where users purchase our plugins and use them on an online 
 
  
 
-You can contact us by using our discord server ticket system found at https://discord.gg/elplugins.
+You can contact us by using our discord server ticket system found at https://discord.gg/Fa4BdBvg2c/.
 
  
 
@@ -476,7 +476,7 @@ These Legal Terms and any policies or operating rules posted by us on the Servic
 
  
 
-In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us using the ticketing system at: https://discord.gg/elplugins
+In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us using the ticketing system at: https://discord.gg/Fa4BdBvg2c/
 
  
 
