@@ -382,6 +382,7 @@ nav > ul li a:active {
 .splashRow::after {
 	content: "";
 	clear: both;
+	max-width: 720px;
 	display: table;
 	justify-content: center;
   }
