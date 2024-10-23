@@ -376,14 +376,17 @@ nav > ul li a:active {
 	height: 110px;
 }
 
+.splashRow {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80vw;
+}
 
-// Splash
 
 .splashRow::after {
 	content: "";
 	clear: both;
-	max-width: 720px;
-	display: table;
+	display: block;
 	justify-content: center;
   }
 
@@ -391,7 +394,7 @@ nav > ul li a:active {
 	float: left;
 	width: 33.33%;
 	padding: 5px;
-	max-width: 900px;
+	max-width: 400px;
   }
 
   @media screen and (max-width: 500px) {
