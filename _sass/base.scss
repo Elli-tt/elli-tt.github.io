@@ -20,6 +20,12 @@ body {
 	background-color: #353535;
 }
 
+.pluginsPageContent {
+	position: relative;
+	z-index: 5;
+	padding: 40px 0;
+}
+
 h1 {
 	font-size: 3rem;
 }

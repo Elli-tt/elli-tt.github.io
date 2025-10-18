@@ -3,22 +3,33 @@
 
 {% include head.html %}
 
-<body>
-    <div class="imageWrapper">
-            <div class="headerBackground">
-                <div class="container">
-                    {% include header.html %}
-                    <div class="iphonePreview">
+<body class="modernBody">
+    <!-- Animated Background Elements -->
+    <div class="bg-animated-elements">
+        <div class="bg-element bg-element-1">⚔️</div>
+        <div class="bg-element bg-element-2">🛡️</div>
+        <div class="bg-element bg-element-3">🏹</div>
+        <div class="bg-element bg-element-4">⚡</div>
+        <div class="bg-element bg-element-5">💎</div>
+        <div class="bg-element bg-element-6">🪓</div>
+    </div>
 
-                        <div class="videoContainer hidden">
-                            <video class="screenvideo" autoplay="autoplay" controls="controls" loop="loop">
-                            </video>
-                        </div>  
+    <!-- Modern Header -->
+    <div class="modernHeader">
+        <div class="modernHeaderBackground">
+            <div class="container">
+                {% include header.html %}
+            </div>
+        </div>
+    </div>
 
-                        {% include screencontent.html %}
-
-                    </div>
-                    <div class="appInfo">
+    <!-- Hero Section -->
+    <div class="modernHeroWrapper">
+        <div class="modernHero">
+            <div class="container">
+                <!-- Centered App Info Section -->
+                <div class="centeredAppInfo">
+                    <div class="appIconContainer">
                         <div class="appIconShadow">
                             <svg width="0" height="0">
                                 <defs>
@@ -29,28 +40,48 @@
                             </svg>
                             <img class="appIconLarge" src="{{ site.app_icon | relative_url }}">
                         </div>
-                        <div class="appNamePriceContainer">
-                            <h1 class="appName">
-                                {{ site.app_name }}
-                            </h1>
-                            <h2 class="appPrice">
-                                {{ site.app_price }}
-                            </h2>
-                        </div>
-                        <div class="appDescriptionContainer">
-                            <p class ="appDescription">
-                                {{ site.app_description }}
+                    </div>
+                    <div class="downloadButtonsContainer">
+                        <a class="modernButton discordButton" href="{{site.appstore_link}}">
+                            <span class="modernButtonIcon">💬</span>
+                            <span class="modernButtonText">Join us on Discord</span>
+                        </a>
+                    </div>
+                    <div class="appDescriptionContainer">
+                        <div class="descriptionBackground">
+                            <p class="appDescription">
+                                RuneLite plugins for Combat, Skilling, Minigames, Utility, and PVM content.<br>
+                                Fully automated, Smart Click, One Click and Hotkey plugins available.
                             </p>
                         </div>
-                        <div class="downloadButtonsContainer">
-                            <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
-                        </div>
                     </div>
-                    {% include features.html %}
-                    {% include footer.html %}
-                    {% include appstoreimages.html %}
+                </div>
+                
+                <!-- Large Video Section -->
+                <div class="largeVideoSection">
+                    <div class="videoContainer hidden">
+                        <video class="screenvideo" autoplay="autoplay" controls="controls" loop="loop">
+                        </video>
+                    </div>  
+                    {% include screencontent.html %}
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="modernFeaturesWrapper">
+        <div class="container">
+            {% include features.html %}
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="modernFooterWrapper">
+        <div class="container">
+            {% include footer.html %}
+            {% include appstoreimages.html %}
+        </div>
+    </div>
 </body>
 </html>

@@ -7,15 +7,31 @@
 
 {% include head.html %}
 
-<body class="subPageBody">
-    <div class="headerBackground subPageHeaderBackground">
+<body class="modernBody subPageBody">
+    <!-- Animated Background Elements -->
+    <div class="bg-animated-elements">
+        <div class="bg-element bg-element-1">⚔️</div>
+        <div class="bg-element bg-element-2">🛡️</div>
+        <div class="bg-element bg-element-3">🏹</div>
+        <div class="bg-element bg-element-4">⚡</div>
+        <div class="bg-element bg-element-5">💎</div>
+        <div class="bg-element bg-element-6">🪓</div>
+    </div>
+
+    <div class="modernHeader">
+        <div class="modernHeaderBackground">
         <div class="container subPageContainer">
             {% include header.html %}
+            </div>
         </div>
+  </div>
+
+    <div class="pluginsPageContent">
          <!-- Package Toggle Buttons -->
 <div class="package-toggle-container">
     <button class="package-toggle-btn active" onclick="showPackage('plugin')">🎁 Plugin Package</button>
     <button class="package-toggle-btn" onclick="showPackage('pvm')">⚔️ PVM Plugins</button>
+    <button class="package-toggle-btn" onclick="showPackage('combined')">🎁 Plugin & PVM Package ⚔️</button>
 </div>
 
          <!-- Plugin Package Header -->
@@ -23,21 +39,15 @@
     <div class="plugin-package-header">
         <h1>🎁 Plugin Package 🎁</h1>
         <p class="plugin-package-subtitle">Includes a variety of Combat, Skilling, Minigames and Utility plugins.</p>
-    </div>
-
-         <!-- Control buttons -->
-<div id="myBtnContainer" class="center">
-    <button class="btn active" onclick="filterSelection('all')"><div class="emojiSmall">🤖</div>Show all</button>
-    <button class="btn" onclick="filterSelection('combat')"><div class="emojiSmall">⚔️</div>Combat</button>
-    <button class="btn" onclick="filterSelection('minigame')"><div class="emojiSmall">🎲</div>Minigame</button>
-    <button class="btn" onclick="filterSelection('skilling')"><div class="emojiSmall">🪓</div>Skilling</button>
-    <button class="btn" onclick="filterSelection('utility')"><div class="emojiSmall">🔧</div>Utility</button>
+        <div class="pricing-container">
+            <div class="pricing-item">30 Days - $15</div>
+            <div class="pricing-item">60 Days - $28.50</div>
+            <div class="pricing-item">90 Days - $40.50</div>
+            <div class="pricing-item">Lifetime - $200 (Crypto/GP only)</div>
+        </div>
   </div>
 
-  <div id="myBtnContainer" class="center">
-    <input type="text" id="myInput" class="myInput" onkeyup="myFunction()" placeholder="🔎 Search Plugins">
-  </div>
-
+  
   
   <!-- The filterable elements organized by category -->
   <div id="myUL" class="container2">
@@ -46,24 +56,24 @@
     <div class="category-section combat-section">
       <h2 class="category-header">Combat</h2>
       <div class="plugin-columns">
-        <div class="filterDiv combat plugin-item">💠 auto-prayer<div class="description">Toggles prayers for you</div></div>
-        <div class="filterDiv combat plugin-item">💪 bf-pumper<div class="description">Free Strength Xp at Blast Furnace</div></div>
-        <div class="filterDiv combat plugin-item">🦍 bosshelper<div class="description">Helps you get those boss kills</div></div>
-        <div class="filterDiv combat plugin-item">🪩 cannon-reloader<div class="description">Reloads your cannon for you</div></div>
-        <div class="filterDiv combat plugin-item">💪 combat<div class="description">All your combat needs in one plugin</div></div>
-        <div class="filterDiv combat plugin-item">🍔 eater<div class="description">Fully customisable auto eater</div></div>
-        <div class="filterDiv combat plugin-item">🥷 fighter<div class="description">Auto fights monsters for you</div></div>
-        <div class="filterDiv combat plugin-item">🌋 fight-caves<div class="description">Helps you with Fight Caves</div></div>
-        <div class="filterDiv combat plugin-item">🧰 looter<div class="description">Picks up all your monster drops</div></div>
-        <div class="filterDiv combat plugin-item">🧌 nightmare-zone<div class="description">Customisable Nightmare Zone full auto</div></div>
-        <div class="filterDiv combat plugin-item">🍹 pot-drinker<div class="description">Fully customisable potion drinker</div></div>
-        <div class="filterDiv combat plugin-item">💠 chaos-temple-prayer<div class="description">Offers bones to the wildy altar</div></div>
-        <div class="filterDiv combat plugin-item">🏹 ranging-guild<div class="description">no hp xp range xp at the ranging guild</div></div>
-        <div class="filterDiv combat plugin-item">💢 reset-aggro<div class="description">Resets aggro for you at Crabs</div></div>
-        <div class="filterDiv combat plugin-item">🐀 scurrius<div class="description">Kills Scurrius for xp</div></div>
-        <div class="filterDiv combat plugin-item">🪄 stun-alch-tele<div class="description">Fast, cheap magic xp</div></div>
-        <div class="filterDiv combat plugin-item">🤺 warriors-guild<div class="description">Obtains tokens then kills cyclops' for Defenders</div></div>
-        <div class="filterDiv combat plugin-item">🦀 gemstone-crab<div class="description">New gemstone crab plugin</div></div>
+        <div class="filterDiv combat plugin-item">💠 Auto Prayer<div class="description">Toggles prayers for you</div></div>
+        <div class="filterDiv combat plugin-item">💪 Bf Pumper<div class="description">Free Strength Xp at Blast Furnace</div></div>
+        <div class="filterDiv combat plugin-item">🦍 Bosshelper<div class="description">Helps you get those boss kills</div></div>
+        <div class="filterDiv combat plugin-item">🪩 Cannon Reloader<div class="description">Reloads your cannon for you</div></div>
+        <div class="filterDiv combat plugin-item">💪 Combat<div class="description">All your combat needs in one plugin</div></div>
+        <div class="filterDiv combat plugin-item">🍔 Eater<div class="description">Fully customisable auto eater</div></div>
+        <div class="filterDiv combat plugin-item">🥷 Fighter<div class="description">Auto fights monsters for you</div></div>
+        <div class="filterDiv combat plugin-item">🌋 Fight Caves<div class="description">Helps you with Fight Caves</div></div>
+        <div class="filterDiv combat plugin-item">🧰 Looter<div class="description">Picks up all your monster drops</div></div>
+        <div class="filterDiv combat plugin-item">🧌 Nightmare Zone<div class="description">Customisable Nightmare Zone full auto</div></div>
+        <div class="filterDiv combat plugin-item">🍹 Pot Drinker<div class="description">Fully customisable potion drinker</div></div>
+        <div class="filterDiv combat plugin-item">💠 Chaos Temple Prayer<div class="description">Offers bones to the wildy altar</div></div>
+        <div class="filterDiv combat plugin-item">🏹 Ranging Guild<div class="description">no hp xp range xp at the ranging guild</div></div>
+        <div class="filterDiv combat plugin-item">💢 Reset Aggro<div class="description">Resets aggro for you at Crabs</div></div>
+        <div class="filterDiv combat plugin-item">🐀 Scurrius<div class="description">Kills Scurrius for xp</div></div>
+        <div class="filterDiv combat plugin-item">🪄 Stun Alch Tele<div class="description">Fast, cheap magic xp</div></div>
+        <div class="filterDiv combat plugin-item">🤺 Warriors Guild<div class="description">Obtains tokens then kills cyclops' for Defenders</div></div>
+        <div class="filterDiv combat plugin-item">🦀 Gemstone Crab<div class="description">New gemstone crab plugin</div></div>
       </div>
     </div>
 
@@ -71,37 +81,37 @@
     <div class="category-section skilling-section">
       <h2 class="category-header">Skilling</h2>
       <div class="plugin-columns">
-        <div class="filterDiv skilling plugin-item">✨ abyss<div class="description">Crafts runes through the Abyss</div></div>
-        <div class="filterDiv skilling plugin-item">🏃 agility<div class="description">Supports rooftops and courses</div></div>
-        <div class="filterDiv skilling plugin-item">🔨 amethyst<div class="description">Simple Amethyst miner</div></div>
-        <div class="filterDiv skilling plugin-item">✨ astrals<div class="description">Crafts Astrals for you on Lunar Isle</div></div>
-        <div class="filterDiv skilling plugin-item">🔧 bankstander<div class="description">Your go to for all Bankstanding activities</div></div>
-        <div class="filterDiv skilling plugin-item">💥 blast-furnace<div class="description">Makes Bars at Blast Furnace</div></div>
-        <div class="filterDiv skilling plugin-item">✨ bloods<div class="description">Crafts Bloods and Souls in Zeah</div></div>
-        <div class="filterDiv skilling plugin-item">🌲 chop-fletch<div class="description">Chops trees and fletches the logs</div></div>
-        <div class="filterDiv skilling plugin-item">🚪 construction<div class="description">Constructs lots of things in your PoH</div></div>
-        <div class="filterDiv skilling plugin-item">✨ cosmics<div class="description">Crafts Cosmic runes in Zanaris</div></div>
-        <div class="filterDiv skilling plugin-item">🔥 firemaker<div class="description">Makes fires for you</div></div>
-        <div class="filterDiv skilling plugin-item">🔨 gem-mine<div class="description">Mines gem rocks</div></div>
-        <div class="filterDiv skilling plugin-item">🐗 herbiboar<div class="description">Hunts Herbiboar so you don't have to</div></div>
-        <div class="filterDiv skilling plugin-item">🌿 herblore<div class="description">Insanely fast xp with Serum 207s or Super Combats</div></div>
-        <div class="filterDiv skilling plugin-item">🐗 hunter<div class="description">Supports a lot of Hunter methods</div></div>
-        <div class="filterDiv skilling plugin-item">🐟 karambwan<div class="description">Fishes Karambwans</div></div>
-        <div class="filterDiv skilling plugin-item">✨ lavas<div class="description">Crafts Lava Runes for great XP</div></div>
-        <div class="filterDiv skilling plugin-item">🐟 minnows<div class="description">Collects tonnes of minnows for you</div></div>
-        <div class="filterDiv skilling plugin-item">🔨 mlm<div class="description">A Motherlode mine plugin</div></div>
-        <div class="filterDiv skilling plugin-item">💰 planks<div class="description">Creates planks at your PoH</div></div>
-        <div class="filterDiv skilling plugin-item">🐗 rumours<div class="description">Completes Hunter Rumours contracts for you</div></div>
-        <div class="filterDiv skilling plugin-item">🤹 skiller<div class="description">Full of tick manipulation skilling methods</div></div>
-        <div class="filterDiv skilling plugin-item">🌲 teaks<div class="description">Chops teaks on fossil island</div></div>
-        <div class="filterDiv skilling plugin-item">🦝 thiever<div class="description">Supports lots of stalls, NPCs and Blackjacking</div></div>
-        <div class="filterDiv skilling plugin-item">🍳 tick-cooker<div class="description">Tick manipulation Cooks for you 1t/2t</div></div>
-        <div class="filterDiv skilling plugin-item">🎣 tick-fisher<div class="description">Tick manipulation fishes for you 2t/3t</div></div>
-        <div class="filterDiv skilling plugin-item">🪨 tick-miner<div class="description">Tick manipulation mines for you 3t4g</div></div>
-        <div class="filterDiv skilling plugin-item">🌴 tick-woodcutter<div class="description">Tick manipulation woodcuts for you 1.5t</div></div>
-        <div class="filterDiv skilling plugin-item">🌋 volcanic-mine<div class="description">Completes the Volcanic Mine minigame</div></div>
-        <div class="filterDiv skilling plugin-item">✨ wrath<div class="description">Crafts Wrath runes</div></div>
-        <div class="filterDiv skilling plugin-item">✨ zmi<div class="description">Crafts runes at ZMI</div></div>
+        <div class="filterDiv skilling plugin-item">✨ Abyss<div class="description">Crafts runes through the Abyss</div></div>
+        <div class="filterDiv skilling plugin-item">🏃 Agility<div class="description">Supports rooftops and courses</div></div>
+        <div class="filterDiv skilling plugin-item">🔨 Amethyst<div class="description">Simple Amethyst miner</div></div>
+        <div class="filterDiv skilling plugin-item">✨ Astrals<div class="description">Crafts Astrals for you on Lunar Isle</div></div>
+        <div class="filterDiv skilling plugin-item">🔧 Bankstander<div class="description">Your go to for all Bankstanding activities</div></div>
+        <div class="filterDiv skilling plugin-item">💥 Blast Furnace<div class="description">Makes Bars at Blast Furnace</div></div>
+        <div class="filterDiv skilling plugin-item">✨ Bloods<div class="description">Crafts Bloods and Souls in Zeah</div></div>
+        <div class="filterDiv skilling plugin-item">🌲 Chop Fletch<div class="description">Chops trees and fletches the logs</div></div>
+        <div class="filterDiv skilling plugin-item">🚪 Construction<div class="description">Constructs lots of things in your PoH</div></div>
+        <div class="filterDiv skilling plugin-item">✨ Cosmics<div class="description">Crafts Cosmic runes in Zanaris</div></div>
+        <div class="filterDiv skilling plugin-item">🔥 Firemaker<div class="description">Makes fires for you</div></div>
+        <div class="filterDiv skilling plugin-item">🔨 Gem Mine<div class="description">Mines gem rocks</div></div>
+        <div class="filterDiv skilling plugin-item">🐗 Herbiboar<div class="description">Hunts Herbiboar so you don't have to</div></div>
+        <div class="filterDiv skilling plugin-item">🌿 Herblore<div class="description">Insanely fast xp with Serum 207s or Super Combats</div></div>
+        <div class="filterDiv skilling plugin-item">🐗 Hunter<div class="description">Supports a lot of Hunter methods</div></div>
+        <div class="filterDiv skilling plugin-item">🐟 Karambwan<div class="description">Fishes Karambwans</div></div>
+        <div class="filterDiv skilling plugin-item">✨ Lavas<div class="description">Crafts Lava Runes for great XP</div></div>
+        <div class="filterDiv skilling plugin-item">🐟 Minnows<div class="description">Collects tonnes of minnows for you</div></div>
+        <div class="filterDiv skilling plugin-item">🔨 Mlm<div class="description">A Motherlode mine plugin</div></div>
+        <div class="filterDiv skilling plugin-item">💰 Planks<div class="description">Creates planks at your PoH</div></div>
+        <div class="filterDiv skilling plugin-item">🐗 Rumours<div class="description">Completes Hunter Rumours contracts for you</div></div>
+        <div class="filterDiv skilling plugin-item">🤹 Skiller<div class="description">Full of tick manipulation skilling methods</div></div>
+        <div class="filterDiv skilling plugin-item">🌲 Teaks<div class="description">Chops teaks on fossil island</div></div>
+        <div class="filterDiv skilling plugin-item">🦝 Thiever<div class="description">Supports lots of stalls, NPCs and Blackjacking</div></div>
+        <div class="filterDiv skilling plugin-item">🍳 Tick Cooker<div class="description">Tick manipulation Cooks for you 1t/2t</div></div>
+        <div class="filterDiv skilling plugin-item">🎣 Tick Fisher<div class="description">Tick manipulation fishes for you 2t/3t</div></div>
+        <div class="filterDiv skilling plugin-item">🪨 Tick Miner<div class="description">Tick manipulation mines for you 3t4g</div></div>
+        <div class="filterDiv skilling plugin-item">🌴 Tick Woodcutter<div class="description">Tick manipulation woodcuts for you 1.5t</div></div>
+        <div class="filterDiv skilling plugin-item">🌋 Volcanic Mine<div class="description">Completes the Volcanic Mine minigame</div></div>
+        <div class="filterDiv skilling plugin-item">✨ Wrath<div class="description">Crafts Wrath runes</div></div>
+        <div class="filterDiv skilling plugin-item">✨ Zmi<div class="description">Crafts runes at ZMI</div></div>
       </div>
     </div>
 
@@ -109,21 +119,21 @@
     <div class="category-section minigame-section">
       <h2 class="category-header">Minigames</h2>
       <div class="plugin-columns">
-        <div class="filterDiv minigame plugin-item">🕵🏽 rogues-den<div class="description">Gets the Rogue Outfit for you</div></div>
-        <div class="filterDiv minigame plugin-item">🐟 tempoross<div class="description">Subdues Tempoross for fishing xp</div></div>
-        <div class="filterDiv minigame plugin-item">🛕 temple-trekking<div class="description">Completes the Temple Trekking minigame</div></div>
-        <div class="filterDiv minigame plugin-item">🚜 tithe-farm<div class="description">Completes the Tithe Farm minigame</div></div>
-        <div class="filterDiv minigame plugin-item">🐟 trawler<div class="description">Obtains the trawler outfit for you</div></div>
-        <div class="filterDiv minigame plugin-item">🧹 varrock-cleaner<div class="description">Cleans finds at the varrock museum</div></div>
-        <div class="filterDiv minigame plugin-item">🔥 wintertodt<div class="description">Kills Wintertodt for you</div></div>
-        <div class="filterDiv minigame plugin-item">🌿 mixology<div class="description">Supports both paste and potion making</div></div>
-        <div class="filterDiv minigame plugin-item">🎫 castle-wars<div class="description">Completes Castle Wars for you</div></div>
-        <div class="filterDiv minigame plugin-item">🔪 giants-foundry<div class="description">Full auto Giants Foundry minigame</div></div>
-        <div class="filterDiv minigame plugin-item">✨ guardians<div class="description">Full Auto GOTR minigame</div></div>
-        <div class="filterDiv minigame plugin-item">🏠 mahogany-homes<div class="description">Completes the Mahogany Homes minigame for you for great construction xp</div></div>
-        <div class="filterDiv minigame plugin-item">🧙 mage-training-arena<div class="description">Full auto all MTA rooms</div></div>
-        <div class="filterDiv minigame plugin-item">🪳 pest-control<div class="description">Gets you void tokens nice and easy</div></div>
-        <div class="filterDiv minigame plugin-item">🔺 pyramid-plunder<div class="description">Steals pyramid tops for great agility xp and gp</div></div>
+        <div class="filterDiv minigame plugin-item">🕵🏽 Rogues Den<div class="description">Gets the Rogue Outfit for you</div></div>
+        <div class="filterDiv minigame plugin-item">🐟 Tempoross<div class="description">Subdues Tempoross for fishing xp</div></div>
+        <div class="filterDiv minigame plugin-item">🛕 Temple Trekking<div class="description">Completes the Temple Trekking minigame</div></div>
+        <div class="filterDiv minigame plugin-item">🚜 Tithe Farm<div class="description">Completes the Tithe Farm minigame</div></div>
+        <div class="filterDiv minigame plugin-item">🐟 Trawler<div class="description">Obtains the trawler outfit for you</div></div>
+        <div class="filterDiv minigame plugin-item">🧹 Varrock Cleaner<div class="description">Cleans finds at the varrock museum</div></div>
+        <div class="filterDiv minigame plugin-item">🔥 Wintertodt<div class="description">Kills Wintertodt for you</div></div>
+        <div class="filterDiv minigame plugin-item">🌿 Mixology<div class="description">Supports both paste and potion making</div></div>
+        <div class="filterDiv minigame plugin-item">🎫 Castle Wars<div class="description">Completes Castle Wars for you</div></div>
+        <div class="filterDiv minigame plugin-item">🔪 Giants Foundry<div class="description">Full auto Giants Foundry minigame</div></div>
+        <div class="filterDiv minigame plugin-item">✨ Guardians<div class="description">Full Auto GOTR minigame</div></div>
+        <div class="filterDiv minigame plugin-item">🏠 Mahogany Homes<div class="description">Completes the Mahogany Homes minigame for you for great construction xp</div></div>
+        <div class="filterDiv minigame plugin-item">🧙 Mage Training Arena<div class="description">Full auto all MTA rooms</div></div>
+        <div class="filterDiv minigame plugin-item">🪳 Pest Control<div class="description">Gets you void tokens nice and easy</div></div>
+        <div class="filterDiv minigame plugin-item">🔺 Pyramid Plunder<div class="description">Steals pyramid tops for great agility xp and gp</div></div>
 </div> 
     </div>
 
@@ -131,94 +141,101 @@
     <div class="category-section utility-section">
       <h2 class="category-header">Utility</h2>
       <div class="plugin-columns">
-        <div class="filterDiv utility plugin-item">⛔ auto-hop<div class="description">Automatically Logs/Hops/Teles when triggered</div></div>
-        <div class="filterDiv utility plugin-item">🔧 break-handler<div class="description">Takes breaks for you</div></div>
-        <div class="filterDiv utility plugin-item">🕵 coxscouter<div class="description">Scouts for your desired Chambers Layout</div></div>
-        <div class="filterDiv utility plugin-item">🔥 hotkey<div class="description">Press a hotkey, eat/equip gear/change prayer</div></div>
-        <div class="filterDiv utility plugin-item">🕴 loadout<div class="description">Automatically withdraws an inventory and gears for you at the bank</div></div>
-        <div class="filterDiv utility plugin-item">🥇 one-click<div class="description">Used to make interactions only require one click</div></div>
-        <div class="filterDiv utility plugin-item">💠 prayer<div class="description">Prayer utility plugin</div></div>
+        <div class="filterDiv utility plugin-item">⛔ Auto Hop<div class="description">Automatically Logs/Hops/Teles when triggered</div></div>
+        <div class="filterDiv utility plugin-item">🔧 Break Handler<div class="description">Takes breaks for you</div></div>
+        <div class="filterDiv utility plugin-item">🕵 Cox Scouter<div class="description">Scouts for your desired Chambers Layout</div></div>
+        <div class="filterDiv utility plugin-item">🔥 Hotkey<div class="description">Press a hotkey, eat/equip gear/change prayer</div></div>
+        <div class="filterDiv utility plugin-item">🕴 Loadout<div class="description">Automatically withdraws an inventory and gears for you at the bank</div></div>
+        <div class="filterDiv utility plugin-item">🥇 One Click<div class="description">Used to make interactions only require one click</div></div>
+        <div class="filterDiv utility plugin-item">💠 Prayer<div class="description">Prayer utility plugin</div></div>
       </div>
   </div>
 
   </div> 
-</div>
+  </div>
 
 <!-- PVM Package Content -->
 <div class="pvm-package-content" style="display: none;">
     <div class="plugin-package-header">
         <h1>⚔️PVM Plugins⚔️</h1>
         <p class="plugin-package-subtitle">All included in the purchase of PVM Plugins</p>
+        <div class="pricing-container">
+            <div class="pricing-item">30 Days - $20</div>
+            <div class="pricing-item">60 Days - $38</div>
+            <div class="pricing-item">90 Days - $54</div>
+        </div>
     </div>
 
     <div class="pvm-section">
-        <div class="pvm-plugin-item">🐻 gauntlet<div class="description">Automatically completes Gauntlet</div></div>
-        <div class="pvm-plugin-item">🐉 vorkath<div class="description">Fully automatic Vorkath killer</div></div>
-        <div class="pvm-plugin-item">🐍 zulrah<div class="description">Fully automatic Zulrah killer</div></div>
+        <div class="pvm-plugin-item">🐻 Gauntlet<div class="description">Automatically completes Gauntlet</div></div>
+        <div class="pvm-plugin-item">🐉 Vorkath<div class="description">Fully automatic Vorkath killer</div></div>
+        <div class="pvm-plugin-item">🐍 Zulrah<div class="description">Fully automatic Zulrah killer</div></div>
     </div>
 </div>
 
+<!-- Combined Package Content -->
+<div class="combined-package-content" style="display: none;">
+    <div class="plugin-package-header">
+        <h1>🎁 Plugin & PVM Package ⚔️</h1>
+        <p class="plugin-package-subtitle">Get access to all plugins by ElPlugins</p>
+        <div class="pricing-container">
+            <div class="pricing-item">30 Days - $30</div>
+            <div class="pricing-item">60 Days - $57</div>
+            <div class="pricing-item">90 Days - $81</div>
+        </div>
     </div>
+
+    <div class="combined-section">
+        <div class="combined-buttons-container">
+            <div class="combined-plugin-item">🎁 All Plugin Package plugins<div class="description">Combat, Skilling, Minigames, and Utility plugins</div></div>
+            <div class="combined-plugin-item">⚔️ All PVM Package plugins<div class="description">Gauntlet, Vorkath, and Zulrah plugins</div></div>
+        </div>
+    </div>
+</div>
+
+    </div><!-- end pluginsPageContent -->
 
     <script>
         // Package switching functionality
         function showPackage(packageType) {
             var pluginContent = document.querySelector('.plugin-package-content');
             var pvmContent = document.querySelector('.pvm-package-content');
-            var filterButtons = document.getElementById('myBtnContainer');
-            var searchContainer = document.querySelector('#myBtnContainer').nextElementSibling;
+            var combinedContent = document.querySelector('.combined-package-content');
             var toggleButtons = document.querySelectorAll('.package-toggle-btn');
             
             // Update toggle button states
             toggleButtons.forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
             
+            // Hide all content first
+            pluginContent.style.display = 'none';
+            pvmContent.style.display = 'none';
+            combinedContent.style.display = 'none';
+            
             if (packageType === 'plugin') {
                 pluginContent.style.display = 'block';
-                pvmContent.style.display = 'none';
-                filterButtons.style.display = 'block';
-                searchContainer.style.display = 'block';
-                filterSelection("all");
+                showAllPlugins();
             } else if (packageType === 'pvm') {
-                pluginContent.style.display = 'none';
                 pvmContent.style.display = 'block';
-                filterButtons.style.display = 'none';
-                searchContainer.style.display = 'none';
+            } else if (packageType === 'combined') {
+                combinedContent.style.display = 'block';
             }
         }
 
-        filterSelection("all")
-function filterSelection(c) {
+        // Show all plugins by default since filters are removed
+        showAllPlugins();
+        
+function showAllPlugins() {
   var x, i, sections;
   x = document.getElementsByClassName("filterDiv");
   sections = document.getElementsByClassName("category-section");
   
-  if (c == "all") {
-    // Show all sections and all plugins
-    for (i = 0; i < sections.length; i++) {
-      w3AddClass(sections[i], "show");
-    }
-    for (i = 0; i < x.length; i++) {
-      w3AddClass(x[i], "show");
-    }
-  } else {
-    // Hide all sections first
-    for (i = 0; i < sections.length; i++) {
-      w3RemoveClass(sections[i], "show");
-    }
-    
-    // Show sections that have matching plugins
+  // Show all sections and all plugins
+  for (i = 0; i < sections.length; i++) {
+    w3AddClass(sections[i], "show");
+  }
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) {
-        w3AddClass(x[i], "show");
-        // Show the parent section
-        var section = x[i].closest('.category-section');
-        if (section) {
-          w3AddClass(section, "show");
-        }
-      }
-    }
+    w3AddClass(x[i], "show");
   }
 }
 
@@ -258,40 +275,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-function myFunction() {
-  // Only search if Plugin Package is active
-  var pluginContent = document.querySelector('.plugin-package-content');
-  if (pluginContent.style.display === 'none') {
-    return; // Don't search if PVM package is active
-  }
-
-  // Declare variables
-  var input, filter, ul, li, a, i, txtValue, sections;
-  input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
-  x = document.getElementsByClassName("filterDiv");
-  sections = document.getElementsByClassName("category-section");
-
-  // Hide all sections first
-  for (i = 0; i < sections.length; i++) {
-    w3RemoveClass(sections[i], "show");
-  }
-
-  // Loop through all plugin items, and hide those who don't match the search query
-  for (i = 0; i < x.length; i++) {
-    txtValue = x[i].textContent || x[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        w3AddClass(x[i], "show");
-        // Show the parent section
-        var section = x[i].closest('.category-section');
-        if (section) {
-          w3AddClass(section, "show");
-        }
-    } else {
-        w3RemoveClass(x[i], "show");
-    }
-  }
-}
+// Search function removed since search bar was removed
 
 </script>
 </body>

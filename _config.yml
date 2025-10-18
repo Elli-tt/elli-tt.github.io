@@ -11,8 +11,8 @@ presskit_download_link                    : https://discord.com/invite/Fa4BdBvg2
 
 app_icon                                  : assets/elplugins.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : ElPlugins                                    # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price                                 : Combat, Skilling, Minigame, Utility and PVM Plugins                                   # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : ElPlugins are both fully automated and manual RuneLite plugins created to enhance your experience on OSRS.
+app_price                                 : For all your Old School Plugin needs.                                   # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
+app_description                           : ElPlugins includes both fully automated and manual RuneLite plugins created to enhance your experience on OSRS.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -36,27 +36,27 @@ mastodon_link                             :
 features                                  :
 
   - title                                 : RuneLite
-    description                           : Runs on a custom loader for RuneLite called RLPL.
+    description                           : Free Custom Plugin Loader included with all plugins.
     fontawesome_icon_name                 : magic
     
-  - title                                 : Multiple Modes
-    description                           : The plugins have a FULL AUTO and a SMART CLICK (Manual) mode.
+  - title                                 : All Modes
+    description                           : Full Auto, Smart Click, One Click and Hotkey modes.
     fontawesome_icon_name                 : mobile
 
   - title                                 : Jagex Launcher
-    description                           : Client supports all Username, Email and JL logins.
+    description                           : All accounts supported.
     fontawesome_icon_name                 : play-circle
 
   - title                                 : Frequent Updates
-    description                           : Plugins are updated frequently.
+    description                           : Check out our Changelog on Discord.
     fontawesome_icon_name                 : sync
 
   - title                                 : Minimal Downtime
-    description                           : The client is updated shortly after the official RuneLite update for minimal downtime.
+    description                           : The client is updated shortly after the official RuneLite update.
     fontawesome_icon_name                 : adjust
   
-  - title                                 : Feature List
-    description                           : Supporting all your Combat, Skilling, Minigame, Utility and PVM needs.
+  - title                                 : Simplified Packages
+    description                           : Check out our plugin list for the packages on offer.
     fontawesome_icon_name                 : star
 
   - title                                 : Fully Customisable
@@ -64,11 +64,11 @@ features                                  :
     fontawesome_icon_name                 : arrow-alt-circle-down
 
   - title                                 : Support
-    description                           : All of our support channels are listed on our Discord server. They become unlocked after purchase.
+    description                           : Full section of install, FAQ and help channels on Discord.
     fontawesome_icon_name                 : link
 
-  - title                                 : Frequently Asked Questions
-    description                           : This section is available on our Discord server!
+  - title                                 : Discord
+    description                           : For all other information on the plugins.
     fontawesome_icon_name                 : info-circle
 
   - title                                 : # New Feature Title
