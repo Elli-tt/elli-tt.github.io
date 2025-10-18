@@ -376,32 +376,332 @@ nav > ul li a:active {
 	height: 110px;
 }
 
-.splashRow {
-	margin-left: auto;
-	margin-right: auto;
-	width: 80vw;
+// Modern Splash Page Styling
+.splashBody {
+	background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+	min-height: 100vh;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
 }
 
-
-.splashRow::after {
-	content: "";
-	clear: both;
-	display: block;
+// Hero Section
+.splash-hero {
+	position: relative;
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
 	justify-content: center;
-  }
+	text-align: center;
+	padding: 60px 20px;
+	background: radial-gradient(ellipse at center, rgba(35, 166, 179, 0.1) 0%, transparent 70%);
+}
 
-.splashColumn {
-	float: left;
-	width: 33.33%;
-	padding: 5px;
-	max-width: 400px;
-  }
+.splash-hero-content {
+	max-width: 800px;
+	z-index: 2;
+	position: relative;
+}
 
-  @media screen and (max-width: 500px) {
-	.column {
-	  width: 100%;
+.splash-logo {
+	margin-bottom: 30px;
+}
+
+.splash-logo-img {
+	width: 120px;
+	height: 120px;
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease;
+}
+
+.splash-logo-img:hover {
+	transform: scale(1.05);
+}
+
+.splash-title {
+	font-size: 4rem;
+	font-weight: bold;
+	color: #ffffff;
+	margin-bottom: 15px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	background: linear-gradient(45deg, #23A6B3, #ffffff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.splash-subtitle {
+	font-size: 1.8rem;
+	color: #23A6B3;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.splash-description {
+	font-size: 1.2rem;
+	color: #cccccc;
+	line-height: 1.6;
+	margin-bottom: 40px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Feature Highlights
+.splash-features {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 40px;
+	flex-wrap: wrap;
+}
+
+.splash-feature {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 15px;
+	border: 1px solid rgba(35, 166, 179, 0.3);
+	transition: all 0.3s ease;
+	backdrop-filter: blur(10px);
+}
+
+.splash-feature:hover {
+	transform: translateY(-5px);
+	background: rgba(35, 166, 179, 0.1);
+	border-color: #23A6B3;
+	box-shadow: 0 10px 25px rgba(35, 166, 179, 0.2);
+}
+
+.splash-feature-icon {
+	font-size: 2.5rem;
+	margin-bottom: 5px;
+}
+
+.splash-feature span {
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+// Background Elements
+.splash-bg-elements {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.splash-bg-item {
+	position: absolute;
+	font-size: 3rem;
+	opacity: 0.1;
+	animation: float 6s ease-in-out infinite;
+}
+
+.splash-bg-item-1 {
+	top: 20%;
+	left: 10%;
+	animation-delay: 0s;
+}
+
+.splash-bg-item-2 {
+	top: 30%;
+	right: 15%;
+	animation-delay: 1s;
+}
+
+.splash-bg-item-3 {
+	bottom: 30%;
+	left: 20%;
+	animation-delay: 2s;
+}
+
+.splash-bg-item-4 {
+	top: 60%;
+	right: 25%;
+	animation-delay: 3s;
+}
+
+.splash-bg-item-5 {
+	bottom: 20%;
+	right: 10%;
+	animation-delay: 4s;
+}
+
+@keyframes float {
+	0%, 100% { transform: translateY(0px) rotate(0deg); }
+	50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+// Action Buttons Section
+.splash-actions {
+	padding: 60px 20px;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.splash-actions-container {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 30px;
+}
+
+.splash-btn {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 25px 30px;
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 15px;
+	text-decoration: none;
+	color: #ffffff;
+	transition: all 0.3s ease;
+	backdrop-filter: blur(10px);
+	position: relative;
+	overflow: hidden;
+}
+
+.splash-btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+	transition: left 0.5s ease;
+}
+
+.splash-btn:hover::before {
+	left: 100%;
+}
+
+.splash-btn:hover {
+	transform: translateY(-5px);
+	border-color: #23A6B3;
+	box-shadow: 0 15px 35px rgba(35, 166, 179, 0.3);
+}
+
+.splash-btn-discord:hover {
+	background: linear-gradient(135deg, rgba(88, 101, 242, 0.2), rgba(88, 101, 242, 0.1));
+	border-color: #5865F2;
+}
+
+.splash-btn-purchase:hover {
+	background: linear-gradient(135deg, rgba(35, 166, 179, 0.2), rgba(35, 166, 179, 0.1));
+	border-color: #23A6B3;
+}
+
+.splash-btn-website:hover {
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
+	border-color: #ffffff;
+}
+
+.splash-btn-icon {
+	font-size: 2.5rem;
+	flex-shrink: 0;
+}
+
+.splash-btn-content {
+	text-align: left;
+}
+
+.splash-btn-title {
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.splash-btn-subtitle {
+	font-size: 1rem;
+	opacity: 0.8;
+}
+
+// Footer
+.splash-footer {
+	text-align: center;
+	padding: 30px 20px;
+	background: rgba(0, 0, 0, 0.5);
+	color: #888888;
+	font-size: 0.9rem;
+}
+
+// Responsive Design
+@media only screen and (max-width: 768px) {
+	.splash-title {
+		font-size: 2.5rem;
 	}
-  }
+	
+	.splash-subtitle {
+		font-size: 1.4rem;
+	}
+	
+	.splash-description {
+		font-size: 1rem;
+	}
+	
+	.splash-features {
+		gap: 15px;
+	}
+	
+	.splash-feature {
+		padding: 15px;
+	}
+	
+	.splash-feature-icon {
+		font-size: 2rem;
+	}
+	
+	.splash-actions-container {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+	
+	.splash-btn {
+		padding: 20px 25px;
+	}
+	
+	.splash-btn-icon {
+		font-size: 2rem;
+	}
+	
+	.splash-btn-title {
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.splash-hero {
+		padding: 40px 15px;
+	}
+	
+	.splash-title {
+		font-size: 2rem;
+	}
+	
+	.splash-logo-img {
+		width: 80px;
+		height: 80px;
+	}
+	
+	.splash-features {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.splash-feature {
+		width: 200px;
+	}
+}
 
 //Plugin Page
 .center {

@@ -7,29 +7,80 @@
 
 {% include head.html %}
 
-<body class="subPageBody">
-    <div class="headerBackground subPageHeaderBackground">
-        <div class="container">
-            {% include splashheader.html %}
+<body class="splashBody">
+    <!-- Hero Section -->
+    <div class="splash-hero">
+        <div class="splash-hero-content">
+            <div class="splash-logo">
+                <img src="/assets/elplugins.png" alt="ElPlugins" class="splash-logo-img">
+            </div>
+            <h1 class="splash-title">ElPlugins</h1>
+            <p class="splash-subtitle">Enhance Your OSRS Experience</p>
+            <p class="splash-description">Professional RuneLite plugins for Combat, Skilling, Minigames, Utility, and PVM content. Fully automated and manual modes available.</p>
+            
+            <!-- Feature Highlights -->
+            <div class="splash-features">
+                <div class="splash-feature">
+                    <div class="splash-feature-icon">⚔️</div>
+                    <span>Combat & PVM</span>
+                </div>
+                <div class="splash-feature">
+                    <div class="splash-feature-icon">🪓</div>
+                    <span>Skilling</span>
+                </div>
+                <div class="splash-feature">
+                    <div class="splash-feature-icon">🎲</div>
+                    <span>Minigames</span>
+                </div>
+                <div class="splash-feature">
+                    <div class="splash-feature-icon">🔧</div>
+                    <span>Utility</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="splash-bg-elements">
+            <div class="splash-bg-item splash-bg-item-1">⚔️</div>
+            <div class="splash-bg-item splash-bg-item-2">🛡️</div>
+            <div class="splash-bg-item splash-bg-item-3">🏹</div>
+            <div class="splash-bg-item splash-bg-item-4">⚡</div>
+            <div class="splash-bg-item splash-bg-item-5">💎</div>
         </div>
     </div>
-    <div class="splashRow">
-        <div class="splashColumn">
-            <a target="_self" href="https://discord.com/invite/Fa4BdBvg2c">
-                <img src="/assets/discordjoin.png" alt="Join our discord." style="width:100%">
-            </a>
-        </div>
-        <div class="splashColumn">
-            <a target="_self" href="https://pluginshop.link/elplugins#shop">
-                <img src="/assets/purchaseonline.png" alt="Purchase Online." style="width:100%">
-            </a>
-        </div>
-        <div class="splashColumn">
-            <a target="_self" href="https://elli-tt.github.io/">
-                <img src="/assets/elpluginssplash.png" alt="Continue to the website." style="width:100%">
+
+    <!-- Action Buttons Section -->
+    <div class="splash-actions">
+        <div class="splash-actions-container">
+            <a href="https://discord.com/invite/Fa4BdBvg2c" class="splash-btn splash-btn-discord">
+                <div class="splash-btn-icon">💬</div>
+                <div class="splash-btn-content">
+                    <div class="splash-btn-title">Join Discord</div>
+                    <div class="splash-btn-subtitle">Get Support & Updates</div>
+                </div>
             </a>
             
+            <a href="https://pluginshop.link/elplugins#shop" class="splash-btn splash-btn-purchase">
+                <div class="splash-btn-icon">🛒</div>
+                <div class="splash-btn-content">
+                    <div class="splash-btn-title">Purchase Plugins</div>
+                    <div class="splash-btn-subtitle">Start Your Journey</div>
+                </div>
+            </a>
+            
+            <a href="/" class="splash-btn splash-btn-website">
+                <div class="splash-btn-icon">🏠</div>
+                <div class="splash-btn-content">
+                    <div class="splash-btn-title">View Website</div>
+                    <div class="splash-btn-subtitle">Explore All Features</div>
+                </div>
+            </a>
         </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="splash-footer">
+        <p>© 2024 ElPlugins - Professional OSRS RuneLite Plugins</p>
     </div>
 </body>
 
