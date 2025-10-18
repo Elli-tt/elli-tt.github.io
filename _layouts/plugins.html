@@ -12,6 +12,12 @@
         <div class="container subPageContainer">
             {% include header.html %}
         </div>
+         <!-- Plugin Package Header -->
+<div class="plugin-package-header">
+    <h1>🎁 Plugin Package 🎁</h1>
+    <p class="plugin-package-subtitle">Includes a variety of Combat, Skilling, Minigames and Utility plugins.</p>
+</div>
+
          <!-- Control buttons -->
 <div id="myBtnContainer" class="center">
     <button class="btn active" onclick="filterSelection('all')"><div class="emojiSmall">🤖</div>Show all</button>
@@ -27,98 +33,144 @@
   </div>
 
   
-  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <!-- The filterable elements organized by category -->
   <div id="myUL" class="container2">
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Abyss<small style="color:lightslategray;"><br>Crafts runes through the Abyss</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Agility<small style="color:lightslategray;"><br>Supports rooftops and courses</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Amethyst<small style="color:lightslategray;"><br>Simple Amethyst miner</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Astrals<small style="color:lightslategray;"><br>Crafts Astrals for you on Lunar Isle</small></div>
-    <div class="filterDiv utility"><div class="emoji">🔧</div>Auto Hop<small style="color:lightslategray;"><br>Automatically Logs/Hops/Teles when triggered</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Auto Prayer<small style="color:lightslategray;"><br>Toggles prayers for you</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Bankstander<small style="color:lightslategray;"><br>Your go to for all Bankstanding activities</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Blast Furnace<small style="color:lightslategray;"><br>Makes Bars at Blast Furnace</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Blast Furnace Pumper<small style="color:lightslategray;"><br>Free Strength Xp at Blast Furnace</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Bloods<small style="color:lightslategray;"><br>Crafts Bloods and Souls in Zeah</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Boss Helper<small style="color:lightslategray;"><br>Helps you get those boss kills</small></div>
-    <div class="filterDiv utility"><div class="emoji">🔧</div>Break Handler<small style="color:lightslategray;"><br>Takes breaks for you</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Cannon Reloader<small style="color:lightslategray;"><br>Reloads your cannon for you</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Castle Wars<small style="color:lightslategray;"><br>Completes Castle Wars for you</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Chop Fletch<small style="color:lightslategray;"><br>Chops trees and fletches the logs</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Combat<small style="color:lightslategray;"><br>All your combat needs in one plugin</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Construction<small style="color:lightslategray;"><br>Constructs lots of things in your PoH</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Cosmics<small style="color:lightslategray;"><br>Crafts Cosmic runes in Zanaris</small></div>
-    <div class="filterDiv utility"><div class="emoji">🔧</div>Cox Scouter<small style="color:lightslategray;"><br>Scouts for your desired Chambers Layout</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Eater<small style="color:lightslategray;"><br>Fully customisable auto eater</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Fight Caves<small style="color:lightslategray;"><br>Helps you with Fight Caves</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Fighter<small style="color:lightslategray;"><br>Auto fights monsters for you</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Firemaker<small style="color:lightslategray;"><br>Makes fires for you</small></div>
-    <div class="filterDiv pvm"><div class="emoji">🐲</div>Gauntlet<small style="color:lightslategray;"><br>Automatically completes Gauntlet</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Gem Mine<small style="color:lightslategray;"><br>Mines gem rocks</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Giants Foundry<small style="color:lightslategray;"><br>Full auto Giants Foundry minigame</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Guardians Of The Rift<small style="color:lightslategray;"><br>Full Auto GOTR minigame</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Herbiboar<small style="color:lightslategray;"><br>Hunts Herbiboar so you don't have to</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Herblore<small style="color:lightslategray;"><br>Insanely fast xp with Serum 207s or Super Combats</small></div>
-    <div class="filterDiv utility"><div class="emoji">🔧</div>Hot Key<small style="color:lightslategray;"><br>Press a hotkey, eat/equip gear/change prayer</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Hunter<small style="color:lightslategray;"><br>Supports a lot of Hunter methods</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Karambwan<small style="color:lightslategray;"><br>Fishes Karambwans</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Lavas<small style="color:lightslategray;"><br>Crafts Lava Runes for great XP</small></div>
-    <div class="filterDiv utility"><div class="emoji">🔧</div>Loadout<small style="color:lightslategray;"><br>Automatically withdraws an inventory and gears for you at the bank</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Looter<small style="color:lightslategray;"><br>Picks up all your monster drops</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Mage Training Arena<small style="color:lightslategray;"><br>Full auto all MTA rooms</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Mahogany Homes<small style="color:lightslategray;"><br>Completes the Mahogany Homes minigame for you for great construction xp</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Minnows<small style="color:lightslategray;"><br>Collects tonnes of minnows for you</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Mixology<small style="color:lightslategray;"><br>Supports both paste and potion making</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>MLM<small style="color:lightslategray;"><br>A Motherlode mine plugin</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Nightmare Zone<small style="color:lightslategray;"><br>Customisable Nightmare Zone full auto</small></div>
-    <div class="filterDiv utility"><div class="emoji">🔧</div>One Click<small style="color:lightslategray;"><br>Used to make interactions only require one click</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Pest Control<small style="color:lightslategray;"><br>Gets you void tokens nice and easy</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Planks<small style="color:lightslategray;"><br>Creates planks at your PoH</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Pot Drinker<small style="color:lightslategray;"><br>Fully customisable potion drinker</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Prayer Chaos Temple<small style="color:lightslategray;"><br>Offers bones to the wildy altar</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Pyramid Plunder<small style="color:lightslategray;"><br>Steals pyramid tops for great agility xp and gp</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Ranging Guild<small style="color:lightslategray;"><br>no hp xp range xp at the ranging guild</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Reset Aggro<small style="color:lightslategray;"><br>Resets aggro for you at Crabs</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Rogues Den<small style="color:lightslategray;"><br>Gets the Rogue Outfit for you</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Rumours<small style="color:lightslategray;"><br>Completes Hunter Rumours contracts for you</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Scurrius<small style="color:lightslategray;"><br>Kills Scurrius for xp</small></div>
-    <div class="filterDiv utility"><div class="emoji">🔧</div>Shopper<small style="color:lightslategray;"><br>Buys and Sells everything at shops</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Skiller<small style="color:lightslategray;"><br>Full of tick manipulation skilling methods</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Stun Alch Tele<small style="color:lightslategray;"><br>Fast, cheap magic xp</small></div>
-    <div class="filterDiv utility"><div class="emoji">🔧</div>Super Profiles<small style="color:lightslategray;"><br>Great account manager</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Teaks<small style="color:lightslategray;"><br>Chops teaks on fossil island</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Temple Trekking<small style="color:lightslategray;"><br>Completes the Temple Trekking minigame</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Tempoross<small style="color:lightslategray;"><br>Subdues Tempoross for fishing xp</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Thiever<small style="color:lightslategray;"><br>Supports lots of stalls, NPCs and Blackjacking</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Tick Cooker<small style="color:lightslategray;"><br>Tick manipulation Cooks for you 1t/2t</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Tick Fisher<small style="color:lightslategray;"><br>Tick manipulation fishes for you 2t/3t</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Tick Miner<small style="color:lightslategray;"><br>Tick manipulation mines for you 3t4g</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Tick Woodcutter<small style="color:lightslategray;"><br>Tick manipulation woodcuts for you 1.5t</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Tithe Farm<small style="color:lightslategray;"><br>Completes the Tithe Farm minigame</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Trawler<small style="color:lightslategray;"><br>Obtains the trawler outfit for you</small></div>
-    <div class="filterDiv utility"><div class="emoji">🔧</div>Utils<small style="color:lightslategray;"><br>Powers ElPlugins</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Varrock Cleaner<small style="color:lightslategray;"><br>Cleans finds at the varrock museum</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Volcanic Mine<small style="color:lightslategray;"><br>Completes the Volcanic Mine minigame</small></div>
-    <div class="filterDiv pvm"><div class="emoji">🐲</div>Vorkath<small style="color:lightslategray;"><br>Fully automatic Vorkath killer</small></div>
-    <div class="filterDiv utility"><div class="emoji">🔧</div>Walker<small style="color:lightslategray;"><br>Walks places so you don't have to</small></div>
-    <div class="filterDiv combat"><div class="emoji">⚔️</div>Warriors Guild<small style="color:lightslategray;"><br>Obtains tokens then kills cyclops' for Defenders</small></div>
-    <div class="filterDiv utility"><div class="emoji">🔧</div>Widgets<small style="color:lightslategray;"><br>Adds useful widgets to your inventory for spell casting/prayers etc</small></div>
-    <div class="filterDiv minigame"><div class="emoji">🎲</div>Wintertodt<small style="color:lightslategray;"><br>Kills Wintertodt for you</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>Wrath<small style="color:lightslategray;"><br>Crafts Wrath runes</small></div>
-    <div class="filterDiv skilling"><div class="emoji">🪓</div>ZMI<small style="color:lightslategray;"><br>Crafts runes at ZMI</small></div>
-    <div class="filterDiv pvm"><div class="emoji">🐲</div>Zulrah</div>
+    
+    <!-- Combat Section -->
+    <div class="category-section combat-section">
+      <h2 class="category-header">Combat</h2>
+      <div class="plugin-columns">
+        <div class="filterDiv combat plugin-item">💠 auto-prayer<div class="description">Toggles prayers for you</div></div>
+        <div class="filterDiv combat plugin-item">💪 bf-pumper<div class="description">Free Strength Xp at Blast Furnace</div></div>
+        <div class="filterDiv combat plugin-item">🦍 bosshelper<div class="description">Helps you get those boss kills</div></div>
+        <div class="filterDiv combat plugin-item">🪩 cannon-reloader<div class="description">Reloads your cannon for you</div></div>
+        <div class="filterDiv combat plugin-item">💪 combat<div class="description">All your combat needs in one plugin</div></div>
+        <div class="filterDiv combat plugin-item">🍔 eater<div class="description">Fully customisable auto eater</div></div>
+        <div class="filterDiv combat plugin-item">🥷 fighter<div class="description">Auto fights monsters for you</div></div>
+        <div class="filterDiv combat plugin-item">🌋 fight-caves<div class="description">Helps you with Fight Caves</div></div>
+        <div class="filterDiv combat plugin-item">🧰 looter<div class="description">Picks up all your monster drops</div></div>
+        <div class="filterDiv combat plugin-item">🧌 nightmare-zone<div class="description">Customisable Nightmare Zone full auto</div></div>
+        <div class="filterDiv combat plugin-item">🍹 pot-drinker<div class="description">Fully customisable potion drinker</div></div>
+        <div class="filterDiv combat plugin-item">💠 chaos-temple-prayer<div class="description">Offers bones to the wildy altar</div></div>
+        <div class="filterDiv combat plugin-item">🏹 ranging-guild<div class="description">no hp xp range xp at the ranging guild</div></div>
+        <div class="filterDiv combat plugin-item">💢 reset-aggro<div class="description">Resets aggro for you at Crabs</div></div>
+        <div class="filterDiv combat plugin-item">🐀 scurrius<div class="description">Kills Scurrius for xp</div></div>
+        <div class="filterDiv combat plugin-item">🪄 stun-alch-tele<div class="description">Fast, cheap magic xp</div></div>
+        <div class="filterDiv combat plugin-item">🤺 warriors-guild<div class="description">Obtains tokens then kills cyclops' for Defenders</div></div>
+        <div class="filterDiv combat plugin-item">🦀 gemstone-crab<div class="description">New gemstone crab plugin</div></div>
+      </div>
+    </div>
+
+    <!-- Skilling Section -->
+    <div class="category-section skilling-section">
+      <h2 class="category-header">Skilling</h2>
+      <div class="plugin-columns">
+        <div class="filterDiv skilling plugin-item">✨ abyss<div class="description">Crafts runes through the Abyss</div></div>
+        <div class="filterDiv skilling plugin-item">🏃 agility<div class="description">Supports rooftops and courses</div></div>
+        <div class="filterDiv skilling plugin-item">🔨 amethyst<div class="description">Simple Amethyst miner</div></div>
+        <div class="filterDiv skilling plugin-item">✨ astrals<div class="description">Crafts Astrals for you on Lunar Isle</div></div>
+        <div class="filterDiv skilling plugin-item">🔧 bankstander<div class="description">Your go to for all Bankstanding activities</div></div>
+        <div class="filterDiv skilling plugin-item">💥 blast-furnace<div class="description">Makes Bars at Blast Furnace</div></div>
+        <div class="filterDiv skilling plugin-item">✨ bloods<div class="description">Crafts Bloods and Souls in Zeah</div></div>
+        <div class="filterDiv skilling plugin-item">🌲 chop-fletch<div class="description">Chops trees and fletches the logs</div></div>
+        <div class="filterDiv skilling plugin-item">🚪 construction<div class="description">Constructs lots of things in your PoH</div></div>
+        <div class="filterDiv skilling plugin-item">✨ cosmics<div class="description">Crafts Cosmic runes in Zanaris</div></div>
+        <div class="filterDiv skilling plugin-item">🔥 firemaker<div class="description">Makes fires for you</div></div>
+        <div class="filterDiv skilling plugin-item">🔨 gem-mine<div class="description">Mines gem rocks</div></div>
+        <div class="filterDiv skilling plugin-item">🐗 herbiboar<div class="description">Hunts Herbiboar so you don't have to</div></div>
+        <div class="filterDiv skilling plugin-item">🌿 herblore<div class="description">Insanely fast xp with Serum 207s or Super Combats</div></div>
+        <div class="filterDiv skilling plugin-item">🐗 hunter<div class="description">Supports a lot of Hunter methods</div></div>
+        <div class="filterDiv skilling plugin-item">🐟 karambwan<div class="description">Fishes Karambwans</div></div>
+        <div class="filterDiv skilling plugin-item">✨ lavas<div class="description">Crafts Lava Runes for great XP</div></div>
+        <div class="filterDiv skilling plugin-item">🐟 minnows<div class="description">Collects tonnes of minnows for you</div></div>
+        <div class="filterDiv skilling plugin-item">🔨 mlm<div class="description">A Motherlode mine plugin</div></div>
+        <div class="filterDiv skilling plugin-item">💰 planks<div class="description">Creates planks at your PoH</div></div>
+        <div class="filterDiv skilling plugin-item">🐗 rumours<div class="description">Completes Hunter Rumours contracts for you</div></div>
+        <div class="filterDiv skilling plugin-item">🤹 skiller<div class="description">Full of tick manipulation skilling methods</div></div>
+        <div class="filterDiv skilling plugin-item">🌲 teaks<div class="description">Chops teaks on fossil island</div></div>
+        <div class="filterDiv skilling plugin-item">🦝 thiever<div class="description">Supports lots of stalls, NPCs and Blackjacking</div></div>
+        <div class="filterDiv skilling plugin-item">🍳 tick-cooker<div class="description">Tick manipulation Cooks for you 1t/2t</div></div>
+        <div class="filterDiv skilling plugin-item">🎣 tick-fisher<div class="description">Tick manipulation fishes for you 2t/3t</div></div>
+        <div class="filterDiv skilling plugin-item">🪨 tick-miner<div class="description">Tick manipulation mines for you 3t4g</div></div>
+        <div class="filterDiv skilling plugin-item">🌴 tick-woodcutter<div class="description">Tick manipulation woodcuts for you 1.5t</div></div>
+        <div class="filterDiv skilling plugin-item">🌋 volcanic-mine<div class="description">Completes the Volcanic Mine minigame</div></div>
+        <div class="filterDiv skilling plugin-item">✨ wrath<div class="description">Crafts Wrath runes</div></div>
+        <div class="filterDiv skilling plugin-item">✨ zmi<div class="description">Crafts runes at ZMI</div></div>
+      </div>
+    </div>
+
+    <!-- Minigames Section -->
+    <div class="category-section minigame-section">
+      <h2 class="category-header">Minigames</h2>
+      <div class="plugin-columns">
+        <div class="filterDiv minigame plugin-item">🕵🏽 rogues-den<div class="description">Gets the Rogue Outfit for you</div></div>
+        <div class="filterDiv minigame plugin-item">🐟 tempoross<div class="description">Subdues Tempoross for fishing xp</div></div>
+        <div class="filterDiv minigame plugin-item">🛕 temple-trekking<div class="description">Completes the Temple Trekking minigame</div></div>
+        <div class="filterDiv minigame plugin-item">🚜 tithe-farm<div class="description">Completes the Tithe Farm minigame</div></div>
+        <div class="filterDiv minigame plugin-item">🐟 trawler<div class="description">Obtains the trawler outfit for you</div></div>
+        <div class="filterDiv minigame plugin-item">🧹 varrock-cleaner<div class="description">Cleans finds at the varrock museum</div></div>
+        <div class="filterDiv minigame plugin-item">🔥 wintertodt<div class="description">Kills Wintertodt for you</div></div>
+        <div class="filterDiv minigame plugin-item">🌿 mixology<div class="description">Supports both paste and potion making</div></div>
+        <div class="filterDiv minigame plugin-item">🎫 castle-wars<div class="description">Completes Castle Wars for you</div></div>
+        <div class="filterDiv minigame plugin-item">🔪 giants-foundry<div class="description">Full auto Giants Foundry minigame</div></div>
+        <div class="filterDiv minigame plugin-item">✨ guardians<div class="description">Full Auto GOTR minigame</div></div>
+        <div class="filterDiv minigame plugin-item">🏠 mahogany-homes<div class="description">Completes the Mahogany Homes minigame for you for great construction xp</div></div>
+        <div class="filterDiv minigame plugin-item">🧙 mage-training-arena<div class="description">Full auto all MTA rooms</div></div>
+        <div class="filterDiv minigame plugin-item">🪳 pest-control<div class="description">Gets you void tokens nice and easy</div></div>
+        <div class="filterDiv minigame plugin-item">🔺 pyramid-plunder<div class="description">Steals pyramid tops for great agility xp and gp</div></div>
+      </div>
+    </div>
+
+    <!-- Utility Section -->
+    <div class="category-section utility-section">
+      <h2 class="category-header">Utility</h2>
+      <div class="plugin-columns">
+        <div class="filterDiv utility plugin-item">⛔ auto-hop<div class="description">Automatically Logs/Hops/Teles when triggered</div></div>
+        <div class="filterDiv utility plugin-item">🔧 break-handler<div class="description">Takes breaks for you</div></div>
+        <div class="filterDiv utility plugin-item">🕵 coxscouter<div class="description">Scouts for your desired Chambers Layout</div></div>
+        <div class="filterDiv utility plugin-item">🔥 hotkey<div class="description">Press a hotkey, eat/equip gear/change prayer</div></div>
+        <div class="filterDiv utility plugin-item">🕴 loadout<div class="description">Automatically withdraws an inventory and gears for you at the bank</div></div>
+        <div class="filterDiv utility plugin-item">🥇 one-click<div class="description">Used to make interactions only require one click</div></div>
+        <div class="filterDiv utility plugin-item">💠 prayer<div class="description">Prayer utility plugin</div></div>
+      </div>
+    </div>
+
 </div> 
     </div>
 
     <script>
         filterSelection("all")
 function filterSelection(c) {
-  var x, i;
+  var x, i, sections;
   x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  sections = document.getElementsByClassName("category-section");
+  
+  if (c == "all") {
+    // Show all sections and all plugins
+    for (i = 0; i < sections.length; i++) {
+      w3AddClass(sections[i], "show");
+    }
+    for (i = 0; i < x.length; i++) {
+      w3AddClass(x[i], "show");
+    }
+  } else {
+    // Hide all sections first
+    for (i = 0; i < sections.length; i++) {
+      w3RemoveClass(sections[i], "show");
+    }
+    
+    // Show sections that have matching plugins
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) {
+        w3AddClass(x[i], "show");
+        // Show the parent section
+        var section = x[i].closest('.category-section');
+        if (section) {
+          w3AddClass(section, "show");
+        }
+      }
+    }
   }
 }
 
@@ -160,16 +212,27 @@ for (var i = 0; i < btns.length; i++) {
 
 function myFunction() {
   // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
+  var input, filter, ul, li, a, i, txtValue, sections;
   input = document.getElementById('myInput');
   filter = input.value.toUpperCase();
   x = document.getElementsByClassName("filterDiv");
+  sections = document.getElementsByClassName("category-section");
 
-  // Loop through all list items, and hide those who don't match the search query
+  // Hide all sections first
+  for (i = 0; i < sections.length; i++) {
+    w3RemoveClass(sections[i], "show");
+  }
+
+  // Loop through all plugin items, and hide those who don't match the search query
   for (i = 0; i < x.length; i++) {
     txtValue = x[i].textContent || x[i].innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
         w3AddClass(x[i], "show");
+        // Show the parent section
+        var section = x[i].closest('.category-section');
+        if (section) {
+          w3AddClass(section, "show");
+        }
     } else {
         w3RemoveClass(x[i], "show");
     }
