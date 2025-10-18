@@ -12,11 +12,18 @@
         <div class="container subPageContainer">
             {% include header.html %}
         </div>
-         <!-- Plugin Package Header -->
-<div class="plugin-package-header">
-    <h1>🎁 Plugin Package 🎁</h1>
-    <p class="plugin-package-subtitle">Includes a variety of Combat, Skilling, Minigames and Utility plugins.</p>
+         <!-- Package Toggle Buttons -->
+<div class="package-toggle-container">
+    <button class="package-toggle-btn active" onclick="showPackage('plugin')">🎁 Plugin Package</button>
+    <button class="package-toggle-btn" onclick="showPackage('pvm')">⚔️ PVM Plugins</button>
 </div>
+
+         <!-- Plugin Package Header -->
+<div class="plugin-package-content">
+    <div class="plugin-package-header">
+        <h1>🎁 Plugin Package 🎁</h1>
+        <p class="plugin-package-subtitle">Includes a variety of Combat, Skilling, Minigames and Utility plugins.</p>
+    </div>
 
          <!-- Control buttons -->
 <div id="myBtnContainer" class="center">
@@ -118,7 +125,7 @@
         <div class="filterDiv minigame plugin-item">🧙 mage-training-arena<div class="description">Full auto all MTA rooms</div></div>
         <div class="filterDiv minigame plugin-item">🪳 pest-control<div class="description">Gets you void tokens nice and easy</div></div>
         <div class="filterDiv minigame plugin-item">🔺 pyramid-plunder<div class="description">Steals pyramid tops for great agility xp and gp</div></div>
-      </div>
+</div> 
     </div>
 
     <!-- Utility Section -->
@@ -133,12 +140,54 @@
         <div class="filterDiv utility plugin-item">🥇 one-click<div class="description">Used to make interactions only require one click</div></div>
         <div class="filterDiv utility plugin-item">💠 prayer<div class="description">Prayer utility plugin</div></div>
       </div>
+  </div>
+
+  </div> 
+</div>
+
+<!-- PVM Package Content -->
+<div class="pvm-package-content" style="display: none;">
+    <div class="plugin-package-header">
+        <h1>⚔️PVM Plugins⚔️</h1>
+        <p class="plugin-package-subtitle">All included in the purchase of PVM Plugins</p>
     </div>
 
-</div> 
+    <div class="pvm-section">
+        <div class="pvm-plugin-item">🐻 gauntlet<div class="description">Automatically completes Gauntlet</div></div>
+        <div class="pvm-plugin-item">🐉 vorkath<div class="description">Fully automatic Vorkath killer</div></div>
+        <div class="pvm-plugin-item">🐍 zulrah<div class="description">Fully automatic Zulrah killer</div></div>
+    </div>
+</div>
+
     </div>
 
     <script>
+        // Package switching functionality
+        function showPackage(packageType) {
+            var pluginContent = document.querySelector('.plugin-package-content');
+            var pvmContent = document.querySelector('.pvm-package-content');
+            var filterButtons = document.getElementById('myBtnContainer');
+            var searchContainer = document.querySelector('#myBtnContainer').nextElementSibling;
+            var toggleButtons = document.querySelectorAll('.package-toggle-btn');
+            
+            // Update toggle button states
+            toggleButtons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            if (packageType === 'plugin') {
+                pluginContent.style.display = 'block';
+                pvmContent.style.display = 'none';
+                filterButtons.style.display = 'block';
+                searchContainer.style.display = 'block';
+                filterSelection("all");
+            } else if (packageType === 'pvm') {
+                pluginContent.style.display = 'none';
+                pvmContent.style.display = 'block';
+                filterButtons.style.display = 'none';
+                searchContainer.style.display = 'none';
+            }
+        }
+
         filterSelection("all")
 function filterSelection(c) {
   var x, i, sections;
@@ -211,6 +260,12 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 function myFunction() {
+  // Only search if Plugin Package is active
+  var pluginContent = document.querySelector('.plugin-package-content');
+  if (pluginContent.style.display === 'none') {
+    return; // Don't search if PVM package is active
+  }
+
   // Declare variables
   var input, filter, ul, li, a, i, txtValue, sections;
   input = document.getElementById('myInput');
