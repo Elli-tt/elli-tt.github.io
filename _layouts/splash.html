@@ -1,459 +1,87 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
+
 <!DOCTYPE html>
 <html lang="en-us">
+
 {% include head.html %}
+
 <body class="splashBody">
-
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
-<style>
-.splashBody {
-  margin: 0;
-  padding: 0;
-  background: #080808;
-  color: #fff;
-  font-family: 'Inter', sans-serif;
-  overflow-x: hidden;
-}
-.splashBody *, .splashBody *::before, .splashBody *::after {
-  box-sizing: border-box;
-}
-
-/* NAV */
-.sp-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 28px 60px;
-  border-bottom: 1px solid #1a1a1a;
-}
-.sp-nav-logo {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: 1.5rem;
-  letter-spacing: 0.04em;
-  color: #fff;
-  text-decoration: none;
-}
-.sp-nav-logo span { color: #a8ff47; }
-.sp-nav-links {
-  display: flex;
-  gap: 36px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.sp-nav-links a {
-  font-size: 0.85rem;
-  color: #555;
-  text-decoration: none;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  transition: color 0.2s;
-}
-.sp-nav-links a:hover { color: #fff; text-decoration: none; }
-.sp-nav-cta {
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: #080808;
-  background: #a8ff47;
-  padding: 10px 22px;
-  border-radius: 4px;
-  text-decoration: none;
-  letter-spacing: 0.04em;
-  transition: opacity 0.2s;
-}
-.sp-nav-cta:hover { opacity: 0.85; text-decoration: none; color: #080808; }
-
-/* HERO */
-.sp-hero-wrap { max-width: 1400px; margin: 0 auto; }
-.sp-hero {
-  display: grid;
-  grid-template-columns: 1fr 420px;
-  align-items: center;
-  min-height: calc(100vh - 82px);
-  padding: 0 60px;
-  gap: 60px;
-}
-.sp-hero-text { padding: 60px 0; }
-.sp-hero-tag {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #a8ff47;
-  margin-bottom: 28px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.sp-hero-tag::before {
-  content: '';
-  display: block;
-  width: 28px;
-  height: 1px;
-  background: #a8ff47;
-}
-.sp-hero h1 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: clamp(5rem, 8vw, 8.5rem);
-  line-height: 0.92;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-  color: #fff;
-}
-.sp-hero h1 .sp-accent { color: #a8ff47; display: block; }
-.sp-hero-desc {
-  font-size: 1.05rem;
-  color: #666;
-  line-height: 1.75;
-  max-width: 480px;
-  margin-bottom: 52px;
-}
-
-/* PILLS */
-.sp-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 52px; }
-.sp-pill {
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  padding: 7px 14px;
-  border: 1px solid #222;
-  border-radius: 2px;
-  color: #aaa;
-  transition: all 0.2s;
-}
-.sp-pill-combat { border-color: #3a1a1a; color: #c0392b; }
-.sp-pill-skill  { border-color: #1a2e1a; color: #4caf50; }
-.sp-pill-mini   { border-color: #251a3a; color: #8b5cf6; }
-.sp-pill-util   { border-color: #2a2a1a; color: #c8a84b; }
-
-/* CTA BUTTONS */
-.sp-cta-group { display: flex; gap: 14px; flex-wrap: wrap; }
-.sp-btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #080808;
-  background: #a8ff47;
-  padding: 16px 32px;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-.sp-btn-primary:hover { opacity: 0.88; color: #080808; text-decoration: none; }
-.sp-btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #fff;
-  background: transparent;
-  padding: 16px 32px;
-  border-radius: 4px;
-  border: 1px solid #2a2a2a;
-  text-decoration: none;
-  transition: border-color 0.2s, color 0.2s;
-}
-.sp-btn-secondary:hover { border-color: #555; color: #fff; text-decoration: none; }
-.sp-btn-ghost {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #555;
-  background: transparent;
-  padding: 16px 32px;
-  border-radius: 4px;
-  border: 1px solid #1a1a1a;
-  text-decoration: none;
-  transition: border-color 0.2s, color 0.2s;
-}
-.sp-btn-ghost:hover { border-color: #333; color: #aaa; text-decoration: none; }
-
-/* HERO MARK */
-.sp-hero-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.sp-mark-bg {
-  position: absolute;
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(168,255,71,0.07) 0%, transparent 70%);
-}
-.sp-mark-ring {
-  position: absolute;
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
-  border: 1px solid #1e1e1e;
-  animation: sp-markpulse 4s ease-in-out infinite;
-}
-.sp-mark-ring2 {
-  position: absolute;
-  width: 290px;
-  height: 290px;
-  border-radius: 50%;
-  border: 1px dashed #1a1a1a;
-  animation: sp-markpulse 4s ease-in-out 1s infinite;
-}
-@keyframes sp-markpulse {
-  0%,100% { opacity: 0.5; transform: scale(1); }
-  50%      { opacity: 1;   transform: scale(1.02); }
-}
-
-/* STAT STRIP */
-.sp-stats {
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-.sp-stat { padding: 36px 60px; border-right: 1px solid #111; }
-.sp-stat:last-child { border-right: none; }
-.sp-stat-num {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: 3rem;
-  color: #fff;
-  letter-spacing: -0.02em;
-  line-height: 1;
-}
-.sp-stat-num span { color: #a8ff47; }
-.sp-stat-label {
-  font-size: 0.78rem;
-  color: #444;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-top: 6px;
-}
-
-/* CATEGORIES */
-.sp-categories { padding: 100px 60px; max-width: 1400px; margin: 0 auto; }
-.sp-section-tag {
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #a8ff47;
-  margin-bottom: 16px;
-}
-.sp-section-title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: -0.01em;
-  margin-bottom: 56px;
-  color: #fff;
-}
-.sp-cat-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: #111;
-}
-.sp-cat { background: #080808; padding: 40px 36px; transition: background 0.25s; }
-.sp-cat:hover { background: #0f0f0f; }
-.sp-cat-num {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.85rem;
-  color: #2a2a2a;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  margin-bottom: 28px;
-}
-.sp-cat-icon { width: 36px; height: 3px; margin-bottom: 24px; border-radius: 1px; }
-.sp-cat-combat .sp-cat-icon { background: #c0392b; }
-.sp-cat-skill  .sp-cat-icon { background: #4caf50; }
-.sp-cat-mini   .sp-cat-icon { background: #8b5cf6; }
-.sp-cat-util   .sp-cat-icon { background: #c8a84b; }
-.sp-cat-name {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  color: #fff;
-  margin-bottom: 12px;
-}
-.sp-cat-desc { font-size: 0.85rem; color: #444; line-height: 1.65; }
-
-/* FOOTER */
-.sp-footer {
-  border-top: 1px solid #111;
-  padding: 36px 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.sp-footer-logo {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: 1.2rem;
-  letter-spacing: 0.04em;
-  color: #222;
-}
-.sp-footer-logo span { color: #333; }
-.sp-footer p { font-size: 0.78rem; color: #2a2a2a; letter-spacing: 0.04em; margin: 0; }
-
-/* RESPONSIVE */
-@media only screen and (max-width: 900px) {
-  .sp-nav { padding: 20px 24px; }
-  .sp-nav-links { display: none; }
-  .sp-hero { grid-template-columns: 1fr; padding: 40px 24px; gap: 0; min-height: auto; }
-  .sp-hero-mark { display: none; }
-  .sp-hero h1 { font-size: 4.5rem; }
-  .sp-stats { grid-template-columns: repeat(2, 1fr); }
-  .sp-stat { padding: 28px 24px; }
-  .sp-categories { padding: 60px 24px; }
-  .sp-cat-grid { grid-template-columns: repeat(2, 1fr); }
-  .sp-footer { padding: 28px 24px; flex-direction: column; gap: 12px; text-align: center; }
-}
-@media only screen and (max-width: 500px) {
-  .sp-hero h1 { font-size: 3.5rem; }
-  .sp-stats { grid-template-columns: 1fr 1fr; }
-  .sp-cat-grid { grid-template-columns: 1fr; }
-  .sp-cta-group { flex-direction: column; }
-}
-</style>
-
-<!-- NAV -->
-<nav class="sp-nav">
-  <a href="/" class="sp-nav-logo">EL<span>PLUGINS</span></a>
-  <ul class="sp-nav-links">
-    <li><a href="/">Plugins</a></li>
-    <li><a href="https://pluginshop.link/elplugins#shop">Pricing</a></li>
-    <li><a href="https://discord.com/invite/Fa4BdBvg2c">Discord</a></li>
-  </ul>
-  <a href="https://pluginshop.link/elplugins#shop" class="sp-nav-cta">Get Plugins</a>
-</nav>
-
-<!-- HERO -->
-<div class="sp-hero-wrap">
-  <div class="sp-hero">
-    <div class="sp-hero-text">
-      <div class="sp-hero-tag">For all your Old School Plugin needs</div>
-      <h1>Run<br>Lite<br><span class="sp-accent">Plugins</span></h1>
-      <p class="sp-hero-desc">Fully automated, Smart Click, One Click and Hotkey plugins for Combat, Skilling, Minigames, Utility, and PVM content.</p>
-
-      <div class="sp-pills">
-        <span class="sp-pill sp-pill-combat">Gauntlet</span>
-        <span class="sp-pill sp-pill-combat">Vorkath</span>
-        <span class="sp-pill sp-pill-combat">Zulrah</span>
-        <span class="sp-pill sp-pill-combat">Fight Caves</span>
-        <span class="sp-pill sp-pill-combat">Auto Prayers</span>
-        <span class="sp-pill sp-pill-skill">Skilling</span>
-        <span class="sp-pill sp-pill-mini">Wintertodt</span>
-        <span class="sp-pill sp-pill-mini">GOTR</span>
-        <span class="sp-pill sp-pill-mini">Tempoross</span>
-        <span class="sp-pill sp-pill-util">One Click</span>
-        <span class="sp-pill sp-pill-util">Hotkey</span>
-        <span class="sp-pill sp-pill-util">Loadout</span>
-      </div>
-
-      <div class="sp-cta-group">
-        <a href="https://discord.com/invite/Fa4BdBvg2c" class="sp-btn-primary">Join Discord</a>
-        <a href="https://pluginshop.link/elplugins#shop" class="sp-btn-secondary">Purchase Plugins</a>
-        <a href="/" class="sp-btn-ghost">View Website</a>
-      </div>
+    <!-- Hero Section -->
+    <div class="splash-hero">
+        <div class="splash-hero-content">
+            <div class="splash-logo">
+                <img src="/assets/elplugins.png" alt="ElPlugins" class="splash-logo-img">
+            </div>
+            <h1 class="splash-title">ElPlugins</h1>
+            <p class="splash-subtitle">For all your Old School Plugin needs</p>
+            <p class="splash-description">RuneLite plugins for Combat, Skilling, Minigames, Utility, and PVM content. Fully automated, Smart Click, One Click and Hotkey plugins available.</p>
+            
+            <!-- Feature Highlights -->
+            <div class="splash-features">
+                <div class="splash-feature">
+                    <div class="splash-feature-icon">⚔️</div>
+                    <span>Gauntlet, Vorkath, Zulrah, Fight Caves, Auto Prayers</span>
+                </div>
+                <div class="splash-feature">
+                    <div class="splash-feature-icon">🪓</div>
+                    <span>Train each one of your skills with our wide range of skilling plugins</span>
+                </div>
+                <div class="splash-feature">
+                    <div class="splash-feature-icon">🎲</div>
+                    <span>Wintertodt, GOTR, Tempoross and more</span>
+                </div>
+                <div class="splash-feature">
+                    <div class="splash-feature-icon">🔧</div>
+                    <span>Hotkey, Loadout, One Click, Widgets</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="splash-bg-elements">
+            <div class="splash-bg-item splash-bg-item-1">⚔️</div>
+            <div class="splash-bg-item splash-bg-item-2">🛡️</div>
+            <div class="splash-bg-item splash-bg-item-3">🏹</div>
+            <div class="splash-bg-item splash-bg-item-4">⚡</div>
+            <div class="splash-bg-item splash-bg-item-5">💎</div>
+        </div>
     </div>
 
-    <div class="sp-hero-mark">
-      <div class="sp-mark-bg"></div>
-      <div class="sp-mark-ring"></div>
-      <div class="sp-mark-ring2"></div>
-      <svg width="220" height="260" viewBox="0 0 220 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <g opacity="0.9">
-          <polygon points="110,10 130,40 200,40 145,78 165,150 110,115 55,150 75,78 20,40 90,40"
-                   fill="none" stroke="#a8ff47" stroke-width="1.5" stroke-linejoin="round"/>
-          <line x1="110" y1="10" x2="110" y2="220" stroke="#1e1e1e" stroke-width="1"/>
-          <rect x="95" y="120" width="30" height="100" rx="2" fill="#0f0f0f" stroke="#1e1e1e" stroke-width="1"/>
-          <rect x="72" y="175" width="76" height="14" rx="2" fill="#0f0f0f" stroke="#1e1e1e" stroke-width="1"/>
-          <path d="M 102 30 L 102 118 L 118 118 L 118 30 L 110 8 Z"
-                fill="#111" stroke="#a8ff47" stroke-width="1.2" stroke-linejoin="round"/>
-          <line x1="110" y1="8" x2="110" y2="118" stroke="#a8ff47" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.4"/>
-          <circle cx="110" cy="63" r="8" fill="none" stroke="#a8ff47" stroke-width="1" opacity="0.6"/>
-          <rect x="98" y="168" width="24" height="6" rx="1" fill="#a8ff47" opacity="0.15"/>
-          <rect x="98" y="168" width="24" height="6" rx="1" fill="none" stroke="#a8ff47" stroke-width="0.8"/>
-        </g>
-        <text x="110" y="248" text-anchor="middle"
-              font-family="'Barlow Condensed',sans-serif"
-              font-size="11" font-weight="700" fill="#2a2a2a" letter-spacing="6">ELPLUGINS</text>
-      </svg>
+    <!-- Action Buttons Section -->
+    <div class="splash-actions">
+        <div class="splash-actions-container">
+            <a href="https://discord.com/invite/Fa4BdBvg2c" class="splash-btn splash-btn-discord">
+                <div class="splash-btn-icon">💬</div>
+                <div class="splash-btn-content">
+                    <div class="splash-btn-title">Join Discord</div>
+                    <div class="splash-btn-subtitle">Support, Updates and Community</div>
+                </div>
+            </a>
+            
+            <a href="https://pluginshop.link/elplugins#shop" class="splash-btn splash-btn-purchase">
+                <div class="splash-btn-icon">🛒</div>
+                <div class="splash-btn-content">
+                    <div class="splash-btn-title">Purchase Plugins</div>
+                    <div class="splash-btn-subtitle">Visit our Webshop, for GP/Crypto visit Discord</div>
+                </div>
+            </a>
+            
+            <a href="/" class="splash-btn splash-btn-website">
+                <div class="splash-btn-icon">🏠</div>
+                <div class="splash-btn-content">
+                    <div class="splash-btn-title">View Website</div>
+                    <div class="splash-btn-subtitle">Explore the Full Website</div>
+                </div>
+            </a>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- STAT STRIP -->
-<div class="sp-stats">
-  <div class="sp-stat">
-    <div class="sp-stat-num">50<span>+</span></div>
-    <div class="sp-stat-label">Plugins available</div>
-  </div>
-  <div class="sp-stat">
-    <div class="sp-stat-num">4<span>×</span></div>
-    <div class="sp-stat-label">Plugin types</div>
-  </div>
-  <div class="sp-stat">
-    <div class="sp-stat-num">24<span>/7</span></div>
-    <div class="sp-stat-label">Discord support</div>
-  </div>
-  <div class="sp-stat">
-    <div class="sp-stat-num">GP<span>+</span></div>
-    <div class="sp-stat-label">Crypto accepted</div>
-  </div>
-</div>
-
-<!-- CATEGORIES -->
-<section class="sp-categories">
-  <div class="sp-section-tag">What we offer</div>
-  <div class="sp-section-title">Plugin Categories</div>
-  <div class="sp-cat-grid">
-    <div class="sp-cat sp-cat-combat">
-      <div class="sp-cat-num">01</div>
-      <div class="sp-cat-icon"></div>
-      <div class="sp-cat-name">Combat &amp; PVM</div>
-      <div class="sp-cat-desc">Gauntlet, Vorkath, Zulrah, Fight Caves, Auto Prayers and more. Fully automated boss plugins with smart logic.</div>
+    <!-- Footer -->
+    <div class="splash-footer">
+        <p>© 2026 ElPlugins - ElPlugins.com</p>
     </div>
-    <div class="sp-cat sp-cat-skill">
-      <div class="sp-cat-num">02</div>
-      <div class="sp-cat-icon"></div>
-      <div class="sp-cat-name">Skilling</div>
-      <div class="sp-cat-desc">Train each one of your skills with our wide range of skilling plugins. Efficient and reliable.</div>
-    </div>
-    <div class="sp-cat sp-cat-mini">
-      <div class="sp-cat-num">03</div>
-      <div class="sp-cat-icon"></div>
-      <div class="sp-cat-name">Minigames</div>
-      <div class="sp-cat-desc">Wintertodt, GOTR, Tempoross and more. Automate minigames and collect your rewards with ease.</div>
-    </div>
-    <div class="sp-cat sp-cat-util">
-      <div class="sp-cat-num">04</div>
-      <div class="sp-cat-icon"></div>
-      <div class="sp-cat-name">Utility</div>
-      <div class="sp-cat-desc">Hotkey, Loadout, One Click, and Widget plugins to streamline your gameplay and interface.</div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="sp-footer">
-  <div class="sp-footer-logo">EL<span>PLUGINS</span></div>
-  <p>© 2025 ElPlugins — ElPlugins.com</p>
-</footer>
-
 </body>
+
 </html>
