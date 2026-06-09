@@ -1,87 +1,456 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
-
 <!DOCTYPE html>
 <html lang="en-us">
-
 {% include head.html %}
-
 <body class="splashBody">
-    <!-- Hero Section -->
-    <div class="splash-hero">
-        <div class="splash-hero-content">
-            <div class="splash-logo">
-                <img src="/assets/elplugins.png" alt="ElPlugins" class="splash-logo-img">
-            </div>
-            <h1 class="splash-title">ElPlugins</h1>
-            <p class="splash-subtitle">For all your Old School Plugin needs</p>
-            <p class="splash-description">RuneLite plugins for Combat, Skilling, Minigames, Utility, and PVM content. Fully automated, Smart Click, One Click and Hotkey plugins available.</p>
-            
-            <!-- Feature Highlights -->
-            <div class="splash-features">
-                <div class="splash-feature">
-                    <div class="splash-feature-icon">⚔️</div>
-                    <span>Gauntlet, Vorkath, Zulrah, Fight Caves, Auto Prayers</span>
-                </div>
-                <div class="splash-feature">
-                    <div class="splash-feature-icon">🪓</div>
-                    <span>Train each one of your skills with our wide range of skilling plugins</span>
-                </div>
-                <div class="splash-feature">
-                    <div class="splash-feature-icon">🎲</div>
-                    <span>Wintertodt, GOTR, Tempoross and more</span>
-                </div>
-                <div class="splash-feature">
-                    <div class="splash-feature-icon">🔧</div>
-                    <span>Hotkey, Loadout, One Click, Widgets</span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Background Elements -->
-        <div class="splash-bg-elements">
-            <div class="splash-bg-item splash-bg-item-1">⚔️</div>
-            <div class="splash-bg-item splash-bg-item-2">🛡️</div>
-            <div class="splash-bg-item splash-bg-item-3">🏹</div>
-            <div class="splash-bg-item splash-bg-item-4">⚡</div>
-            <div class="splash-bg-item splash-bg-item-5">💎</div>
-        </div>
+
+<style>
+  /* ── Reset & base ── */
+  .splashBody {
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  .splashBody *, .splashBody *::before, .splashBody *::after {
+    box-sizing: border-box;
+  }
+
+  /* ── Hero ── */
+  .splash-hero {
+    position: relative;
+    min-height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px 64px;
+    overflow: hidden;
+    background: radial-gradient(ellipse 70% 60% at 50% 42%, rgba(200,168,75,0.08) 0%, transparent 70%);
+  }
+
+  /* Subtle diamond texture */
+  .splash-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c8a84b' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  /* Spinning rune ring */
+  .splash-rune-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 560px;
+    height: 560px;
+    pointer-events: none;
+    animation: runespin 70s linear infinite;
+    opacity: 0.07;
+  }
+  @keyframes runespin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+
+  .splash-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    width: 100%;
+  }
+
+  /* ── Logo ── */
+  .splash-logo {
+    margin-bottom: 28px;
+  }
+  .splash-logo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 22px;
+    border: 2px solid rgba(200, 168, 75, 0.4);
+    box-shadow: 0 0 40px rgba(200, 168, 75, 0.15), 0 8px 32px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  .splash-logo-img:hover {
+    transform: scale(1.05);
+  }
+
+  /* ── Text ── */
+  .splash-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c8a84b;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .splash-title {
+    font-size: clamp(2.6rem, 7vw, 4.4rem);
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    line-height: 1;
+    margin: 0 0 18px;
+    background: linear-gradient(135deg, #e8c96a 0%, #ffffff 55%, #c8a84b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .splash-description {
+    font-size: 1rem;
+    color: #888;
+    line-height: 1.7;
+    max-width: 540px;
+    margin: 0 auto 48px;
+  }
+
+  /* ── Feature cards ── */
+  .splash-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .splash-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 18px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(200, 168, 75, 0.12);
+    border-left-width: 3px;
+    border-radius: 10px;
+    text-align: left;
+    transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  }
+  .splash-feature:hover {
+    background: rgba(200, 168, 75, 0.06);
+    transform: translateY(-2px);
+  }
+  .splash-feature-combat  { border-left-color: #c0392b; }
+  .splash-feature-skilling { border-left-color: #27ae60; }
+  .splash-feature-minigame { border-left-color: #8b5cf6; }
+  .splash-feature-utility  { border-left-color: #c8a84b; }
+
+  .splash-feature-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .splash-feature-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #e0e0e0;
+    margin-bottom: 3px;
+  }
+  .splash-feature-sub {
+    font-size: 0.78rem;
+    color: #666;
+    line-height: 1.45;
+  }
+
+  /* ── Divider ── */
+  .splash-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .splash-divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(200, 168, 75, 0.3), transparent);
+  }
+  .splash-divider-text {
+    font-size: 0.72rem;
+    color: #444;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  /* ── Actions ── */
+  .splash-actions {
+    padding: 56px 24px 64px;
+    background: rgba(0, 0, 0, 0.45);
+  }
+  .splash-actions-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .splash-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 28px 24px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s, background 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+  .splash-btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.04), transparent);
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .splash-btn:hover::after { opacity: 1; }
+  .splash-btn:hover { transform: translateY(-4px); text-decoration: none; }
+
+  .splash-btn-discord { border-color: rgba(88, 101, 242, 0.25); }
+  .splash-btn-discord:hover {
+    border-color: rgba(88, 101, 242, 0.65);
+    box-shadow: 0 14px 32px rgba(88, 101, 242, 0.18);
+  }
+  .splash-btn-purchase { border-color: rgba(200, 168, 75, 0.3); }
+  .splash-btn-purchase:hover {
+    border-color: rgba(200, 168, 75, 0.65);
+    box-shadow: 0 14px 32px rgba(200, 168, 75, 0.16);
+  }
+  .splash-btn-website { border-color: rgba(255, 255, 255, 0.1); }
+  .splash-btn-website:hover {
+    border-color: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 14px 32px rgba(255, 255, 255, 0.05);
+  }
+
+  .splash-btn-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .splash-btn-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+  }
+  .splash-btn-discord  .splash-btn-icon-wrap { background: rgba(88,  101, 242, 0.15); }
+  .splash-btn-purchase .splash-btn-icon-wrap { background: rgba(200, 168,  75, 0.12); }
+  .splash-btn-website  .splash-btn-icon-wrap { background: rgba(255, 255, 255, 0.06); }
+
+  .splash-btn-arrow {
+    margin-left: auto;
+    font-size: 1rem;
+    opacity: 0.25;
+    transition: opacity 0.2s, transform 0.2s;
+    flex-shrink: 0;
+  }
+  .splash-btn:hover .splash-btn-arrow {
+    opacity: 0.7;
+    transform: translateX(4px);
+  }
+
+  .splash-btn-badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: rgba(200, 168, 75, 0.15);
+    color: #c8a84b;
+    border: 1px solid rgba(200, 168, 75, 0.3);
+  }
+
+  .splash-btn-title {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .splash-btn-subtitle {
+    font-size: 0.8rem;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  /* ── Footer ── */
+  .splash-footer {
+    text-align: center;
+    padding: 22px 24px;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .splash-footer p {
+    font-size: 0.77rem;
+    color: #333;
+    letter-spacing: 0.04em;
+    margin: 0;
+  }
+
+  /* ── Responsive ── */
+  @media only screen and (max-width: 768px) {
+    .splash-features {
+      grid-template-columns: 1fr;
+      max-width: 420px;
+    }
+    .splash-actions-container {
+      grid-template-columns: 1fr;
+      max-width: 480px;
+    }
+    .splash-rune-ring {
+      width: 360px;
+      height: 360px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .splash-hero {
+      padding: 60px 16px 48px;
+    }
+    .splash-logo-img {
+      width: 80px;
+      height: 80px;
+    }
+    .splash-actions {
+      padding: 40px 16px 48px;
+    }
+  }
+</style>
+
+<!-- Hero -->
+<div class="splash-hero">
+
+  <!-- Animated rune ring (inline SVG for no extra request) -->
+  <svg class="splash-rune-ring" viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="260" cy="260" r="240" fill="none" stroke="#c8a84b" stroke-width="1" stroke-dasharray="4 9"/>
+    <circle cx="260" cy="260" r="210" fill="none" stroke="#c8a84b" stroke-width="0.5"/>
+    <circle cx="260" cy="260" r="178" fill="none" stroke="#c8a84b" stroke-width="1" stroke-dasharray="2 14"/>
+    <polygon points="260,48 315,152 428,162 346,238 372,350 260,294 148,350 174,238 92,162 205,152"
+             fill="none" stroke="#c8a84b" stroke-width="0.9"/>
+    <circle cx="260" cy="48"  r="5" fill="#c8a84b"/>
+    <circle cx="315" cy="152" r="3" fill="#c8a84b"/>
+    <circle cx="428" cy="162" r="5" fill="#c8a84b"/>
+    <circle cx="346" cy="238" r="3" fill="#c8a84b"/>
+    <circle cx="372" cy="350" r="5" fill="#c8a84b"/>
+    <circle cx="260" cy="294" r="3" fill="#c8a84b"/>
+    <circle cx="148" cy="350" r="5" fill="#c8a84b"/>
+    <circle cx="174" cy="238" r="3" fill="#c8a84b"/>
+    <circle cx="92"  cy="162" r="5" fill="#c8a84b"/>
+    <circle cx="205" cy="152" r="3" fill="#c8a84b"/>
+  </svg>
+
+  <div class="splash-hero-content">
+    <div class="splash-logo">
+      <img src="/assets/elplugins.png" alt="ElPlugins" class="splash-logo-img">
     </div>
 
-    <!-- Action Buttons Section -->
-    <div class="splash-actions">
-        <div class="splash-actions-container">
-            <a href="https://discord.com/invite/Fa4BdBvg2c" class="splash-btn splash-btn-discord">
-                <div class="splash-btn-icon">💬</div>
-                <div class="splash-btn-content">
-                    <div class="splash-btn-title">Join Discord</div>
-                    <div class="splash-btn-subtitle">Support, Updates and Community</div>
-                </div>
-            </a>
-            
-            <a href="https://pluginshop.link/elplugins#shop" class="splash-btn splash-btn-purchase">
-                <div class="splash-btn-icon">🛒</div>
-                <div class="splash-btn-content">
-                    <div class="splash-btn-title">Purchase Plugins</div>
-                    <div class="splash-btn-subtitle">Visit our Webshop, for GP/Crypto visit Discord</div>
-                </div>
-            </a>
-            
-            <a href="/" class="splash-btn splash-btn-website">
-                <div class="splash-btn-icon">🏠</div>
-                <div class="splash-btn-content">
-                    <div class="splash-btn-title">View Website</div>
-                    <div class="splash-btn-subtitle">Explore the Full Website</div>
-                </div>
-            </a>
-        </div>
-    </div>
+    <span class="splash-eyebrow">RuneLite Plugins</span>
+    <h1 class="splash-title">ElPlugins</h1>
+    <p class="splash-description">
+      Fully automated, Smart Click, One Click and Hotkey plugins for Combat, Skilling, Minigames, Utility, and PVM content.
+    </p>
 
-    <!-- Footer -->
-    <div class="splash-footer">
-        <p>© 2025 ElPlugins - ElPlugins.com</p>
+    <div class="splash-features">
+      <div class="splash-feature splash-feature-combat">
+        <div class="splash-feature-icon">⚔️</div>
+        <div>
+          <div class="splash-feature-label">Combat &amp; PVM</div>
+          <div class="splash-feature-sub">Gauntlet, Vorkath, Zulrah, Fight Caves, Auto Prayers</div>
+        </div>
+      </div>
+      <div class="splash-feature splash-feature-skilling">
+        <div class="splash-feature-icon">🪓</div>
+        <div>
+          <div class="splash-feature-label">Skilling</div>
+          <div class="splash-feature-sub">Train every skill with our wide range of plugins</div>
+        </div>
+      </div>
+      <div class="splash-feature splash-feature-minigame">
+        <div class="splash-feature-icon">🎲</div>
+        <div>
+          <div class="splash-feature-label">Minigames</div>
+          <div class="splash-feature-sub">Wintertodt, GOTR, Tempoross and more</div>
+        </div>
+      </div>
+      <div class="splash-feature splash-feature-utility">
+        <div class="splash-feature-icon">🔧</div>
+        <div>
+          <div class="splash-feature-label">Utility</div>
+          <div class="splash-feature-sub">Hotkey, Loadout, One Click, Widgets</div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- Divider -->
+<div class="splash-divider">
+  <div class="splash-divider-line"></div>
+  <span class="splash-divider-text">Get Started</span>
+  <div class="splash-divider-line"></div>
+</div>
+
+<!-- Action Buttons -->
+<div class="splash-actions">
+  <div class="splash-actions-container">
+
+    <a href="https://discord.com/invite/Fa4BdBvg2c" class="splash-btn splash-btn-discord">
+      <div class="splash-btn-top">
+        <div class="splash-btn-icon-wrap">💬</div>
+        <span class="splash-btn-arrow">→</span>
+      </div>
+      <div>
+        <div class="splash-btn-title">Join Discord</div>
+        <div class="splash-btn-subtitle">Support, updates, and community. Purchase with GP or Crypto inside.</div>
+      </div>
+    </a>
+
+    <a href="https://pluginshop.link/elplugins#shop" class="splash-btn splash-btn-purchase">
+      <div class="splash-btn-top">
+        <div class="splash-btn-icon-wrap">🛒</div>
+        <span class="splash-btn-badge">Webshop</span>
+        <span class="splash-btn-arrow">→</span>
+      </div>
+      <div>
+        <div class="splash-btn-title">Purchase Plugins</div>
+        <div class="splash-btn-subtitle">Browse and buy plugins from our official webshop.</div>
+      </div>
+    </a>
+
+    <a href="/" class="splash-btn splash-btn-website">
+      <div class="splash-btn-top">
+        <div class="splash-btn-icon-wrap">🏠</div>
+        <span class="splash-btn-arrow">→</span>
+      </div>
+      <div>
+        <div class="splash-btn-title">Full Website</div>
+        <div class="splash-btn-subtitle">Explore all plugins, guides, and documentation.</div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="splash-footer">
+  <p>© 2025 ElPlugins — ElPlugins.com</p>
+</div>
+
 </body>
-
 </html>
