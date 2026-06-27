@@ -1,0 +1,27 @@
+---
+const { product } = Astro.props;
+---
+
+<article class="product-card">
+  <div class="product-image-wrap">
+    <img src={product.image} alt={product.name} class="product-image" />
+  </div>
+
+  <div class="product-content">
+    <div class="product-meta">
+      <span>{product.category}</span>
+      <span>{product.status}</span>
+    </div>
+
+    <h3>{product.name}</h3>
+    <p>{product.description}</p>
+
+    <ul>
+      {product.features.map((feature) => (
+        <li>{feature}</li>
+      ))}
+    </ul>
+
+    <a class="card-button" href={product.webstoreUrl}>View on Webstore</a>
+  </div>
+</article>

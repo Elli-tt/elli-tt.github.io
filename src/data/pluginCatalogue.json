@@ -1,0 +1,114 @@
+[
+  {
+    "category": "Combat",
+    "description": "Included in the Plugin Package.",
+    "plugins": [
+      { "emoji": "💠", "name": "Auto Prayer" },
+      { "emoji": "💪", "name": "Bf Pumper" },
+      { "emoji": "🪩", "name": "Cannon Reloader" },
+      { "emoji": "💪", "name": "Combat" },
+      { "emoji": "🍔", "name": "Eater" },
+      { "emoji": "🥷", "name": "Fighter" },
+      { "emoji": "🧰", "name": "Looter" },
+      { "emoji": "🧌", "name": "Nightmare Zone" },
+      { "emoji": "🍹", "name": "Pot Drinker" },
+      { "emoji": "💠", "name": "Chaos Temple Prayer" },
+      { "emoji": "🏹", "name": "Ranging Guild" },
+      { "emoji": "💢", "name": "Reset Aggro" },
+      { "emoji": "🪄", "name": "Stun Alch Tele" },
+      { "emoji": "🤺", "name": "Warriors Guild" },
+      { "emoji": "🦀", "name": "Gemstone Crab" }
+    ]
+  },
+  {
+    "category": "Skilling",
+    "description": "Included in the Plugin Package.",
+    "plugins": [
+      { "emoji": "✨", "name": "Abyss" },
+      { "emoji": "🏃", "name": "Agility" },
+      { "emoji": "🔨", "name": "Amethyst" },
+      { "emoji": "✨", "name": "Astrals" },
+      { "emoji": "🔧", "name": "Bankstander" },
+      { "emoji": "💥", "name": "Blast Furnace" },
+      { "emoji": "✨", "name": "Bloods" },
+      { "emoji": "🌲", "name": "Chop Fletch" },
+      { "emoji": "🚪", "name": "Construction" },
+      { "emoji": "✨", "name": "Cosmics" },
+      { "emoji": "🔥", "name": "Firemaker" },
+      { "emoji": "🔨", "name": "Gem Mine" },
+      { "emoji": "🐗", "name": "Herbiboar" },
+      { "emoji": "🌿", "name": "Herblore" },
+      { "emoji": "🐗", "name": "Hunter" },
+      { "emoji": "🐟", "name": "Karambwan" },
+      { "emoji": "✨", "name": "Lavas" },
+      { "emoji": "🐟", "name": "Minnows" },
+      { "emoji": "🔨", "name": "Mlm" },
+      { "emoji": "💰", "name": "Planks" },
+      { "emoji": "🐗", "name": "Rumours" },
+      { "emoji": "🤹", "name": "Skiller" },
+      { "emoji": "🌲", "name": "Teaks" },
+      { "emoji": "🦝", "name": "Thiever" },
+      { "emoji": "🍳", "name": "Tick Cooker" },
+      { "emoji": "🎣", "name": "Tick Fisher" },
+      { "emoji": "🪨", "name": "Tick Miner" },
+      { "emoji": "🌴", "name": "Tick Woodcutter" },
+      { "emoji": "🌋", "name": "Volcanic Mine" },
+      { "emoji": "✨", "name": "Wrath" },
+      { "emoji": "✨", "name": "Zmi" }
+    ]
+  },
+  {
+    "category": "Minigames",
+    "description": "Included in the Plugin Package.",
+    "plugins": [
+      { "emoji": "🕵🏽", "name": "Rogues Den" },
+      { "emoji": "🐟", "name": "Tempoross" },
+      { "emoji": "🌲", "name": "Vale Totems" },
+      { "emoji": "🛕", "name": "Temple Trekking" },
+      { "emoji": "🚜", "name": "Tithe Farm" },
+      { "emoji": "🐟", "name": "Trawler" },
+      { "emoji": "🧹", "name": "Varrock Cleaner" },
+      { "emoji": "🔥", "name": "Wintertodt" },
+      { "emoji": "🌿", "name": "Mixology" },
+      { "emoji": "🎫", "name": "Castle Wars" },
+      { "emoji": "🔪", "name": "Giants Foundry" },
+      { "emoji": "✨", "name": "Guardians" },
+      { "emoji": "🏠", "name": "Mahogany Homes" },
+      { "emoji": "🧙", "name": "Mage Training Arena" },
+      { "emoji": "🪳", "name": "Pest Control" },
+      { "emoji": "🔺", "name": "Pyramid Plunder" }
+    ]
+  },
+  {
+    "category": "Utility",
+    "description": "Included in the Plugin Package.",
+    "plugins": [
+      { "emoji": "⛔", "name": "Auto Hop" },
+      { "emoji": "🔧", "name": "Break Handler" },
+      { "emoji": "🕵", "name": "Coxscouter" },
+      { "emoji": "🔥", "name": "Hotkey" },
+      { "emoji": "🕴", "name": "Loadout" },
+      { "emoji": "🥇", "name": "One Click" },
+      { "emoji": "💠", "name": "Prayer" },
+      { "emoji": "👶", "name": "Tutorial" },
+      { "emoji": "🛒", "name": "Shopper" },
+      { "emoji": "🧑", "name": "Super Profiles" },
+      { "emoji": "🚶", "name": "Walker" },
+      { "emoji": "📌", "name": "Widgets" }
+    ]
+  },
+  {
+    "category": "PVM",
+    "description": "All included in the purchase of PVM Plugins.",
+    "plugins": [
+      { "emoji": "🦍", "name": "Bosshelper" },
+      { "emoji": "🐉", "name": "Vorkath" },
+      { "emoji": "🐍", "name": "Zulrah" },
+      { "emoji": "🐒", "name": "Demonic Gorillas" },
+      { "emoji": "🗿", "name": "Royal Titans" },
+      { "emoji": "🐀", "name": "Scurrius" },
+      { "emoji": "👹", "name": "Tormented Demons" },
+      { "emoji": "🌋", "name": "Fight Caves" }
+    ]
+  }
+]

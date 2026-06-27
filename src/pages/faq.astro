@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+const webstoreUrl = 'https://pluginshop.link/elplugins';
+const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
+const mainSiteUrl = 'https://elli-tt.github.io/';
+---
+
+<BaseLayout
+  title="FAQ - ElPlugins"
+  description="Frequently asked questions about ElPlugins, plugin access, support, updates, and purchasing."
+>
+  <Navbar />
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Support</p>
+      <h1>FAQ</h1>
+      <p>
+        Common questions about ElPlugins, purchases, support, access and updates.
+      </p>
+
+      <div class="page-actions">
+        <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
+        <a class="button discord-button" href={discordUrl}>Join Discord</a>
+      </div>
+    </section>
+
+    <section class="faq-list">
+      <article>
+        <h2>Where do I purchase plugins?</h2>
+        <p>
+          Plugins can be purchased through the ElPlugins webshop. For GP or Crypto
+          payment options, join the Discord server.
+        </p>
+
+        <div class="card-actions">
+          <a class="card-button" href={webstoreUrl}>Purchase Plugins</a>
+          <a class="card-button muted" href={discordUrl}>Join Discord</a>
+        </div>
+      </article>
+
+      <article>
+        <h2>Where do I get support?</h2>
+        <p>
+          Join the ElPlugins Discord for support, install help, FAQ channels,
+          changelogs and community help.
+        </p>
+
+        <a class="card-button" href={discordUrl}>Join Discord</a>
+      </article>
+
+      <article>
+        <h2>What packages are available?</h2>
+        <p>
+          ElPlugins offers the Plugin Package, PVM Plugins and a Plugin & PVM Package
+          bundle for users who want access to both.
+        </p>
+      </article>
+
+      <article>
+        <h2>Are all accounts supported?</h2>
+        <p>
+          Yes. ElPlugins supports accounts through the Jagex Launcher.
+        </p>
+      </article>
+
+      <article>
+        <h2>Are plugins customisable?</h2>
+        <p>
+          Yes. Delays and settings are fully customisable between plugins.
+        </p>
+      </article>
+
+      <article>
+        <h2>How often are plugins updated?</h2>
+        <p>
+          ElPlugins provides frequent updates. Check the Discord changelog for the
+          latest update information.
+        </p>
+      </article>
+
+      <article>
+        <h2>Where can I find more information?</h2>
+        <p>
+          You can visit the full ElPlugins website for more information.
+        </p>
+
+        <a class="card-button muted" href={mainSiteUrl}>View Website</a>
+      </article>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

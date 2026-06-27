@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import catalogue from '../data/pluginCatalogue.json';
+import products from '../data/products.json';
+
+const webstoreUrl = 'https://pluginshop.link/elplugins';
+const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
+---
+
+<BaseLayout
+  title="Plugins - ElPlugins"
+  description="Browse the full ElPlugins catalogue including Combat, Skilling, Minigames, Utility, and PVM plugins."
+>
+  <Navbar />
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">ElPlugins Catalogue</p>
+      <h1>Plugins</h1>
+      <p>
+        Browse the full list of Combat, Skilling, Minigames, Utility and PVM plugins.
+      </p>
+
+      <div class="page-actions">
+        <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
+        <a class="button discord-button" href={discordUrl}>Join Discord</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Packages</p>
+        <h2>Available Packages</h2>
+        <p>Choose a package from the webshop or join Discord for help.</p>
+      </div>
+
+      <div class="package-grid">
+        {products.map((product) => (
+          <article class="package-card">
+            <div class="package-badge">{product.badge}</div>
+
+            <div class="package-top">
+              <span>{product.category}</span>
+              <strong>{product.status}</strong>
+            </div>
+
+            <h3>{product.name}</h3>
+            <p>{product.description}</p>
+
+            <div class="price-list">
+              {product.prices.map((price) => (
+                <span>{price}</span>
+              ))}
+            </div>
+
+            <ul>
+              {product.features.map((feature) => (
+                <li>{feature}</li>
+              ))}
+            </ul>
+
+            <div class="card-actions">
+              <a class="card-button" href={product.webstoreUrl}>Purchase Plugins</a>
+              <a class="card-button muted" href={discordUrl}>Join Discord</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section catalogue-section">
+      {catalogue.map((group) => (
+        <div class="catalogue-group" id={group.category.toLowerCase()}>
+          <div class="catalogue-heading">
+            <div>
+              <p class="eyebrow">{group.category}</p>
+              <h2>{group.category}</h2>
+              <p>{group.description}</p>
+            </div>
+
+            <span>{group.plugins.length} plugins</span>
+          </div>
+
+          <div class="plugin-grid">
+            {group.plugins.map((plugin) => (
+              <article class="plugin-card">
+                <h3>
+                  <span class="plugin-emoji">{plugin.emoji}</span>
+                  {plugin.name}
+                </h3>
+              </article>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <div class="center bottom-cta">
+        <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
+        <a class="button discord-button" href={discordUrl}>Join Discord</a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

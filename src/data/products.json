@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Plugin Package",
+    "badge": "🎁",
+    "category": "Combat, Skilling, Minigames & Utility",
+    "status": "Available",
+    "description": "Includes a variety of Combat, Skilling, Minigames and Utility plugins.",
+    "prices": [
+      "30 Days - $15",
+      "60 Days - $28.50",
+      "90 Days - $40.50",
+      "Lifetime - $200 (Crypto/GP only)"
+    ],
+    "features": [
+      "Combat Plugins",
+      "Skilling Plugins",
+      "Minigame Plugins",
+      "Utility Plugins"
+    ],
+    "webstoreUrl": "https://pluginshop.link/elplugins"
+  },
+  {
+    "name": "PVM Plugins",
+    "badge": "⚔️",
+    "category": "PVM",
+    "status": "Available",
+    "description": "All included in the purchase of PVM Plugins.",
+    "prices": [
+      "30 Days - $20",
+      "60 Days - $38",
+      "90 Days - $54"
+    ],
+    "features": [
+      "Bosshelper",
+      "Vorkath",
+      "Zulrah",
+      "Demonic Gorillas",
+      "Royal Titans",
+      "Scurrius",
+      "Tormented Demons",
+      "Fight Caves"
+    ],
+    "webstoreUrl": "https://pluginshop.link/elplugins"
+  },
+  {
+    "name": "Plugin & PVM Package",
+    "badge": "💎",
+    "category": "Bundle",
+    "status": "Available",
+    "description": "Get access to both the Plugin Package and PVM Plugins.",
+    "prices": [
+      "30 Days - $30",
+      "60 Days - $57",
+      "90 Days - $81"
+    ],
+    "features": [
+      "All Combat Plugins",
+      "All Skilling Plugins",
+      "All Minigame Plugins",
+      "All Utility Plugins",
+      "All PVM Plugins"
+    ],
+    "webstoreUrl": "https://pluginshop.link/elplugins"
+  }
+]
