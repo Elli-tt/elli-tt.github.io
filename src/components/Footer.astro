@@ -1,27 +1,32 @@
 ---
 const base = import.meta.env.BASE_URL;
 
+const splashUrl = base;
+const homeUrl = `${base}home/`;
+const pluginsUrl = `${base}plugins/`;
+const faqUrl = `${base}faq/`;
+const tosUrl = `${base}tos/`;
+
 const webstoreUrl = 'https://pluginshop.link/elplugins';
 const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
-const mainSiteUrl = 'https://elli-tt.github.io/';
 ---
 
 <footer class="footer">
   <div class="footer-brand">
-    <img src={`${base}images/elplugins.png`} alt="ElPlugins logo" class="footer-logo" />
+    <img src={`${base}images/elpluginshdlogo.png`} alt="ElPlugins logo" class="footer-logo" />
     <h2>ElPlugins</h2>
     <p>For all your Old School Plugin needs.</p>
     <p class="made-by">Made in Gielinor.</p>
   </div>
 
   <div class="footer-links">
-    <a href={base}>Home</a>
-    <a href={`${base}plugins`}>Plugins</a>
-    <a href={`${base}faq`}>FAQ</a>
-    <a href={`${base}tos`}>ToS</a>
+    <a href={splashUrl}>Splash</a>
+    <a href={homeUrl}>Home</a>
+    <a href={pluginsUrl}>Plugins</a>
+    <a href={faqUrl}>FAQ</a>
+    <a href={tosUrl}>ToS</a>
     <a href={webstoreUrl}>Purchase Plugins</a>
     <a href={discordUrl}>Join Discord</a>
-    <a href={mainSiteUrl}>Full Website</a>
   </div>
 
   <p class="copyright">© 2026 ElPlugins - ElPlugins.com</p>
