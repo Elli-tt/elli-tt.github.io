@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import products from '../data/products.json';
+
+const base = import.meta.env.BASE_URL;
+
+const webstoreUrl = 'https://pluginshop.link/elplugins';
+const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
+
+const featureBlocks = [
+  {
+    icon: '🧩',
+    title: 'RuneLite',
+    description: 'Free custom plugin loader included with all plugins.'
+  },
+  {
+    icon: '⚙️',
+    title: 'All Modes',
+    description: 'Full Auto, Smart Click, One Click and Hotkey modes.'
+  },
+  {
+    icon: '🚀',
+    title: 'Jagex Launcher',
+    description: 'All accounts supported.'
+  },
+  {
+    icon: '📢',
+    title: 'Frequent Updates',
+    description: 'Check out our changelog on Discord.'
+  },
+  {
+    icon: '⏱️',
+    title: 'Minimal Downtime',
+    description: 'The client is updated shortly after the official RuneLite update.'
+  },
+  {
+    icon: '📦',
+    title: 'Simplified Packages',
+    description: 'Choose from Plugin Package, PVM Plugins, or the full bundle.'
+  },
+  {
+    icon: '🎛️',
+    title: 'Fully Customisable',
+    description: 'Delays and settings are fully customisable between plugins.'
+  },
+  {
+    icon: '💬',
+    title: 'Support',
+    description: 'Install help, FAQ, support channels, and community help on Discord.'
+  }
+];
+---
+
+<BaseLayout
+  title="Home - ElPlugins"
+  description="ElPlugins full website homepage."
+>
+  <Navbar />
+
+  <main>
+    <section class="page-hero home-hero">
+      <div class="home-hero-logo">
+        <img src={`${base}images/elplugins.png`} alt="ElPlugins logo" />
+      </div>
+
+      <p class="eyebrow">ElPlugins</p>
+      <h1>For all your Old School Plugin needs</h1>
+      <p>
+        RuneLite plugins for Combat, Skilling, Minigames, Utility and PVM content.
+        Fully automated, Smart Click, One Click and Hotkey plugins available.
+      </p>
+
+      <div class="page-actions">
+        <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
+        <a class="button discord-button" href={discordUrl}>Join Discord</a>
+        <a class="button secondary" href={`${base}plugins/`}>View Plugins</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Packages</p>
+        <h2>Available Packages</h2>
+        <p>Choose a package from the webshop or join Discord for help.</p>
+      </div>
+
+      <div class="package-grid">
+        {products.map((product) => (
+          <article class="package-card">
+            <div class="package-badge">{product.badge}</div>
+
+            <div class="package-top">
+              <span>{product.category}</span>
+              <strong>{product.status}</strong>
+            </div>
+
+            <h3>{product.name}</h3>
+            <p>{product.description}</p>
+
+            <div class="price-list">
+              {product.prices.map((price) => (
+                <span>{price}</span>
+              ))}
+            </div>
+
+            <ul>
+              {product.features.map((feature) => (
+                <li>{feature}</li>
+              ))}
+            </ul>
+
+            <div class="card-actions">
+              <a class="card-button" href={product.webstoreUrl}>Purchase Plugins</a>
+              <a class="card-button muted" href={discordUrl}>Join Discord</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section features-section">
+      <div class="section-heading">
+        <p class="eyebrow">Why ElPlugins</p>
+        <h2>Built around support, updates and flexibility</h2>
+      </div>
+
+      <div class="feature-grid">
+        {featureBlocks.map((feature) => (
+          <article class="feature-card">
+            <span class="feature-icon">{feature.icon}</span>
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div>
+        <p class="eyebrow">Get Started</p>
+        <h2>Ready to browse the full catalogue?</h2>
+        <p>
+          View the plugin list, join Discord for help, or go straight to the webshop.
+        </p>
+      </div>
+
+      <div class="cta-actions">
+        <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
+        <a class="button discord-button" href={discordUrl}>Join Discord</a>
+        <a class="button secondary" href={`${base}plugins/`}>View Plugins</a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

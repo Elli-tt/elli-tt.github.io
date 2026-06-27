@@ -5,10 +5,14 @@ const {
 
 const base = import.meta.env.BASE_URL;
 
-const splashUrl = `${base}splash/`;
+const splashUrl = base;
+const homeUrl = `${base}home/`;
+const pluginsUrl = `${base}plugins/`;
+const faqUrl = `${base}faq/`;
+const tosUrl = `${base}tos/`;
+
 const webstoreUrl = 'https://pluginshop.link/elplugins';
 const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
-const mainSiteUrl = base;
 ---
 
 <header class={`site-header ${splash ? 'splash-header' : ''}`}>
@@ -19,11 +23,11 @@ const mainSiteUrl = base;
 
   {!splash && (
     <nav class="nav-links" aria-label="Main navigation">
-      <a href={splashUrl}>Home</a>
-      <a href={`${base}plugins`}>Plugins</a>
-      <a href={`${base}faq`}>FAQ</a>
-      <a href={`${base}tos`}>ToS</a>
-      <a href={mainSiteUrl}>Full Website</a>
+      <a href={homeUrl}>Home</a>
+      <a href={pluginsUrl}>Plugins</a>
+      <a href={faqUrl}>FAQ</a>
+      <a href={tosUrl}>ToS</a>
+      <a href={splashUrl}>Splash</a>
     </nav>
   )}
 
