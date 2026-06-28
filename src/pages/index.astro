@@ -17,15 +17,26 @@ const homeUrl = `${base}home/`;
   <Navbar splash={true} />
 
   <main>
-    <section class="splash-hero">
+    <section class="splash-hero ocean-splash">
       <div class="splash-glow"></div>
 
-      <div class="splash-logo-wrap">
-        <img src={`${base}images/elpluginshdlogo.png`} alt="ElPlugins logo" class="splash-logo" />
+      <div class="bubble bubble-one"></div>
+      <div class="bubble bubble-two"></div>
+      <div class="bubble bubble-three"></div>
+      <div class="bubble bubble-four"></div>
+
+      <div class="splash-logo-wrap ocean-logo-wrap">
+        <img src={`${base}images/elpluginshdlogo.png`} alt="ElPlugins logo" class="splash-logo ocean-logo" />
       </div>
 
-      <div class="splash-content">
-        <p class="splash-tagline">For all your Old School Plugin needs</p>
+      <div class="splash-content ocean-splash-content">
+        <p class="splash-tagline">
+          For all your Old School Plugin needs
+        </p>
+
+        <p class="splash-subtagline">
+          Combat <span>•</span> Skilling <span>•</span> Minigames <span>•</span> Utility <span>•</span> PVM
+        </p>
 
         <div class="splash-buttons">
           <a class="splash-button purchase" href={webstoreUrl}>
@@ -80,15 +91,347 @@ const homeUrl = `${base}home/`;
   <Footer />
 
   <style>
+    .ocean-splash {
+      min-height: calc(100vh - 83px);
+      padding-top: 18px;
+      padding-bottom: 64px;
+      align-content: start;
+      grid-template-rows: auto auto;
+      gap: 0;
+      overflow: hidden;
+    }
+
+    .ocean-splash::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 50% 14%, rgba(255, 216, 74, 0.055), transparent 18rem),
+        radial-gradient(circle at 48% 34%, rgba(25, 255, 98, 0.045), transparent 24rem);
+      animation: oceanLightDrift 12s ease-in-out infinite;
+    }
+
+    .ocean-logo-wrap {
+      margin-top: 0;
+      transform-origin: center;
+      z-index: 2;
+      animation:
+        anchorDropIn 1.1s cubic-bezier(0.18, 0.9, 0.28, 1.2) both,
+        anchorFloat 6.8s ease-in-out 1.1s infinite;
+    }
+
+    .ocean-logo {
+      width: clamp(260px, 25vw, 430px);
+      margin-bottom: 0;
+      animation: anchorGlow 6.8s ease-in-out 1.1s infinite;
+      filter:
+        drop-shadow(0 0 16px rgba(255, 216, 74, 0.32))
+        drop-shadow(0 0 30px rgba(25, 255, 98, 0.06))
+        drop-shadow(0 24px 40px rgba(0, 0, 0, 0.62));
+    }
+
+    .ocean-splash-content {
+      margin-top: 6px;
+      z-index: 3;
+    }
+
     .splash-tagline {
-      margin: -12px auto 30px;
+      width: fit-content;
+      margin: 0 auto 10px;
       color: var(--gold-bright);
-      font-size: clamp(1.2rem, 2.6vw, 2rem);
+      font-size: clamp(1.18rem, 2.35vw, 1.9rem);
       font-weight: 950;
       letter-spacing: 0.02em;
       text-shadow:
-        0 0 20px rgba(255, 216, 74, 0.32),
-        0 12px 38px rgba(0, 0, 0, 0.44);
+        0 0 10px rgba(255, 216, 74, 0.22),
+        0 0 20px rgba(25, 255, 98, 0.07),
+        0 12px 38px rgba(0, 0, 0, 0.42);
+    }
+
+    .splash-subtagline {
+      margin: 0 auto 30px;
+      color: rgba(255, 248, 217, 0.72);
+      font-size: clamp(0.86rem, 1.3vw, 1.02rem);
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      animation: seaMistFade 7s ease-in-out infinite;
+    }
+
+    .splash-subtagline span {
+      color: var(--green-bright);
+      text-shadow: 0 0 10px rgba(25, 255, 98, 0.28);
+    }
+
+    .bubble {
+      position: absolute;
+      z-index: 1;
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(179, 255, 218, 0.26);
+      background: rgba(179, 255, 218, 0.05);
+      box-shadow: 0 0 14px rgba(25, 255, 98, 0.08);
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    .bubble-one {
+      left: 31%;
+      bottom: 18%;
+      animation: bubbleRise 9s ease-in infinite 0.2s;
+    }
+
+    .bubble-two {
+      left: 64%;
+      bottom: 16%;
+      width: 7px;
+      height: 7px;
+      animation: bubbleRise 10.5s ease-in infinite 2.4s;
+    }
+
+    .bubble-three {
+      left: 43%;
+      bottom: 12%;
+      width: 6px;
+      height: 6px;
+      animation: bubbleRise 8.8s ease-in infinite 4.1s;
+    }
+
+    .bubble-four {
+      left: 56%;
+      bottom: 10%;
+      width: 10px;
+      height: 10px;
+      animation: bubbleRise 11.2s ease-in infinite 5.8s;
+    }
+
+    .splash-button {
+      transform-origin: center;
+    }
+
+    .splash-button:hover {
+      animation: buttonHoverWiggle 0.48s ease-in-out both;
+    }
+
+    .splash-buttons:not(:hover) .splash-button.discord {
+      animation: discordIdleWiggle 3.8s ease-in-out infinite;
+    }
+
+    .splash-buttons:hover .splash-button.discord {
+      animation: none;
+    }
+
+    .splash-buttons:hover .splash-button.discord:hover {
+      animation: buttonHoverWiggle 0.48s ease-in-out both;
+    }
+
+    @keyframes anchorDropIn {
+      0% {
+        transform: translateY(-130px) scale(0.96) rotate(-2deg);
+        opacity: 0;
+      }
+
+      62% {
+        transform: translateY(18px) scale(1.01) rotate(0.6deg);
+        opacity: 1;
+      }
+
+      78% {
+        transform: translateY(8px) scale(1) rotate(-0.35deg);
+      }
+
+      100% {
+        transform: translateY(14px) scale(1) rotate(0deg);
+        opacity: 1;
+      }
+    }
+
+    @keyframes anchorFloat {
+      0%,
+      100% {
+        transform: translateY(14px) rotate(-0.25deg);
+      }
+
+      50% {
+        transform: translateY(6px) rotate(0.25deg);
+      }
+    }
+
+    @keyframes anchorGlow {
+      0%,
+      100% {
+        filter:
+          drop-shadow(0 0 14px rgba(255, 216, 74, 0.28))
+          drop-shadow(0 0 26px rgba(25, 255, 98, 0.05))
+          drop-shadow(0 24px 40px rgba(0, 0, 0, 0.62));
+      }
+
+      50% {
+        filter:
+          drop-shadow(0 0 19px rgba(255, 216, 74, 0.36))
+          drop-shadow(0 0 36px rgba(25, 255, 98, 0.09))
+          drop-shadow(0 26px 42px rgba(0, 0, 0, 0.64));
+      }
+    }
+
+    @keyframes seaMistFade {
+      0%,
+      100% {
+        opacity: 0.7;
+      }
+
+      50% {
+        opacity: 0.92;
+      }
+    }
+
+    @keyframes oceanLightDrift {
+      0%,
+      100% {
+        opacity: 0.62;
+        transform: translateX(-1%);
+      }
+
+      50% {
+        opacity: 0.85;
+        transform: translateX(1%);
+      }
+    }
+
+    @keyframes bubbleRise {
+      0% {
+        transform: translateY(0) translateX(0) scale(0.75);
+        opacity: 0;
+      }
+
+      18% {
+        opacity: 0.32;
+      }
+
+      80% {
+        opacity: 0.14;
+      }
+
+      100% {
+        transform: translateY(-320px) translateX(18px) scale(1.15);
+        opacity: 0;
+      }
+    }
+
+    @keyframes buttonHoverWiggle {
+      0% {
+        transform: translateY(-2px) rotate(0deg) scale(1);
+      }
+
+      18% {
+        transform: translateY(-4px) rotate(-1.6deg) scale(1.015);
+      }
+
+      36% {
+        transform: translateY(-4px) rotate(1.6deg) scale(1.015);
+      }
+
+      54% {
+        transform: translateY(-4px) rotate(-1deg) scale(1.012);
+      }
+
+      72% {
+        transform: translateY(-4px) rotate(0.8deg) scale(1.01);
+      }
+
+      100% {
+        transform: translateY(-4px) rotate(0deg) scale(1.01);
+      }
+    }
+
+    @keyframes discordIdleWiggle {
+      0%,
+      78%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      82% {
+        transform: translateY(-1px) rotate(-0.7deg);
+      }
+
+      86% {
+        transform: translateY(-2px) rotate(0.7deg);
+      }
+
+      90% {
+        transform: translateY(-1px) rotate(-0.45deg);
+      }
+
+      94% {
+        transform: translateY(0) rotate(0.35deg);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .ocean-splash {
+        padding-top: 12px;
+      }
+
+      .ocean-logo {
+        width: min(100%, 340px);
+      }
+
+      .ocean-splash-content {
+        margin-top: 2px;
+      }
+
+      .splash-subtagline {
+        margin-bottom: 24px;
+      }
+
+      @keyframes anchorDropIn {
+        0% {
+          transform: translateY(-120px) scale(0.96) rotate(-2deg);
+          opacity: 0;
+        }
+
+        62% {
+          transform: translateY(20px) scale(1.01) rotate(0.6deg);
+          opacity: 1;
+        }
+
+        78% {
+          transform: translateY(10px) scale(1) rotate(-0.35deg);
+        }
+
+        100% {
+          transform: translateY(16px) scale(1) rotate(0deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes anchorFloat {
+        0%,
+        100% {
+          transform: translateY(16px) rotate(-0.2deg);
+        }
+
+        50% {
+          transform: translateY(8px) rotate(0.2deg);
+        }
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ocean-splash::before,
+      .ocean-logo,
+      .ocean-logo-wrap,
+      .splash-subtagline,
+      .bubble,
+      .splash-button:hover,
+      .splash-buttons:not(:hover) .splash-button.discord,
+      .splash-buttons:hover .splash-button.discord,
+      .splash-buttons:hover .splash-button.discord:hover {
+        animation: none;
+      }
     }
   </style>
 </BaseLayout>
