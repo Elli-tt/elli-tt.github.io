@@ -83,39 +83,41 @@ const featureBlocks = [
       </div>
     </section>
 
-    <section class="section">
+    <section class="section packages-section">
       <div class="section-heading">
         <p class="eyebrow">Packages</p>
         <h2>Available Packages</h2>
         <p>Choose a Package from below. Crypto/GP handled through our Discord.</p>
       </div>
 
-      <div class="package-grid">
+      <div class="package-grid aligned-package-grid">
         {products.map((product) => (
-          <article class="package-card">
-            <div class="package-badge">{product.badge}</div>
+          <article class="package-card aligned-package-card">
+            <div class="package-header">
+              <div class="package-badge">{product.badge}</div>
 
-            <div class="package-top">
-              <span>{product.category}</span>
-              <strong>{product.status}</strong>
+              <div class="package-top">
+                <span>{product.category}</span>
+                <strong>{product.status}</strong>
+              </div>
+
+              <h3>{product.name}</h3>
+              <p>{product.description}</p>
             </div>
 
-            <h3>{product.name}</h3>
-            <p>{product.description}</p>
-
-            <div class="price-list">
+            <div class="price-list aligned-price-list">
               {product.prices.map((price) => (
                 <span>{price}</span>
               ))}
             </div>
 
-            <ul>
+            <ul class="aligned-feature-list">
               {product.features.map((feature) => (
                 <li>{feature}</li>
               ))}
             </ul>
 
-            <div class="card-actions">
+            <div class="card-actions aligned-card-actions">
               <a class="card-button" href={product.webstoreUrl}>Purchase Plugins</a>
               <a class="card-button muted" href={discordUrl}>Join Discord</a>
             </div>
@@ -165,6 +167,63 @@ const featureBlocks = [
   <Footer />
 
   <style>
+    .aligned-package-grid {
+      align-items: stretch;
+    }
+
+    .aligned-package-card {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      min-height: 100%;
+    }
+
+    .package-header {
+      display: grid;
+      align-content: start;
+    }
+
+    .aligned-package-card .package-top {
+      min-height: 34px;
+    }
+
+    .aligned-package-card h3 {
+      min-height: 66px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .aligned-package-card .package-header > p {
+      min-height: 58px;
+    }
+
+    .aligned-price-list {
+      align-self: start;
+    }
+
+    .aligned-price-list span {
+      min-height: 46px;
+      display: flex;
+      align-items: center;
+    }
+
+    .aligned-feature-list {
+      align-self: start;
+      margin-bottom: 22px;
+    }
+
+    .aligned-card-actions {
+      align-self: end;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 0;
+    }
+
+    .aligned-card-actions .card-button {
+      width: 100%;
+      min-height: 50px;
+    }
+
     .feature-link {
       display: inline-flex;
       margin-top: 12px;
@@ -181,6 +240,12 @@ const featureBlocks = [
     .feature-link:hover {
       transform: translateY(-2px);
       filter: brightness(1.08);
+    }
+
+    @media (min-width: 980px) {
+      .aligned-card-actions {
+        grid-template-columns: 1fr 1fr;
+      }
     }
   </style>
 </BaseLayout>
