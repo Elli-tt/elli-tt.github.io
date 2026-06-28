@@ -112,7 +112,7 @@
         "name": "Warriors Guild",
         "icon": "🛡️",
         "slug": "warriors-guild",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Animated_armour.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Warriors'_guild_basement.png",
         "summary": "Warriors Guild support plugin.",
         "details": "Write your Warriors Guild details here."
       },
@@ -167,7 +167,7 @@
         "name": "Bankstander",
         "icon": "🏦",
         "slug": "bankstander",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Banker.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Bank_booth_(Keldagrim).png",
         "summary": "Bankstanding support plugin.",
         "details": "Write your Bankstander details here."
       },
@@ -223,7 +223,7 @@
         "name": "Gem Mine",
         "icon": "💎",
         "slug": "gem-mine",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Gem_rock.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Shilo_Village_Gem_Mine.png",
         "summary": "Gem mining support plugin.",
         "details": "Write your Gem Mine details here."
       },
@@ -438,7 +438,7 @@
         "name": "Varrock Cleaner",
         "icon": "🧹",
         "slug": "varrock-cleaner",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Varrock_Museum.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Varrock_Museum_ground_floor.png",
         "summary": "Varrock Museum cleaning support plugin.",
         "details": "Write your Varrock Cleaner details here."
       },
@@ -446,7 +446,7 @@
         "name": "Wintertodt",
         "icon": "❄️",
         "slug": "wintertodt",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Wintertodt.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Doors_of_Dinh.png",
         "summary": "Wintertodt support plugin.",
         "details": "Write your Wintertodt details here."
       },
@@ -454,7 +454,7 @@
         "name": "Mixology",
         "icon": "⚗️",
         "slug": "mixology",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Mastering_Mixology.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Mastering_Mixology_room.png",
         "summary": "Mixology support plugin.",
         "details": "Write your Mixology details here."
       },
@@ -525,7 +525,7 @@
         "name": "Auto Hop",
         "icon": "🌍",
         "slug": "auto-hop",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/World_switcher.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/World_Switcher_interface.png",
         "summary": "World hopping support plugin.",
         "details": "Write your Auto Hop details here."
       },
@@ -533,7 +533,7 @@
         "name": "Break Handler",
         "icon": "⏸️",
         "slug": "break-handler",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Bed.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Guard_(Port_Sarim,_sleeping).png",
         "summary": "Break handling support plugin.",
         "details": "Write your Break Handler details here."
       },
@@ -597,7 +597,7 @@
         "name": "Super Profiles",
         "icon": "👤",
         "slug": "super-profiles",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Login_screen.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Default_login_screen.png",
         "summary": "Profile management support plugin.",
         "details": "Write your Super Profiles details here."
       },
@@ -644,7 +644,7 @@
         "name": "Zulrah",
         "icon": "🐍",
         "slug": "zulrah",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Zulrah.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Zulrah_(serpentine).png",
         "summary": "Zulrah support plugin.",
         "details": "Write your Zulrah details here."
       },
@@ -660,7 +660,7 @@
         "name": "Royal Titans",
         "icon": "👑",
         "slug": "royal-titans",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Branda,_Queen_of_Fire.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Fighting_Royal_Titans.png",
         "summary": "Royal Titans support plugin.",
         "details": "Write your Royal Titans details here."
       },
@@ -676,7 +676,7 @@
         "name": "Tormented Demons",
         "icon": "😈",
         "slug": "tormented-demons",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Tormented_Demon.png",
+        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Tormented_Demon_(1).png",
         "summary": "Tormented Demons support plugin.",
         "details": "Write your Tormented Demons details here."
       },

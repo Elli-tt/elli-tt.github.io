@@ -91,10 +91,14 @@ const homeUrl = `${base}home/`;
   <Footer />
 
   <style>
+    main {
+      display: block;
+    }
+
     .ocean-splash {
-      min-height: calc(100vh - 83px);
+      min-height: auto;
       padding-top: 18px;
-      padding-bottom: 64px;
+      padding-bottom: 18px;
       align-content: start;
       grid-template-rows: auto auto;
       gap: 0;
@@ -150,7 +154,7 @@ const homeUrl = `${base}home/`;
     }
 
     .splash-subtagline {
-      margin: 0 auto 30px;
+      margin: 0 auto 26px;
       color: rgba(255, 248, 217, 0.72);
       font-size: clamp(0.86rem, 1.3vw, 1.02rem);
       font-weight: 850;
@@ -162,6 +166,10 @@ const homeUrl = `${base}home/`;
     .splash-subtagline span {
       color: var(--green-bright);
       text-shadow: 0 0 10px rgba(25, 255, 98, 0.28);
+    }
+
+    .splash-buttons {
+      margin-bottom: 0;
     }
 
     .bubble {
@@ -373,6 +381,7 @@ const homeUrl = `${base}home/`;
     @media (max-width: 760px) {
       .ocean-splash {
         padding-top: 12px;
+        padding-bottom: 18px;
       }
 
       .ocean-logo {
@@ -384,7 +393,7 @@ const homeUrl = `${base}home/`;
       }
 
       .splash-subtagline {
-        margin-bottom: 24px;
+        margin-bottom: 22px;
       }
 
       @keyframes anchorDropIn {
