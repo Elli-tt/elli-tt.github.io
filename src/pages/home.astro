@@ -8,12 +8,13 @@ const base = import.meta.env.BASE_URL;
 
 const webstoreUrl = 'https://pluginshop.link/elplugins';
 const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
+const changelogUrl = 'https://discord.com/channels/764897214388240427/1080789983499145316';
 
 const featureBlocks = [
   {
     icon: '🧩',
-    title: 'RuneLite',
-    description: 'Free custom plugin loader included with all plugins.'
+    title: 'RLPL',
+    description: 'Free RuneLite based plugin loader included with all plugins.'
   },
   {
     icon: '⚙️',
@@ -28,12 +29,14 @@ const featureBlocks = [
   {
     icon: '📢',
     title: 'Frequent Updates',
-    description: 'Check out our changelog on Discord.'
+    description: 'Check out our changelog on Discord.',
+    link: changelogUrl,
+    linkText: 'View Changelog'
   },
   {
     icon: '⏱️',
     title: 'Minimal Downtime',
-    description: 'The client is updated shortly after the official RuneLite update.'
+    description: 'The Client is updated shortly after OSRS and RL updates.'
   },
   {
     icon: '📦',
@@ -48,7 +51,7 @@ const featureBlocks = [
   {
     icon: '💬',
     title: 'Support',
-    description: 'Install help, FAQ, support channels, and community help on Discord.'
+    description: 'Help is available on Discord. Including FAQ, Support and Community Channels.'
   }
 ];
 ---
@@ -69,6 +72,7 @@ const featureBlocks = [
       <h1>For all your Old School Plugin needs</h1>
       <p>
         RuneLite plugins for Combat, Skilling, Minigames, Utility and PVM content.
+        <br />
         Fully automated, Smart Click, One Click and Hotkey plugins available.
       </p>
 
@@ -83,7 +87,7 @@ const featureBlocks = [
       <div class="section-heading">
         <p class="eyebrow">Packages</p>
         <h2>Available Packages</h2>
-        <p>Choose a package from the webshop or join Discord for help.</p>
+        <p>Choose a Package from below. Crypto/GP handled through our Discord.</p>
       </div>
 
       <div class="package-grid">
@@ -132,6 +136,10 @@ const featureBlocks = [
             <span class="feature-icon">{feature.icon}</span>
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
+
+            {feature.link && (
+              <a class="feature-link" href={feature.link}>{feature.linkText}</a>
+            )}
           </article>
         ))}
       </div>
@@ -155,4 +163,24 @@ const featureBlocks = [
   </main>
 
   <Footer />
+
+  <style>
+    .feature-link {
+      display: inline-flex;
+      margin-top: 12px;
+      color: #1b1100;
+      background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+      border: 1px solid var(--border-strong);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 0.86rem;
+      font-weight: 950;
+      box-shadow: 0 12px 34px rgba(255, 216, 74, 0.2);
+    }
+
+    .feature-link:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.08);
+    }
+  </style>
 </BaseLayout>

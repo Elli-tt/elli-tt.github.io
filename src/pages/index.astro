@@ -25,6 +25,8 @@ const homeUrl = `${base}home/`;
       </div>
 
       <div class="splash-content">
+        <p class="splash-tagline">For all your Old School Plugin needs</p>
+
         <div class="splash-buttons">
           <a class="splash-button purchase" href={webstoreUrl}>
             <span class="splash-button-logo">
@@ -65,7 +67,7 @@ const homeUrl = `${base}home/`;
 
             <span class="splash-button-content">
               <strong>View Website</strong>
-              <span>Continue to the Full Site</span>
+              <span>To the Full Site</span>
             </span>
 
             <span class="splash-button-arrow">→</span>
@@ -76,4 +78,17 @@ const homeUrl = `${base}home/`;
   </main>
 
   <Footer />
+
+  <style>
+    .splash-tagline {
+      margin: -12px auto 30px;
+      color: var(--gold-bright);
+      font-size: clamp(1.2rem, 2.6vw, 2rem);
+      font-weight: 950;
+      letter-spacing: 0.02em;
+      text-shadow:
+        0 0 20px rgba(255, 216, 74, 0.32),
+        0 12px 38px rgba(0, 0, 0, 0.44);
+    }
+  </style>
 </BaseLayout>

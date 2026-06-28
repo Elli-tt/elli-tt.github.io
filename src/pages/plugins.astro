@@ -2,25 +2,51 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
-import catalogue from '../data/pluginCatalogue.json';
-import products from '../data/products.json';
+import pluginCatalogue from '../data/pluginCatalogue.json';
 
-const webstoreUrl = 'https://pluginshop.link/elplugins';
 const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
+const webstoreUrl = 'https://pluginshop.link/elplugins';
+
+const packageMap = {
+  PVM: {
+    name: 'PVM',
+    icon: '⚔️',
+    label: 'PVM Plugins'
+  },
+  Plugin: {
+    name: 'Plugin',
+    icon: '🎁',
+    label: 'Plugin Package'
+  }
+};
+
+const catalogue = pluginCatalogue.map((category) => {
+  const packageType = category.category === 'PVM' ? 'PVM' : 'Plugin';
+
+  return {
+    ...category,
+    packageType,
+    packageIcon: packageMap[packageType].icon,
+    packageLabel: packageMap[packageType].label
+  };
+});
+
+const categories = catalogue.map((category) => category.category);
 ---
 
 <BaseLayout
   title="Plugins - ElPlugins"
-  description="Browse the full ElPlugins catalogue including Combat, Skilling, Minigames, Utility, and PVM plugins."
+  description="Browse ElPlugins Combat, Skilling, Minigames, Utility and PVM plugins."
 >
   <Navbar />
 
   <main>
     <section class="page-hero">
-      <p class="eyebrow">ElPlugins Catalogue</p>
-      <h1>Plugins</h1>
+      <p class="eyebrow">Plugin Catalogue</p>
+      <h1>Browse Plugins</h1>
       <p>
-        Browse the full list of Combat, Skilling, Minigames, Utility and PVM plugins.
+        Search by plugin name, filter by category, or filter by package.
+        Plugin Package items are marked with 🎁 and PVM Plugins are marked with ⚔️.
       </p>
 
       <div class="page-actions">
@@ -29,79 +55,328 @@ const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Packages</p>
-        <h2>Available Packages</h2>
-        <p>Choose a package from the webshop or join Discord for help.</p>
+    <section class="section plugin-browser-section">
+      <div class="plugin-controls" aria-label="Plugin filters">
+        <label>
+          <span>Search</span>
+          <input
+            id="pluginSearch"
+            type="search"
+            placeholder="Search plugins..."
+            autocomplete="off"
+          />
+        </label>
+
+        <label>
+          <span>Category</span>
+          <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            {categories.map((category) => (
+              <option value={category}>{category}</option>
+            ))}
+          </select>
+        </label>
+
+        <label>
+          <span>Package</span>
+          <select id="packageFilter">
+            <option value="all">All Packages</option>
+            <option value="Plugin">🎁 Plugin Package</option>
+            <option value="PVM">⚔️ PVM Plugins</option>
+          </select>
+        </label>
       </div>
 
-      <div class="package-grid">
-        {products.map((product) => (
-          <article class="package-card">
-            <div class="package-badge">{product.badge}</div>
+      <div class="plugin-result-meta">
+        <p><strong id="pluginCount">0</strong> plugins shown</p>
+        <button id="clearFilters" type="button">Clear Filters</button>
+      </div>
 
-            <div class="package-top">
-              <span>{product.category}</span>
-              <strong>{product.status}</strong>
+      <div class="catalogue-section" id="catalogue">
+        {catalogue.map((category) => (
+          <section
+            class="catalogue-category"
+            data-category-section
+            data-category={category.category}
+            data-package={category.packageType}
+          >
+            <div class="catalogue-heading">
+              <div>
+                <p class="eyebrow">{category.packageIcon} {category.packageLabel}</p>
+                <h2>{category.category}</h2>
+                <p>{category.description}</p>
+              </div>
+
+              <span data-category-count>{category.plugins.length} Plugins</span>
             </div>
 
-            <h3>{product.name}</h3>
-            <p>{product.description}</p>
+            <div class="plugin-grid">
+              {category.plugins.map((plugin) => (
+                <article
+                  class="plugin-card"
+                  data-plugin-card
+                  data-name={plugin.toLowerCase()}
+                  data-category={category.category}
+                  data-package={category.packageType}
+                >
+                  <h3>
+                    <span class="plugin-emoji" aria-hidden="true">
+                      {category.icon}
+                    </span>
 
-            <div class="price-list">
-              {product.prices.map((price) => (
-                <span>{price}</span>
+                    <span>{plugin}</span>
+                  </h3>
+
+                  <span
+                    class={`package-marker ${category.packageType === 'PVM' ? 'pvm-marker' : 'plugin-marker'}`}
+                    title={category.packageLabel}
+                    aria-label={category.packageLabel}
+                  >
+                    {category.packageIcon}
+                  </span>
+                </article>
               ))}
             </div>
-
-            <ul>
-              {product.features.map((feature) => (
-                <li>{feature}</li>
-              ))}
-            </ul>
-
-            <div class="card-actions">
-              <a class="card-button" href={product.webstoreUrl}>Purchase Plugins</a>
-              <a class="card-button muted" href={discordUrl}>Join Discord</a>
-            </div>
-          </article>
+          </section>
         ))}
+      </div>
+
+      <div class="no-results" id="noResults" hidden>
+        <h2>No plugins found</h2>
+        <p>Try clearing the filters or searching for a different plugin name.</p>
       </div>
     </section>
 
-    <section class="section catalogue-section">
-      {catalogue.map((group) => (
-        <div class="catalogue-group" id={group.category.toLowerCase()}>
-          <div class="catalogue-heading">
-            <div>
-              <p class="eyebrow">{group.category}</p>
-              <h2>{group.category}</h2>
-              <p>{group.description}</p>
-            </div>
+    <section class="section center">
+      <div class="section-heading">
+        <p class="eyebrow">Need Help?</p>
+        <h2>Join Discord for package help</h2>
+        <p>
+          Ask questions, check compatibility, and get help choosing the right package.
+        </p>
+      </div>
 
-            <span>{group.plugins.length} plugins</span>
-          </div>
-
-          <div class="plugin-grid">
-            {group.plugins.map((plugin) => (
-              <article class="plugin-card">
-                <h3>
-                  <span class="plugin-emoji">{plugin.emoji}</span>
-                  {plugin.name}
-                </h3>
-              </article>
-            ))}
-          </div>
-        </div>
-      ))}
-
-      <div class="center bottom-cta">
-        <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
+      <div class="bottom-cta">
         <a class="button discord-button" href={discordUrl}>Join Discord</a>
+        <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
       </div>
     </section>
   </main>
 
   <Footer />
+
+  <script>
+    const searchInput = document.querySelector('#pluginSearch');
+    const categoryFilter = document.querySelector('#categoryFilter');
+    const packageFilter = document.querySelector('#packageFilter');
+    const clearFilters = document.querySelector('#clearFilters');
+    const pluginCount = document.querySelector('#pluginCount');
+    const noResults = document.querySelector('#noResults');
+
+    const cards = Array.from(document.querySelectorAll('[data-plugin-card]'));
+    const sections = Array.from(document.querySelectorAll('[data-category-section]'));
+
+    function updateFilters() {
+      const searchValue = searchInput.value.trim().toLowerCase();
+      const categoryValue = categoryFilter.value;
+      const packageValue = packageFilter.value;
+
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const name = card.dataset.name || '';
+        const category = card.dataset.category || '';
+        const packageType = card.dataset.package || '';
+
+        const matchesSearch = !searchValue || name.includes(searchValue);
+        const matchesCategory = categoryValue === 'all' || category === categoryValue;
+        const matchesPackage = packageValue === 'all' || packageType === packageValue;
+
+        const isVisible = matchesSearch && matchesCategory && matchesPackage;
+
+        card.hidden = !isVisible;
+
+        if (isVisible) {
+          visibleCount += 1;
+        }
+      });
+
+      sections.forEach((section) => {
+        const visibleCards = Array.from(section.querySelectorAll('[data-plugin-card]'))
+          .filter((card) => !card.hidden);
+
+        const count = section.querySelector('[data-category-count]');
+
+        section.hidden = visibleCards.length === 0;
+
+        if (count) {
+          count.textContent = `${visibleCards.length} Plugin${visibleCards.length === 1 ? '' : 's'}`;
+        }
+      });
+
+      pluginCount.textContent = String(visibleCount);
+      noResults.hidden = visibleCount !== 0;
+    }
+
+    searchInput.addEventListener('input', updateFilters);
+    categoryFilter.addEventListener('change', updateFilters);
+    packageFilter.addEventListener('change', updateFilters);
+
+    clearFilters.addEventListener('click', () => {
+      searchInput.value = '';
+      categoryFilter.value = 'all';
+      packageFilter.value = 'all';
+      updateFilters();
+      searchInput.focus();
+    });
+
+    updateFilters();
+  </script>
+
+  <style>
+    .plugin-browser-section {
+      padding-top: 46px;
+    }
+
+    .plugin-controls {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding: 22px;
+      background:
+        radial-gradient(circle at top right, rgba(255, 216, 74, 0.12), transparent 18rem),
+        linear-gradient(180deg, rgba(36, 31, 19, 0.88), rgba(16, 14, 9, 0.95));
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .plugin-controls label {
+      display: grid;
+      gap: 8px;
+      color: var(--gold-bright);
+      font-size: 0.78rem;
+      font-weight: 950;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .plugin-controls input,
+    .plugin-controls select {
+      width: 100%;
+      min-height: 52px;
+      padding: 0 16px;
+      color: var(--text);
+      background: rgba(5, 4, 3, 0.72);
+      border: 1px solid rgba(255, 216, 74, 0.24);
+      border-radius: 16px;
+      outline: none;
+      font: inherit;
+      font-weight: 800;
+    }
+
+    .plugin-controls input:focus,
+    .plugin-controls select:focus {
+      border-color: var(--gold-bright);
+      box-shadow: 0 0 0 4px rgba(255, 216, 74, 0.12);
+    }
+
+    .plugin-result-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 44px;
+      color: var(--muted);
+    }
+
+    .plugin-result-meta p {
+      margin: 0;
+    }
+
+    .plugin-result-meta strong {
+      color: var(--gold-bright);
+    }
+
+    .plugin-result-meta button {
+      cursor: pointer;
+      color: #1b1100;
+      background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+      border: 1px solid var(--border-strong);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font: inherit;
+      font-weight: 950;
+    }
+
+    .plugin-card {
+      justify-content: space-between;
+      gap: 14px;
+      transition:
+        transform 160ms ease,
+        border-color 160ms ease,
+        box-shadow 160ms ease,
+        background 160ms ease;
+    }
+
+    .plugin-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--border-strong);
+      box-shadow:
+        0 22px 52px rgba(0, 0, 0, 0.44),
+        0 0 34px rgba(255, 216, 74, 0.1);
+    }
+
+    .package-marker {
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      font-size: 1.45rem;
+      border: 1px solid rgba(255, 216, 74, 0.2);
+      background: rgba(255, 216, 74, 0.08);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    }
+
+    .pvm-marker {
+      border-color: rgba(233, 237, 240, 0.3);
+      background: rgba(233, 237, 240, 0.1);
+    }
+
+    .no-results {
+      padding: 34px;
+      text-align: center;
+      background:
+        linear-gradient(180deg, rgba(36, 31, 19, 0.88), rgba(16, 14, 9, 0.95));
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .no-results h2 {
+      margin-top: 0;
+    }
+
+    .no-results p {
+      color: var(--muted);
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 980px) {
+      .plugin-controls {
+        grid-template-columns: 1fr;
+      }
+
+      .plugin-result-meta {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
 </BaseLayout>
