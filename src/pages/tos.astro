@@ -2,8 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+import {
+  discordUrl,
+  routes,
+  withBasePath
+} from '../config/site';
 
-const discordUrl = 'https://discord.gg/Fa4BdBvg2c/';
+const base = import.meta.env.BASE_URL;
+const privacyUrl = withBasePath(base, routes.privacy);
+const contactEmail = 'Elliott@ElPlugins.com';
 ---
 
 <BaseLayout
@@ -17,8 +24,9 @@ const discordUrl = 'https://discord.gg/Fa4BdBvg2c/';
       <p class="eyebrow">Legal</p>
       <h1>Terms of Service</h1>
       <p>
-        Last reviewed on 28 July 2026. These terms apply to El Plugins, the launcher,
-        plugins, Discord support and related services.
+        Effective 7 July 2026. Last reviewed 7 July 2026. These terms apply to
+        ElPlugins, the launcher, plugins, Discord support, purchases and related
+        services.
       </p>
 
       <div class="page-actions">
@@ -31,34 +39,35 @@ const discordUrl = 'https://discord.gg/Fa4BdBvg2c/';
         <h2>Agreement to Our Legal Terms</h2>
 
         <p>
-          We are El Plugins, also referred to as “Company”, “we”, “us”, or “our”.
-          We operate the Discord server and any other related products and services
-          that refer or link to these legal terms.
+          We are ElPlugins, a trading name also referred to as "we", "us" or
+          "our". We operate the ElPlugins website, Discord server, launcher,
+          plugins, support channels, store listings and related services that
+          refer or link to these terms.
         </p>
 
         <p>
-          We provide a service where users purchase our plugins and use them on an
-          online game. The service includes a launcher as well as plugins. You can
-          contact us by using our Discord server ticket system.
+          You can contact us through the Discord ticket system or by email at
+          {' '}
+          <a href={`mailto:${contactEmail}`}>{contactEmail}</a>. Discord tickets
+          are the official support channel and the starting point for informal
+          dispute notices.
         </p>
 
         <p>
-          These Legal Terms constitute a legally binding agreement made between you,
-          whether personally or on behalf of an entity, and El Plugins, concerning
-          your access to and use of the Services. By accessing the Services, you agree
-          that you have read, understood, and agreed to be bound by all of these Legal
-          Terms.
+          These terms form a legally binding agreement between you and
+          ElPlugins. By accessing, buying or using the services, you confirm
+          that you have read, understood and agreed to these terms.
         </p>
 
         <p>
-          If you do not agree with all of these Legal Terms, then you are expressly
-          prohibited from using the Services and must discontinue use immediately.
+          If you do not agree to these terms, you must not purchase, access or
+          use the services.
         </p>
 
         <p>
-          The Services are intended for users who are at least 13 years of age. Minors
-          in their jurisdiction must have permission from, and be directly supervised
-          by, their parent or guardian to use the Services.
+          The services are intended for users who are at least 13 years old.
+          Minors must have permission from, and be supervised by, a parent or
+          guardian.
         </p>
       </article>
 
@@ -66,14 +75,16 @@ const discordUrl = 'https://discord.gg/Fa4BdBvg2c/';
         <h2>1. Our Services</h2>
 
         <p>
-          The information provided when using the Services is not intended for
-          distribution to or use by any person or entity in any jurisdiction or country
-          where such distribution or use would be contrary to law or regulation.
+          ElPlugins provides plugin access, launcher access, Discord support and
+          related digital services. The services may depend on third-party
+          platforms, game clients, operating systems, payment processors,
+          hosting providers and Discord.
         </p>
 
         <p>
-          Users who access the Services from other locations do so on their own
-          initiative and are solely responsible for compliance with local laws.
+          You are responsible for making sure your use of the services is lawful
+          in your location and consistent with any third-party rules that apply
+          to you.
         </p>
       </article>
 
@@ -81,374 +92,367 @@ const discordUrl = 'https://discord.gg/Fa4BdBvg2c/';
         <h2>2. Intellectual Property Rights</h2>
 
         <p>
-          We are the owner or licensee of all intellectual property rights in our
-          Services, including source code, databases, functionality, software, website
-          designs, text, photographs, graphics, trademarks, service marks and logos.
+          We own or license the intellectual property rights in the services,
+          including source code, software, launcher functionality, plugins,
+          website content, text, graphics, logos, designs, documentation and
+          related materials.
         </p>
 
         <p>
-          Our Content and Marks are protected by copyright, trademark and other
-          intellectual property laws. The Content and Marks are provided through the
-          Services for your personal, non-commercial use only.
+          Subject to your compliance with these terms, we grant you a limited,
+          personal, revocable, non-exclusive and non-transferable licence to
+          access and use the services you have properly purchased or otherwise
+          been granted access to.
         </p>
 
         <p>
-          Subject to your compliance with these Legal Terms, we grant you a
-          non-exclusive, non-transferable, revocable licence to access the Services and
-          download a copy of any portion of the Content to which you have properly
-          gained access, solely for your personal, non-commercial use.
-        </p>
-
-        <p>
-          No part of the Services, Content or Marks may be copied, reproduced,
-          aggregated, republished, uploaded, posted, publicly displayed, encoded,
-          translated, transmitted, distributed, sold, licensed or otherwise exploited
-          for any commercial purpose without our prior written permission.
+          You must not copy, sell, rent, share, sublicense, publish, distribute,
+          decompile, reverse engineer, modify, bypass protection for, or exploit
+          any part of the services except where we have expressly allowed it in
+          writing or applicable law prevents us from restricting it.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>3. User Representations</h2>
+        <h2>3. User Accounts and Representations</h2>
 
-        <p>By using the Services, you represent and warrant that:</p>
+        <p>By using the services, you represent and agree that:</p>
 
         <ul>
-          <li>Your registration information is true, accurate, current and complete.</li>
-          <li>You will maintain the accuracy of that information.</li>
-          <li>You have the legal capacity and agree to comply with these Legal Terms.</li>
-          <li>You are not under the age of 13.</li>
-          <li>If you are a minor, you have received parental permission to use the Services.</li>
-          <li>You will not access the Services through automated or non-human means.</li>
-          <li>You will not use the Services for any illegal or unauthorised purpose.</li>
-          <li>Your use of the Services will not violate any applicable law or regulation.</li>
+          <li>Your registration, Discord, purchase and support information is accurate and kept up to date.</li>
+          <li>You have legal capacity to agree to these terms.</li>
+          <li>You are at least 13 years old, and if you are a minor you have parent or guardian permission.</li>
+          <li>You will keep account, launcher, key and access information secure.</li>
+          <li>You will not use automated or non-human access methods unless we expressly allow them.</li>
+          <li>You will not use the services for illegal, abusive or unauthorised purposes.</li>
+          <li>Your use of the services will not violate applicable law or regulation.</li>
         </ul>
 
         <p>
-          If you provide information that is untrue, inaccurate, not current or
-          incomplete, we have the right to suspend or terminate your account and refuse
-          current or future use of the Services.
+          If information you provide is false, inaccurate, incomplete or
+          misleading, we may suspend, restrict or terminate access.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>4. User Registration</h2>
+        <h2>4. Purchases, Payments and Delivery</h2>
 
         <p>
-          You may be required to register to use the Services. You agree to keep your
-          password confidential and are responsible for all use of your account and
-          password.
+          We may accept payment through Stripe-supported methods, store checkout
+          methods, cryptocurrency and manually verified in-game currency such as
+          Old School RuneScape Gold Pieces. Available payment methods may change
+          at any time.
         </p>
 
         <p>
-          We reserve the right to remove, reclaim or change a username you select if we
-          determine that such username is inappropriate, obscene or otherwise
-          objectionable.
+          You must provide current, complete and accurate purchase information.
+          Prices, packages, availability and accepted currencies may change at
+          any time. Taxes, fees or currency conversion costs may apply depending
+          on your payment method and location.
+        </p>
+
+        <p>
+          A purchase is treated as delivered when the relevant Discord role,
+          launcher access, key, subscription, plugin access or other access
+          entitlement has been provided.
+        </p>
+
+        <p>
+          Subscriptions and package access are fixed-term access periods unless
+          we clearly state otherwise. They do not automatically renew. You are
+          responsible for renewing access manually before or after expiry.
+        </p>
+
+        <p>
+          Sales are final once access has been delivered. Refunds are not
+          provided except where required by law, where a duplicate charge is
+          confirmed, or where a proven payment processing error occurred.
+        </p>
+
+        <p>
+          Cryptocurrency payments are processed after sufficient network
+          confirmation. Cryptocurrency values and fees may fluctuate, and we do
+          not promise cryptocurrency refunds. In-game currency payments are
+          manually verified and are final once accepted. You are responsible for
+          any risk connected with using in-game currency, including third-party
+          game rules or enforcement.
+        </p>
+
+        <p>
+          We may refuse, cancel, correct or limit any order where there is a
+          pricing error, stock or access issue, suspected fraud, abuse, payment
+          dispute, technical problem or breach of these terms.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>5. Purchases and Payment</h2>
+        <h2>5. Software Licence and HWID Rules</h2>
 
-        <p>We accept the following forms of payment:</p>
+        <p>
+          The launcher, plugins and related software are licensed, not sold. You
+          receive a personal, limited, revocable, non-transferable licence to use
+          them only for your own access during the relevant active access period.
+        </p>
+
+        <p>
+          You must not share, resell, rent, leak, transfer or make available any
+          key, plugin, launcher file, account access, Discord role, media,
+          configuration or other access entitlement. Access is linked to your
+          Discord account and may also be linked to hardware identifiers.
+        </p>
+
+        <p>
+          One HWID means one device, including a PC, laptop or server. Activating
+          a plugin binds it to that device for 30 days, and each later use resets
+          the 30-day timer. You may run unlimited plugin instances on an allowed
+          HWID, but plugins remain for personal use only.
+        </p>
+
+        <p>
+          To remove a HWID, you must either wait 30 days without activating the
+          plugin or pay a $5 reset fee, payable in accepted in-game currency or
+          cryptocurrency, for an immediate reset. HWIDs are linked to your
+          Discord account. Creating a new account may avoid a reset fee, but it
+          does not allow you to avoid enforcement, payment or abuse checks.
+        </p>
+
+        <p>
+          Hardware changes, including CPU or motherboard changes, can change
+          your HWID. If that happens, you must wait 30 days or pay the $5 reset
+          fee before using the plugin on the changed HWID.
+        </p>
+
+        <p>Unless a product page or support notice says otherwise, HWID limits are:</p>
 
         <ul>
-          <li>Stripe payments, including cards, wallets, bank redirects, buy now pay later and bank debits.</li>
-          <li>In-game currency, including Old School RuneScape Gold Pieces.</li>
-          <li>Cryptocurrency, including Bitcoin, Litecoin and Ethereum.</li>
+          <li>Package access for 30, 60, 90 days or lifetime: 2 HWIDs.</li>
+          <li>PVM access for 30, 60, 90 days or lifetime: 1 HWID.</li>
+          <li>Package and PVM combined access for 30, 60 or 90 days: 1 HWID.</li>
         </ul>
 
         <p>
-          You agree to provide current, complete and accurate purchase and account
-          information for all purchases made via the Services.
-        </p>
-
-        <p>
-          Sales tax may be added where required. Prices may change at any time. Payments
-          shall be in US dollars or, alternatively, in game currency specified within
-          the Discord server.
-        </p>
-
-        <p>
-          We reserve the right to correct errors or mistakes in pricing, even if payment
-          has already been requested or received. We reserve the right to refuse any
-          order placed through the Services.
+          Updates may be required to continue using the services. We do not
+          guarantee compatibility with every game version, game client, launcher,
+          operating system, device, hardware setup, third-party service or future
+          update.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>6. Software</h2>
+        <h2>6. Prohibited Activities</h2>
 
-        <p>
-          We may include software for use in connection with our Services. If such
-          software is accompanied by an end user licence agreement, the EULA governs
-          your use of the software.
-        </p>
-
-        <p>
-          If no EULA is provided, we grant you a non-exclusive, revocable, personal and
-          non-transferable licence to use the software solely in connection with our
-          Services and in accordance with these Legal Terms.
-        </p>
-
-        <p>
-          Software and related documentation are provided “AS IS” without warranty of
-          any kind. You accept all risk arising out of use or performance of any
-          software.
-        </p>
-      </article>
-
-      <article class="tos-card">
-        <h2>7. Prohibited Activities</h2>
-
-        <p>
-          You may not access or use the Services for any purpose other than that for
-          which we make the Services available. You agree not to:
-        </p>
+        <p>You agree not to:</p>
 
         <ul>
-          <li>Systematically retrieve data or content without written permission.</li>
-          <li>Trick, defraud or mislead us or other users.</li>
-          <li>Circumvent or interfere with security-related features.</li>
-          <li>Use information from the Services to harass, abuse or harm another person.</li>
-          <li>Submit false reports of abuse or misconduct.</li>
-          <li>Use the Services in a way inconsistent with applicable laws or regulations.</li>
-          <li>Upload viruses, Trojan horses, spam or disruptive material.</li>
-          <li>Use automated scripts, bots, scrapers or data extraction tools.</li>
-          <li>Attempt to impersonate another user or person.</li>
-          <li>Interfere with, disrupt or create an undue burden on the Services.</li>
-          <li>Harass, annoy, intimidate or threaten employees or agents.</li>
-          <li>Copy, adapt, decipher, decompile, disassemble or reverse engineer software.</li>
-          <li>Use the Services to compete with us or for unauthorised commercial activity.</li>
-          <li>Share keys with other members.</li>
-          <li>Charge back without speaking to customer services.</li>
-          <li>Advertise personally within the platform.</li>
-          <li>Swap subscriptions for other packages or transfer them to another Discord.</li>
-          <li>Affiliate with cracking, hacking Discords, websites, groups or similar services.</li>
+          <li>Share, sell, transfer, leak or resell keys, plugins, subscriptions, files, Discord access or launcher access.</li>
+          <li>Copy, adapt, decompile, disassemble, decipher, bypass, tamper with or reverse engineer software or protection systems.</li>
+          <li>Use bots, scripts, scrapers, automated tools or data extraction tools against the services unless approved.</li>
+          <li>Interfere with security features, access controls, payment checks, HWID checks or abuse-prevention systems.</li>
+          <li>Submit false, misleading, abusive or bad-faith reports, disputes, support requests or payment claims.</li>
+          <li>Open chargebacks or payment disputes without first trying to resolve the issue through Discord ticket support.</li>
+          <li>Advertise personal services, competing services or unauthorised commercial activity through our platform.</li>
+          <li>Affiliate with cracking, hacking, leaking, account-sharing, key-sharing or similar communities or services.</li>
+          <li>Harass, threaten, abuse, impersonate or mislead staff, customers or other users.</li>
+          <li>Upload malware, spam, disruptive content or material that creates an undue burden on the services.</li>
+          <li>Use the services in a way that violates law, regulation, third-party rights or these terms.</li>
         </ul>
 
         <p>
-          Errors can be corrected within 24 hours of purchase. We can revoke access at
-          any time at our discretion, including for sharing keys or plugins, leaking
-          videos or pictures, or otherwise breaching these terms.
-        </p>
-
-        <p>
-          Usage of the plugins is at your own risk. We make no guarantee of any
-          detectability status. If you get banned from the game, or removed from our
-          service, you are not entitled to a refund.
+          Depending on the severity, evidence and risk, we may warn, suspend,
+          restrict, revoke or terminate access. Serious or repeated breaches may
+          result in immediate removal without refund.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>8. User Generated Contributions</h2>
+        <h2>7. Contributions and Reviews</h2>
 
         <p>
-          The Services may invite you to chat, contribute to or participate in forums or
-          other functionality where you may create, submit, post, display, transmit or
-          publish content.
+          The services may let you submit messages, reviews, feedback, support
+          content, screenshots, suggestions or other materials. You remain
+          responsible for what you submit and must have the rights needed to
+          submit it.
         </p>
 
         <p>
-          Contributions may be viewable by other users and through third-party websites.
-          Contributions you transmit may be treated as non-confidential and
-          non-proprietary.
+          You grant us a limited, non-exclusive, worldwide, royalty-free licence
+          to host, store, display, reproduce, moderate, edit, remove and use your
+          contributions only as reasonably needed to operate, provide, protect,
+          support and improve the services.
         </p>
 
         <p>
-          By making Contributions, you represent that you have the necessary rights and
-          permissions, that your Contributions are not false, misleading, illegal,
-          abusive, discriminatory, threatening, obscene or otherwise objectionable, and
-          that they do not violate these Legal Terms.
-        </p>
-      </article>
-
-      <article class="tos-card">
-        <h2>9. Contribution Licence</h2>
-
-        <p>
-          By posting Contributions, you grant us an unrestricted, unlimited, irrevocable,
-          perpetual, non-exclusive, transferable, royalty-free, fully-paid, worldwide
-          right and licence to host, use, copy, reproduce, disclose, sell, resell,
-          publish, broadcast, archive, store, cache, perform, display, reformat,
-          translate, transmit, excerpt and distribute such Contributions.
-        </p>
-
-        <p>
-          We do not assert ownership over your Contributions. You retain ownership of
-          your Contributions and associated intellectual property rights. You are solely
-          responsible for your Contributions.
-        </p>
-
-        <p>
-          We may edit, redact, re-categorise, pre-screen or delete Contributions at any
-          time and for any reason without notice. We have no obligation to monitor
-          Contributions.
+          We do not claim ownership of your contributions. We may remove or
+          moderate contributions at any time, especially where they are false,
+          abusive, illegal, misleading, discriminatory, threatening, obscene,
+          spam, infringing or otherwise unsuitable.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>10. Guidelines for Reviews</h2>
+        <h2>8. Privacy</h2>
 
         <p>
-          When posting a review, you must have first-hand experience, avoid offensive or
-          abusive language, avoid discriminatory references, avoid references to illegal
-          activity, avoid false or misleading statements, and not organise campaigns to
-          encourage reviews.
-        </p>
-
-        <p>
-          We may accept, reject or remove reviews at our sole discretion. Reviews are
-          not endorsed by us and do not necessarily represent our opinions.
+          We handle personal information according to our
+          {' '}
+          <a href={privacyUrl}>Privacy Policy</a>. The Privacy Policy explains
+          what information we collect, how we use it, which third-party services
+          may process it, and how privacy requests can be made.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>11. Services Management</h2>
+        <h2>9. Support, Availability and Maintenance</h2>
 
         <p>
-          We reserve the right, but not the obligation, to monitor the Services for
-          violations, take appropriate legal action, restrict access, remove content, and
-          otherwise manage the Services to protect our rights and property and ensure
-          proper functioning.
+          Support is provided through Discord tickets on a reasonable-efforts
+          basis. We do not guarantee any specific response time, resolution time
+          or outcome.
+        </p>
+
+        <p>
+          The services may be unavailable, interrupted, delayed, limited or
+          changed because of maintenance, updates, outages, third-party services,
+          security work, payment issues, compatibility changes or operational
+          reasons.
+        </p>
+
+        <p>
+          We do not guarantee uptime or continuous compatibility. We may, at our
+          discretion, offer extensions or credits for significant downtime, but
+          these are not automatic and are not guaranteed.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>12. Term and Termination</h2>
+        <h2>10. Termination</h2>
 
         <p>
-          These Legal Terms remain in full force while you use the Services. We reserve
-          the right, in our sole discretion and without notice or liability, to deny
-          access to and use of the Services to any person for any reason or no reason.
+          These terms apply while you access or use the services. We may suspend,
+          restrict, revoke or terminate your access if you breach these terms,
+          create risk for ElPlugins or other users, abuse payment or support
+          processes, or where we need to protect the services.
         </p>
 
         <p>
-          We may terminate your use or participation in the Services or delete your
-          account and content at any time without warning, in our sole discretion.
-        </p>
-      </article>
-
-      <article class="tos-card">
-        <h2>13. Modifications and Interruptions</h2>
-
-        <p>
-          We reserve the right to change, modify or remove the contents of the Services
-          at any time or for any reason without notice. We have no obligation to update
-          any information on our Services.
-        </p>
-
-        <p>
-          We cannot guarantee the Services will be available at all times. Interruptions,
-          delays or errors may occur. We are not liable for any loss, damage or
-          inconvenience caused by your inability to access or use the Services.
+          Termination does not remove obligations that should reasonably survive,
+          including payment obligations, licence restrictions, intellectual
+          property protections, disclaimers, liability limits and dispute terms.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>14. Dispute Resolution</h2>
+        <h2>11. Changes and Corrections</h2>
 
         <p>
-          To expedite resolution and control the cost of any dispute related to these
-          Legal Terms, the parties agree to first attempt to negotiate any dispute
-          informally for at least 30 days before initiating arbitration.
+          We may update services, packages, prices, features, compatibility
+          details and these terms from time to time. We may correct errors,
+          inaccuracies or omissions, including descriptions, pricing,
+          availability and access information.
+        </p>
+
+        <p>
+          Updated terms take effect when posted unless we state a later date.
+          Continuing to use the services after changes are posted means you
+          accept the updated terms.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>15. Corrections</h2>
+        <h2>12. Disclaimers</h2>
 
         <p>
-          There may be information on the Services that contains typographical errors,
-          inaccuracies or omissions, including descriptions, pricing and availability.
-          We reserve the right to correct errors and update information at any time
-          without prior notice.
+          The services are provided on an as-is and as-available basis. To the
+          fullest extent permitted by law, we disclaim warranties and conditions
+          of any kind, whether express, implied or statutory, including implied
+          warranties of merchantability, fitness for a particular purpose,
+          non-infringement and uninterrupted availability.
+        </p>
+
+        <p>
+          You are responsible for your own use of the services, your device,
+          accounts, third-party platform obligations and any third-party
+          consequences connected with your use.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>16. Disclaimer</h2>
+        <h2>13. Limitation of Liability</h2>
 
         <p>
-          The Services are provided on an as-is and as-available basis. You agree that
-          your use of the Services is at your sole risk.
+          To the fullest extent permitted by law, ElPlugins will not be liable
+          for indirect, incidental, special, consequential, exemplary or punitive
+          losses, or for loss of profit, revenue, data, goodwill, access,
+          opportunity or business.
         </p>
 
         <p>
-          To the fullest extent permitted by law, we disclaim all warranties, express or
-          implied, in connection with the Services and your use thereof, including
-          implied warranties of merchantability, fitness for a particular purpose and
-          non-infringement.
-        </p>
-      </article>
-
-      <article class="tos-card">
-        <h2>17. Limitations of Liability</h2>
-
-        <p>
-          In no event will we or our directors, employees or agents be liable to you or
-          any third party for direct, indirect, consequential, exemplary, incidental,
-          special or punitive damages, including lost profit, lost revenue, loss of data
-          or other damages arising from your use of the Services.
+          To the fullest extent permitted by law, our total liability for any
+          claim connected with the services is limited to the amount you paid to
+          ElPlugins for the affected service in the 30 days before the claim
+          arose.
         </p>
 
         <p>
-          Our liability to you for any cause whatsoever will at all times be limited to
-          the amount paid, if any, by you to us.
+          Nothing in these terms limits liability where it would be unlawful to
+          do so.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>18. User Data</h2>
+        <h2>14. Disputes, Governing Law and Courts</h2>
 
         <p>
-          We may maintain certain data that you transmit to the Services for the purpose
-          of managing performance. Although we perform routine backups, you are solely
-          responsible for all data you transmit or that relates to your activity using
-          the Services.
+          Before starting formal proceedings, you and ElPlugins agree to try to
+          resolve disputes informally for at least 30 days through the Discord
+          ticket system, unless urgent legal action is required.
+        </p>
+
+        <p>
+          These terms and any dispute or claim connected with them, their subject
+          matter or formation are governed by the laws of England and Wales.
+        </p>
+
+        <p>
+          The courts of England and Wales will have exclusive jurisdiction over
+          disputes connected with these terms or the services, except where
+          applicable consumer law gives you mandatory rights in another court.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>19. Electronic Communications, Transactions and Signatures</h2>
+        <h2>15. Miscellaneous</h2>
 
         <p>
-          Visiting the Services, sending emails and completing online forms constitute
-          electronic communications. You consent to receive electronic communications
-          and agree that electronic notices, agreements and disclosures satisfy legal
-          requirements that communications be in writing.
+          These terms, together with any policies or product rules we post,
+          represent the agreement between you and ElPlugins for the services.
+          Our failure to enforce a term does not waive our right to enforce it
+          later.
+        </p>
+
+        <p>
+          If any part of these terms is found invalid or unenforceable, the rest
+          remains in effect. You may not transfer your rights or obligations
+          under these terms without our written permission.
         </p>
       </article>
 
       <article class="tos-card">
-        <h2>20. Miscellaneous</h2>
+        <h2>16. Contact Us</h2>
 
         <p>
-          These Legal Terms and any policies or operating rules posted by us constitute
-          the entire agreement between you and us. Our failure to exercise or enforce
-          any right or provision does not operate as a waiver.
+          For support or complaints, open a Discord ticket:
+          {' '}
+          <a href={discordUrl}>{discordUrl}</a>.
         </p>
 
         <p>
-          If any provision is determined to be unlawful, void or unenforceable, that
-          provision is deemed severable and does not affect the validity of remaining
-          provisions.
-        </p>
-      </article>
-
-      <article class="tos-card">
-        <h2>21. Contact Us</h2>
-
-        <p>
-          To resolve a complaint regarding the Services or to receive further
-          information regarding use of the Services, please contact us using the
-          ticketing system on Discord.
+          For legal or contact purposes, email
+          {' '}
+          <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
         </p>
 
-        <p>
-          <a href={discordUrl}>https://discord.gg/Fa4BdBvg2c/</a>
-        </p>
-
-        <p>El Plugins</p>
+        <p>ElPlugins</p>
       </article>
     </section>
   </main>

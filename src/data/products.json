@@ -16,8 +16,7 @@
       "Skilling Plugins",
       "Minigame Plugins",
       "Utility Plugins"
-    ],
-    "webstoreUrl": "https://store.elplugins.com"
+    ]
   },
   {
     "name": "PVM Plugins",
@@ -40,8 +39,7 @@
       "Scurrius",
       "Tormented Demons",
       "Fight Caves"
-    ],
-    "webstoreUrl": "https://store.elplugins.com"
+    ]
   },
   {
     "name": "Plugin & PVM Package",
@@ -60,7 +58,6 @@
       "All Minigame Plugins",
       "All Utility Plugins",
       "All PVM Plugins"
-    ],
-    "webstoreUrl": "https://store.elplugins.com"
+    ]
   }
 ]

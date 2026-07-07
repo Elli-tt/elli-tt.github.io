@@ -332,6 +332,8 @@ footer {
 .splash-button {
   min-height: 178px;
   padding: 28px;
+  font: inherit;
+  cursor: pointer;
   border-radius: 34px;
   overflow: hidden;
   position: relative;
@@ -339,6 +341,20 @@ footer {
   text-align: left;
   justify-content: flex-start;
   gap: 20px;
+}
+
+.splash-button:disabled,
+.splash-button-disabled {
+  cursor: not-allowed;
+}
+
+.splash-button-disabled:hover {
+  transform: none;
+  filter: none;
+}
+
+.splash-button-disabled:hover::before {
+  opacity: 0;
 }
 
 .splash-button::before {

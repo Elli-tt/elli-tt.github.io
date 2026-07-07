@@ -1,0 +1,302 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { discordUrl } from '../config/site';
+
+const contactEmail = 'Elliott@ElPlugins.com';
+---
+
+<BaseLayout
+  title="Privacy Policy - ElPlugins"
+  description="ElPlugins Privacy Policy."
+>
+  <Navbar />
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Legal</p>
+      <h1>Privacy Policy</h1>
+      <p>
+        Effective 7 July 2026. Last reviewed 7 July 2026. This policy explains
+        how ElPlugins handles information connected with the website, launcher,
+        plugins, Discord support, purchases and related services.
+      </p>
+
+      <div class="page-actions">
+        <a class="button discord-button" href={discordUrl}>Contact Us on Discord</a>
+      </div>
+    </section>
+
+    <section class="tos-page">
+      <article class="tos-card">
+        <h2>1. Who We Are</h2>
+
+        <p>
+          ElPlugins is a trading name that provides plugin access, launcher
+          access, Discord support, purchase handling and related digital
+          services.
+        </p>
+
+        <p>
+          Discord tickets are the official channel for privacy requests. You can
+          also contact us for legal or general contact purposes at
+          {' '}
+          <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+        </p>
+      </article>
+
+      <article class="tos-card">
+        <h2>2. Information We Collect</h2>
+
+        <p>We may collect and process the following information:</p>
+
+        <ul>
+          <li>Discord identity, username, user ID, server roles and ticket history.</li>
+          <li>Purchase records, access status, package history, payment references and transaction metadata.</li>
+          <li>Support messages, screenshots, attachments, logs or other information you provide in tickets.</li>
+          <li>Launcher, account, key, subscription and plugin access identifiers.</li>
+          <li>HWID and device identifiers used to manage licensing, access limits, resets and abuse prevention.</li>
+          <li>Email address if you provide one for contact, purchase, support or legal purposes.</li>
+          <li>Basic technical records such as hosting, security or server logs needed to operate and protect the services.</li>
+        </ul>
+      </article>
+
+      <article class="tos-card">
+        <h2>3. How We Use Information</h2>
+
+        <p>We use information to:</p>
+
+        <ul>
+          <li>Provide, verify and manage purchases, roles, subscriptions, keys, launcher access and plugin access.</li>
+          <li>Operate HWID limits, device binding, resets, abuse checks and fraud prevention.</li>
+          <li>Answer support tickets, investigate issues and manage complaints or disputes.</li>
+          <li>Maintain, secure, troubleshoot and improve the services.</li>
+          <li>Enforce our Terms of Service and protect ElPlugins, customers and staff.</li>
+          <li>Keep records for legal, tax, accounting, chargeback, fraud prevention and dispute purposes.</li>
+          <li>Comply with legal obligations or respond to valid requests from authorities where required.</li>
+        </ul>
+      </article>
+
+      <article class="tos-card">
+        <h2>4. Payments and Third-Party Services</h2>
+
+        <p>
+          Payments and service delivery may involve third-party providers,
+          including Discord, Stripe or other payment providers, store providers,
+          hosting providers and cryptocurrency networks. These services may
+          process information under their own privacy terms.
+        </p>
+
+        <p>
+          We do not intentionally collect full card numbers or full bank details
+          through our own website. Payment providers process those details where
+          required for the payment method you choose.
+        </p>
+
+        <p>
+          Cryptocurrency transactions may be recorded on public blockchain
+          networks. In-game currency payments may require manual verification
+          through support or store processes.
+        </p>
+      </article>
+
+      <article class="tos-card">
+        <h2>5. Analytics, Cookies and Logs</h2>
+
+        <p>
+          We do not intentionally use analytics cookies or tracking for the
+          website. Essential hosting, security and server logs may still be
+          created automatically when you visit the site or use related services.
+        </p>
+
+        <p>
+          Third-party services, including Discord, payment providers and store
+          providers, may use their own cookies, logs or tracking technologies
+          according to their own policies.
+        </p>
+      </article>
+
+      <article class="tos-card">
+        <h2>6. Sharing Information</h2>
+
+        <p>
+          We may share information where needed with service providers that help
+          us operate the services, including payment processors, Discord, store
+          providers, hosting providers, support tools and security providers.
+        </p>
+
+        <p>
+          We may also share information where required to enforce our terms,
+          prevent fraud or abuse, resolve payment disputes, comply with law, or
+          protect ElPlugins, customers, staff or third parties.
+        </p>
+
+        <p>
+          We do not sell your personal information.
+        </p>
+      </article>
+
+      <article class="tos-card">
+        <h2>7. Retention</h2>
+
+        <p>
+          We keep information only as long as reasonably needed for access,
+          support, records, fraud prevention, legal, tax, accounting, security
+          and dispute purposes.
+        </p>
+
+        <p>
+          Some information may need to be retained after access ends, including
+          purchase records, payment references, enforcement records, support
+          history and records needed for disputes, chargebacks, fraud prevention
+          or legal compliance.
+        </p>
+      </article>
+
+      <article class="tos-card">
+        <h2>8. Security</h2>
+
+        <p>
+          We use reasonable measures intended to protect information connected
+          with the services. No online service, storage system or transmission
+          method can be guaranteed completely secure.
+        </p>
+
+        <p>
+          You are responsible for keeping your Discord account, email account,
+          device, launcher access and any keys or credentials secure.
+        </p>
+      </article>
+
+      <article class="tos-card">
+        <h2>9. Your Choices and Requests</h2>
+
+        <p>
+          You may request access, correction or deletion of personal information
+          by opening a Discord ticket. We may need to verify your identity and
+          may refuse or limit a request where we need to keep information for
+          legal, payment, fraud prevention, security, access-record or dispute
+          purposes.
+        </p>
+
+        <p>
+          If you ask us to delete information needed to provide access, support,
+          licensing or abuse prevention, you may lose access to some or all
+          services.
+        </p>
+      </article>
+
+      <article class="tos-card">
+        <h2>10. Children and Minors</h2>
+
+        <p>
+          The services are intended for users who are at least 13 years old.
+          Minors must have permission from, and be supervised by, a parent or
+          guardian.
+        </p>
+
+        <p>
+          If you believe a child has provided information in breach of this
+          policy or our Terms of Service, open a Discord ticket so we can review
+          the issue.
+        </p>
+      </article>
+
+      <article class="tos-card">
+        <h2>11. International Use</h2>
+
+        <p>
+          The services and third-party providers may process information in
+          different countries. By using the services, you understand that
+          information may be transferred, stored or processed outside your
+          location where our providers or systems operate.
+        </p>
+      </article>
+
+      <article class="tos-card">
+        <h2>12. Changes to This Policy</h2>
+
+        <p>
+          We may update this Privacy Policy from time to time. Updated versions
+          take effect when posted unless we state a later date. Continuing to use
+          the services after changes are posted means you accept the updated
+          policy.
+        </p>
+      </article>
+
+      <article class="tos-card">
+        <h2>13. Contact Us</h2>
+
+        <p>
+          For privacy requests, open a Discord ticket:
+          {' '}
+          <a href={discordUrl}>{discordUrl}</a>.
+        </p>
+
+        <p>
+          For legal or contact purposes, email
+          {' '}
+          <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+        </p>
+
+        <p>ElPlugins</p>
+      </article>
+    </section>
+  </main>
+
+  <Footer />
+
+  <style>
+    .tos-page {
+      padding: 70px 6vw 90px;
+      display: grid;
+      gap: 20px;
+      max-width: 1160px;
+    }
+
+    .tos-card {
+      padding: 30px;
+      background:
+        radial-gradient(circle at top right, rgba(255, 216, 74, 0.09), transparent 18rem),
+        linear-gradient(180deg, rgba(36, 31, 19, 0.88), rgba(16, 14, 9, 0.95));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .tos-card h2 {
+      margin-top: 0;
+      font-size: clamp(1.45rem, 2.4vw, 2.1rem);
+    }
+
+    .tos-card p,
+    .tos-card li {
+      color: var(--muted);
+      line-height: 1.72;
+    }
+
+    .tos-card a {
+      color: var(--gold-bright);
+      font-weight: 900;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .tos-card ul {
+      margin: 16px 0 0;
+      padding-left: 20px;
+    }
+
+    @media (max-width: 760px) {
+      .tos-page {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .tos-card {
+        padding: 24px;
+      }
+    }
+  </style>
+</BaseLayout>

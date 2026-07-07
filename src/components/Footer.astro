@@ -1,18 +1,16 @@
 ---
+import {
+  discordUrl,
+  navItems,
+  webstoreUrl,
+  withBasePath
+} from '../config/site';
+
 const {
   hideLinks = false
 } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
-
-const splashUrl = base;
-const homeUrl = `${base}home/`;
-const pluginsUrl = `${base}plugins/`;
-const faqUrl = `${base}faq/`;
-const tosUrl = `${base}tos/`;
-
-const webstoreUrl = 'https://store.elplugins.com';
-const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
 ---
 
 <footer class="footer">
@@ -24,15 +22,13 @@ const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
   </div>
 
   {!hideLinks && (
-  <div class="footer-links">
-    <a href={splashUrl}>Splash</a>
-    <a href={homeUrl}>Home</a>
-    <a href={pluginsUrl}>Plugins</a>
-    <a href={faqUrl}>FAQ</a>
-    <a href={tosUrl}>ToS</a>
-    <a href={webstoreUrl}>Purchase Plugins</a>
-    <a href={discordUrl}>Join Discord</a>
-  </div>
+    <div class="footer-links">
+      {navItems.map((item) => (
+        <a href={withBasePath(base, item.route)}>{item.label}</a>
+      ))}
+      <a href={webstoreUrl}>Purchase Plugins</a>
+      <a href={discordUrl}>Join Discord</a>
+    </div>
   )}
 
   <p class="copyright">© 2026 ElPlugins - ElPlugins.com</p>

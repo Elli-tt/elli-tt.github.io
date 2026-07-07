@@ -2,13 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+import { changelogUrl, discordUrl, routes, webstoreUrl, withBasePath } from '../config/site';
 import products from '../data/products.json';
 
 const base = import.meta.env.BASE_URL;
-
-const webstoreUrl = 'https://store.elplugins.com';
-const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
-const changelogUrl = 'https://discord.com/channels/764897214388240427/1080789983499145316';
 
 const featureBlocks = [
   {
@@ -79,7 +76,7 @@ const featureBlocks = [
       <div class="page-actions">
         <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
         <a class="button discord-button" href={discordUrl}>Join Discord</a>
-        <a class="button secondary" href={`${base}plugins/`}>View Plugins</a>
+        <a class="button secondary" href={withBasePath(base, routes.plugins)}>View Plugins</a>
       </div>
     </section>
 
@@ -118,7 +115,7 @@ const featureBlocks = [
             </ul>
 
             <div class="card-actions aligned-card-actions">
-              <a class="card-button" href={product.webstoreUrl}>Purchase Plugins</a>
+              <a class="card-button" href={webstoreUrl}>Purchase Plugins</a>
               <a class="card-button muted" href={discordUrl}>Join Discord</a>
             </div>
           </article>
@@ -159,7 +156,7 @@ const featureBlocks = [
       <div class="cta-actions">
         <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
         <a class="button discord-button" href={discordUrl}>Join Discord</a>
-        <a class="button secondary" href={`${base}plugins/`}>View Plugins</a>
+        <a class="button secondary" href={withBasePath(base, routes.plugins)}>View Plugins</a>
       </div>
     </section>
   </main>
