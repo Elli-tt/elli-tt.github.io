@@ -1,15 +1,12 @@
 [
   {
     "name": "Plugin Package",
-    "badge": "🎁",
+    "badge": "",
     "category": "Combat, Skilling, Minigames & Utility",
-    "status": "Available",
+    "status": "Catalogue",
     "description": "Includes a variety of Combat, Skilling, Minigames and Utility plugins.",
     "prices": [
-      "30 Days - $15",
-      "60 Days - $28.50",
-      "90 Days - $40.50",
-      "Lifetime - $200 (Crypto/GP only)"
+      "Contact support for availability"
     ],
     "features": [
       "Combat Plugins",
@@ -20,15 +17,12 @@
   },
   {
     "name": "PVM Plugins",
-    "badge": "⚔️",
+    "badge": "",
     "category": "PVM",
-    "status": "Available",
-    "description": "All included in the purchase of PVM Plugins.",
+    "status": "Catalogue",
+    "description": "Includes the listed PVM plugins.",
     "prices": [
-      "30 Days - $20",
-      "60 Days - $38",
-      "90 Days - $54",
-      "Lifetime - $265 (Crypto/GP only)"
+      "Contact support for availability"
     ],
     "features": [
       "Bosshelper",
@@ -43,14 +37,12 @@
   },
   {
     "name": "Plugin & PVM Package",
-    "badge": "💎",
+    "badge": "",
     "category": "Bundle",
-    "status": "Available",
-    "description": "Get access to both the Plugin Package and PVM Plugins.",
+    "status": "Catalogue",
+    "description": "Includes the Plugin Package and PVM Plugins.",
     "prices": [
-      "30 Days - $30",
-      "60 Days - $57",
-      "90 Days - $81"
+      "Contact support for availability"
     ],
     "features": [
       "All Combat Plugins",

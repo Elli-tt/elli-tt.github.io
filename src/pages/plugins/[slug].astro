@@ -61,8 +61,8 @@ const { plugin } = Astro.props;
           </div>
 
           <div class="page-actions">
-            <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
-            <a class="button discord-button" href={discordUrl}>Join Discord</a>
+            <a class="button primary" href={webstoreUrl}>View Catalogue</a>
+            <a class="button discord-button" href={discordUrl}>Contact Support</a>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@ const { plugin } = Astro.props;
         <h2>{plugin.packageLabel}</h2>
         <p>
           This plugin is included in the {plugin.packageLabel}. For package questions,
-          purchase help, Crypto/GP payments or setup support, join Discord.
+          catalogue help, payment questions or setup support, join support.
         </p>
       </article>
     </section>
@@ -94,7 +94,7 @@ const { plugin } = Astro.props;
     .back-link {
       display: inline-flex;
       margin-bottom: 28px;
-      color: var(--gold-bright);
+      color: var(--accent-bright);
       font-weight: 950;
     }
 

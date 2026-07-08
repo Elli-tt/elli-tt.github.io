@@ -10,9 +10,9 @@
   --text: #fff8d9;
   --muted: #c7b98e;
 
-  --gold: #ffd84a;
-  --gold-bright: #fff176;
-  --gold-deep: #b66c00;
+  --accent: #ffd84a;
+  --accent-bright: #fff176;
+  --accent-deep: #b66c00;
 
   --silver: #e9edf0;
   --silver-dark: #747a7c;
@@ -28,7 +28,7 @@
   --border-strong: rgba(255, 216, 74, 0.58);
 
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.62);
-  --gold-glow: 0 0 52px rgba(255, 216, 74, 0.22);
+  --accent-glow: 0 0 52px rgba(255, 216, 74, 0.22);
   --green-glow: 0 0 52px rgba(25, 255, 98, 0.16);
   --radius: 28px;
 }
@@ -150,7 +150,7 @@ footer {
 }
 
 .nav-links a:hover {
-  color: var(--gold-bright);
+  color: var(--accent-bright);
 }
 
 .nav-actions {
@@ -222,7 +222,7 @@ footer {
   color: #1b1100;
   background:
     radial-gradient(circle at top, rgba(255, 255, 255, 0.44), transparent 54%),
-    linear-gradient(180deg, var(--gold-bright), var(--gold));
+    linear-gradient(180deg, var(--accent-bright), var(--accent));
   box-shadow: 0 14px 40px rgba(255, 216, 74, 0.28);
 }
 
@@ -242,7 +242,7 @@ footer {
 .button.primary,
 .card-button {
   color: #1b1100;
-  background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+  background: linear-gradient(180deg, var(--accent-bright), var(--accent));
   box-shadow: 0 16px 44px rgba(255, 216, 74, 0.26);
 }
 
@@ -260,7 +260,7 @@ footer {
 }
 
 .button.ghost {
-  color: var(--gold-bright);
+  color: var(--accent-bright);
   background: rgba(255, 216, 74, 0.08);
 }
 
@@ -304,7 +304,7 @@ footer {
 
 .eyebrow {
   margin: 0;
-  color: var(--gold-bright);
+  color: var(--accent-bright);
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.78rem;
@@ -600,7 +600,7 @@ h3 {
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 18px;
-  color: var(--gold-bright);
+  color: var(--accent-bright);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.75rem;
@@ -719,7 +719,7 @@ h3 {
 }
 
 .catalogue-heading span {
-  color: var(--gold-bright);
+  color: var(--accent-bright);
   font-weight: 900;
   white-space: nowrap;
 }
@@ -829,7 +829,7 @@ h3 {
 }
 
 .footer-links a:hover {
-  color: var(--gold-bright);
+  color: var(--accent-bright);
 }
 
 .copyright {

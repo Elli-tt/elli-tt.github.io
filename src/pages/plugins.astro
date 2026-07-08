@@ -26,8 +26,8 @@ const categories = getPluginCategories();
       </p>
 
       <div class="page-actions">
-        <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
-        <a class="button discord-button" href={discordUrl}>Join Discord</a>
+        <a class="button primary" href={webstoreUrl}>View Catalogue</a>
+        <a class="button discord-button" href={discordUrl}>Contact Support</a>
       </div>
     </section>
 
@@ -129,15 +129,15 @@ const categories = getPluginCategories();
     <section class="section center plugin-help-section">
       <div class="section-heading plugin-help-heading">
         <p class="eyebrow">Need Help?</p>
-        <h2>Join Discord for package help</h2>
+        <h2>Contact Support for package help</h2>
         <p>
           Ask questions, check compatibility, and get help choosing the right package.
         </p>
       </div>
 
       <div class="bottom-cta">
-        <a class="button discord-button" href={discordUrl}>Join Discord</a>
-        <a class="button primary" href={webstoreUrl}>Purchase Plugins</a>
+        <a class="button discord-button" href={discordUrl}>Contact Support</a>
+        <a class="button primary" href={webstoreUrl}>View Catalogue</a>
       </div>
     </section>
   </main>
@@ -249,7 +249,7 @@ const categories = getPluginCategories();
     .plugin-controls label {
       display: grid;
       gap: 8px;
-      color: var(--gold-bright);
+      color: var(--accent-bright);
       font-size: 0.78rem;
       font-weight: 950;
       letter-spacing: 0.12em;
@@ -272,7 +272,7 @@ const categories = getPluginCategories();
 
     .plugin-controls input:focus,
     .plugin-controls select:focus {
-      border-color: var(--gold-bright);
+      border-color: var(--accent-bright);
       box-shadow: 0 0 0 4px rgba(255, 216, 74, 0.12);
     }
 
@@ -290,13 +290,13 @@ const categories = getPluginCategories();
     }
 
     .plugin-result-meta strong {
-      color: var(--gold-bright);
+      color: var(--accent-bright);
     }
 
     .plugin-result-meta button {
       cursor: pointer;
       color: #1b1100;
-      background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+      background: linear-gradient(180deg, var(--accent-bright), var(--accent));
       border: 1px solid var(--border-strong);
       border-radius: 999px;
       padding: 10px 16px;
@@ -325,11 +325,11 @@ const categories = getPluginCategories();
     }
 
     .selected-category-heading .eyebrow {
-      color: var(--gold-bright);
+      color: var(--accent-bright);
     }
 
     .selected-category-heading > span {
-      color: var(--gold-bright);
+      color: var(--accent-bright);
       font-weight: 900;
       white-space: nowrap;
     }

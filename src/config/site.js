@@ -1,11 +1,11 @@
 export const siteName = 'ElPlugins';
 export const siteUrl = 'https://elplugins.com';
-export const defaultDescription = 'ElPlugins - For all your Old School Plugin needs.';
+export const defaultDescription = 'ElPlugins - For all your plugin needs.';
 export const defaultImagePath = '/images/elpluginshdlogo.png';
 
-export const discordUrl = 'https://discord.com/invite/Fa4BdBvg2c';
-export const webstoreUrl = 'https://store.elplugins.com';
-export const changelogUrl = 'https://discord.com/channels/764897214388240427/1080789983499145316';
+export const discordUrl = 'mailto:Elliott@ElPlugins.com';
+export const webstoreUrl = `${siteUrl}/plugins/`;
+export const changelogUrl = 'mailto:Elliott@ElPlugins.com';
 
 export const routes = {
   splash: '',

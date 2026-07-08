@@ -5,18 +5,18 @@
     "description": "Combat related plugins included in the Plugin Package.",
     "plugins": [
       {
-        "name": "Auto Prayer",
+        "name": "Prayer Assist",
         "icon": "🙏",
-        "slug": "auto-prayer",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Prayer_icon.png",
-        "summary": "Automated prayer support plugin.",
-        "details": "Write your Auto Prayer details here."
+        "slug": "prayer-assist",
+        "image": "",
+        "summary": "Assisted prayer support plugin.",
+        "details": "Write your Prayer Assist details here."
       },
       {
         "name": "Bf Pumper",
         "icon": "💪",
         "slug": "bf-pumper",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Blast_Furnace.png",
+        "image": "",
         "summary": "Blast Furnace pumping support plugin.",
         "details": "Write your Bf Pumper details here."
       },
@@ -24,7 +24,7 @@
         "name": "Cannon Reloader",
         "icon": "💣",
         "slug": "cannon-reloader",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Dwarf_multicannon.png",
+        "image": "",
         "summary": "Cannon reloading support plugin.",
         "details": "Write your Cannon Reloader details here."
       },
@@ -32,7 +32,7 @@
         "name": "Combat",
         "icon": "⚔️",
         "slug": "combat",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Attack_icon.png",
+        "image": "",
         "summary": "General combat support plugin.",
         "details": "Write your Combat details here."
       },
@@ -40,7 +40,7 @@
         "name": "Eater",
         "icon": "🍖",
         "slug": "eater",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Shark.png",
+        "image": "",
         "summary": "Food eating support plugin.",
         "details": "Write your Eater details here."
       },
@@ -48,7 +48,7 @@
         "name": "Fighter",
         "icon": "🗡️",
         "slug": "fighter",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Strength_icon.png",
+        "image": "",
         "summary": "Fighting support plugin.",
         "details": "Write your Fighter details here."
       },
@@ -56,7 +56,7 @@
         "name": "Looter",
         "icon": "💰",
         "slug": "looter",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Coins_10000.png",
+        "image": "",
         "summary": "Looting support plugin.",
         "details": "Write your Looter details here."
       },
@@ -64,7 +64,7 @@
         "name": "Nightmare Zone",
         "icon": "🌙",
         "slug": "nightmare-zone",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Nightmare_Zone.png",
+        "image": "",
         "summary": "Nightmare Zone support plugin.",
         "details": "Write your Nightmare Zone details here."
       },
@@ -72,7 +72,7 @@
         "name": "Pot Drinker",
         "icon": "🧪",
         "slug": "pot-drinker",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Super_combat_potion(4).png",
+        "image": "",
         "summary": "Potion drinking support plugin.",
         "details": "Write your Pot Drinker details here."
       },
@@ -80,7 +80,7 @@
         "name": "Chaos Temple Prayer",
         "icon": "🙏",
         "slug": "chaos-temple-prayer",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Chaos_Temple_(hut).png",
+        "image": "",
         "summary": "Chaos Temple prayer support plugin.",
         "details": "Write your Chaos Temple Prayer details here."
       },
@@ -88,7 +88,7 @@
         "name": "Ranging Guild",
         "icon": "🏹",
         "slug": "ranging-guild",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Ranging_Guild.png",
+        "image": "",
         "summary": "Ranging Guild support plugin.",
         "details": "Write your Ranging Guild details here."
       },
@@ -96,7 +96,7 @@
         "name": "Reset Aggro",
         "icon": "🔁",
         "slug": "reset-aggro",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Sand_Crab.png",
+        "image": "",
         "summary": "Aggression reset support plugin.",
         "details": "Write your Reset Aggro details here."
       },
@@ -104,7 +104,7 @@
         "name": "Stun Alch Tele",
         "icon": "✨",
         "slug": "stun-alch-tele",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Magic_icon.png",
+        "image": "",
         "summary": "Magic training support plugin.",
         "details": "Write your Stun Alch Tele details here."
       },
@@ -112,7 +112,7 @@
         "name": "Warriors Guild",
         "icon": "🛡️",
         "slug": "warriors-guild",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Warriors'_guild_basement.png",
+        "image": "",
         "summary": "Warriors Guild support plugin.",
         "details": "Write your Warriors Guild details here."
       },
@@ -120,7 +120,7 @@
         "name": "Gemstone Crab",
         "icon": "🦀",
         "slug": "gemstone-crab",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Ammonite_Crab.png",
+        "image": "",
         "summary": "Crab combat support plugin.",
         "details": "Write your Gemstone Crab details here."
       }
@@ -135,15 +135,15 @@
         "name": "Abyss",
         "icon": "🌀",
         "slug": "abyss",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Abyss.png",
-        "summary": "Abyss runecrafting support plugin.",
+        "image": "",
+        "summary": "Abyss crafting support plugin.",
         "details": "Write your Abyss details here."
       },
       {
         "name": "Agility",
         "icon": "🏃",
         "slug": "agility",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Agility_icon.png",
+        "image": "",
         "summary": "Agility support plugin.",
         "details": "Write your Agility details here."
       },
@@ -151,7 +151,7 @@
         "name": "Amethyst",
         "icon": "💎",
         "slug": "amethyst",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Amethyst.png",
+        "image": "",
         "summary": "Amethyst mining support plugin.",
         "details": "Write your Amethyst details here."
       },
@@ -159,15 +159,15 @@
         "name": "Astrals",
         "icon": "🌙",
         "slug": "astrals",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Astral_rune.png",
-        "summary": "Astral rune support plugin.",
+        "image": "",
+        "summary": "Astral crafting support plugin.",
         "details": "Write your Astrals details here."
       },
       {
         "name": "Bankstander",
         "icon": "🏦",
         "slug": "bankstander",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Bank_booth_(Keldagrim).png",
+        "image": "",
         "summary": "Bankstanding support plugin.",
         "details": "Write your Bankstander details here."
       },
@@ -175,7 +175,7 @@
         "name": "Blast Furnace",
         "icon": "🔥",
         "slug": "blast-furnace",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Blast_Furnace.png",
+        "image": "",
         "summary": "Blast Furnace support plugin.",
         "details": "Write your Blast Furnace details here."
       },
@@ -183,15 +183,15 @@
         "name": "Bloods",
         "icon": "🩸",
         "slug": "bloods",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Blood_rune.png",
-        "summary": "Blood rune support plugin.",
+        "image": "",
+        "summary": "Blood crafting support plugin.",
         "details": "Write your Bloods details here."
       },
       {
         "name": "Chop Fletch",
         "icon": "🪓",
         "slug": "chop-fletch",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Fletching_icon.png",
+        "image": "",
         "summary": "Woodcutting and fletching support plugin.",
         "details": "Write your Chop Fletch details here."
       },
@@ -199,7 +199,7 @@
         "name": "Construction",
         "icon": "🏠",
         "slug": "construction",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Construction_icon.png",
+        "image": "",
         "summary": "Construction support plugin.",
         "details": "Write your Construction details here."
       },
@@ -207,15 +207,15 @@
         "name": "Cosmics",
         "icon": "✨",
         "slug": "cosmics",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Cosmic_rune.png",
-        "summary": "Cosmic rune support plugin.",
+        "image": "",
+        "summary": "Cosmic crafting support plugin.",
         "details": "Write your Cosmics details here."
       },
       {
         "name": "Firemaker",
         "icon": "🔥",
         "slug": "firemaker",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Firemaking_icon.png",
+        "image": "",
         "summary": "Firemaking support plugin.",
         "details": "Write your Firemaker details here."
       },
@@ -223,7 +223,7 @@
         "name": "Gem Mine",
         "icon": "💎",
         "slug": "gem-mine",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Shilo_Village_Gem_Mine.png",
+        "image": "",
         "summary": "Gem mining support plugin.",
         "details": "Write your Gem Mine details here."
       },
@@ -231,7 +231,7 @@
         "name": "Herbiboar",
         "icon": "🐗",
         "slug": "herbiboar",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Herbiboar.png",
+        "image": "",
         "summary": "Herbiboar support plugin.",
         "details": "Write your Herbiboar details here."
       },
@@ -239,7 +239,7 @@
         "name": "Herblore",
         "icon": "🌿",
         "slug": "herblore",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Herblore_icon.png",
+        "image": "",
         "summary": "Herblore support plugin.",
         "details": "Write your Herblore details here."
       },
@@ -247,7 +247,7 @@
         "name": "Hunter",
         "icon": "🪤",
         "slug": "hunter",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Hunter_icon.png",
+        "image": "",
         "summary": "Hunter support plugin.",
         "details": "Write your Hunter details here."
       },
@@ -255,7 +255,7 @@
         "name": "Karambwan",
         "icon": "🐟",
         "slug": "karambwan",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Raw_karambwan.png",
+        "image": "",
         "summary": "Karambwan fishing support plugin.",
         "details": "Write your Karambwan details here."
       },
@@ -263,15 +263,15 @@
         "name": "Lavas",
         "icon": "🌋",
         "slug": "lavas",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Lava_rune.png",
-        "summary": "Lava rune support plugin.",
+        "image": "",
+        "summary": "Lava crafting support plugin.",
         "details": "Write your Lavas details here."
       },
       {
         "name": "Minnows",
         "icon": "🐠",
         "slug": "minnows",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Minnow.png",
+        "image": "",
         "summary": "Minnow fishing support plugin.",
         "details": "Write your Minnows details here."
       },
@@ -279,7 +279,7 @@
         "name": "Mlm",
         "icon": "⛏️",
         "slug": "mlm",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Motherlode_Mine.png",
+        "image": "",
         "summary": "Motherlode Mine support plugin.",
         "details": "Write your MLM details here."
       },
@@ -287,7 +287,7 @@
         "name": "Planks",
         "icon": "🪵",
         "slug": "planks",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Plank.png",
+        "image": "",
         "summary": "Plank making support plugin.",
         "details": "Write your Planks details here."
       },
@@ -295,7 +295,7 @@
         "name": "Rumours",
         "icon": "🐾",
         "slug": "rumours",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Hunter_Guild.png",
+        "image": "",
         "summary": "Hunter Rumours support plugin.",
         "details": "Write your Rumours details here."
       },
@@ -303,7 +303,7 @@
         "name": "Skiller",
         "icon": "⭐",
         "slug": "skiller",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Woodcutting_icon.png",
+        "image": "",
         "summary": "General skilling support plugin.",
         "details": "Write your Skiller details here."
       },
@@ -311,7 +311,7 @@
         "name": "Teaks",
         "icon": "🌳",
         "slug": "teaks",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Teak_tree.png",
+        "image": "",
         "summary": "Teak woodcutting support plugin.",
         "details": "Write your Teaks details here."
       },
@@ -319,7 +319,7 @@
         "name": "Thiever",
         "icon": "👜",
         "slug": "thiever",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Thieving_icon.png",
+        "image": "",
         "summary": "Thieving support plugin.",
         "details": "Write your Thiever details here."
       },
@@ -327,7 +327,7 @@
         "name": "Tick Cooker",
         "icon": "🍳",
         "slug": "tick-cooker",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Cooking_icon.png",
+        "image": "",
         "summary": "Tick cooking support plugin.",
         "details": "Write your Tick Cooker details here."
       },
@@ -335,7 +335,7 @@
         "name": "Tick Fisher",
         "icon": "🎣",
         "slug": "tick-fisher",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Fishing_icon.png",
+        "image": "",
         "summary": "Tick fishing support plugin.",
         "details": "Write your Tick Fisher details here."
       },
@@ -343,7 +343,7 @@
         "name": "Tick Miner",
         "icon": "⛏️",
         "slug": "tick-miner",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Mining_icon.png",
+        "image": "",
         "summary": "Tick mining support plugin.",
         "details": "Write your Tick Miner details here."
       },
@@ -351,7 +351,7 @@
         "name": "Tick Woodcutter",
         "icon": "🪓",
         "slug": "tick-woodcutter",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Woodcutting_icon.png",
+        "image": "",
         "summary": "Tick woodcutting support plugin.",
         "details": "Write your Tick Woodcutter details here."
       },
@@ -359,7 +359,7 @@
         "name": "Volcanic Mine",
         "icon": "🌋",
         "slug": "volcanic-mine",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Volcanic_Mine.png",
+        "image": "",
         "summary": "Volcanic Mine support plugin.",
         "details": "Write your Volcanic Mine details here."
       },
@@ -367,16 +367,16 @@
         "name": "Wrath",
         "icon": "🐉",
         "slug": "wrath",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Wrath_rune.png",
-        "summary": "Wrath rune support plugin.",
+        "image": "",
+        "summary": "Wrath crafting support plugin.",
         "details": "Write your Wrath details here."
       },
       {
         "name": "Zmi",
         "icon": "🌀",
         "slug": "zmi",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Ourania_Altar.png",
-        "summary": "ZMI runecrafting support plugin.",
+        "image": "",
+        "summary": "ZMI crafting support plugin.",
         "details": "Write your ZMI details here."
       }
     ]
@@ -390,7 +390,7 @@
         "name": "Rogues Den",
         "icon": "🗝️",
         "slug": "rogues-den",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Rogues'_Den.png",
+        "image": "",
         "summary": "Rogues Den support plugin.",
         "details": "Write your Rogues Den details here."
       },
@@ -398,7 +398,7 @@
         "name": "Tempoross",
         "icon": "🌊",
         "slug": "tempoross",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Tempoross.png",
+        "image": "",
         "summary": "Tempoross support plugin.",
         "details": "Write your Tempoross details here."
       },
@@ -406,7 +406,7 @@
         "name": "Vale Totems",
         "icon": "🗿",
         "slug": "vale-totems",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Totem.png",
+        "image": "",
         "summary": "Vale Totems support plugin.",
         "details": "Write your Vale Totems details here."
       },
@@ -414,7 +414,7 @@
         "name": "Temple Trekking",
         "icon": "🥾",
         "slug": "temple-trekking",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Temple_Trekking.png",
+        "image": "",
         "summary": "Temple Trekking support plugin.",
         "details": "Write your Temple Trekking details here."
       },
@@ -422,7 +422,7 @@
         "name": "Tithe Farm",
         "icon": "🌱",
         "slug": "tithe-farm",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Tithe_Farm.png",
+        "image": "",
         "summary": "Tithe Farm support plugin.",
         "details": "Write your Tithe Farm details here."
       },
@@ -430,7 +430,7 @@
         "name": "Trawler",
         "icon": "🚢",
         "slug": "trawler",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Fishing_Trawler.png",
+        "image": "",
         "summary": "Fishing Trawler support plugin.",
         "details": "Write your Trawler details here."
       },
@@ -438,7 +438,7 @@
         "name": "Varrock Cleaner",
         "icon": "🧹",
         "slug": "varrock-cleaner",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Varrock_Museum_ground_floor.png",
+        "image": "",
         "summary": "Varrock Museum cleaning support plugin.",
         "details": "Write your Varrock Cleaner details here."
       },
@@ -446,7 +446,7 @@
         "name": "Wintertodt",
         "icon": "❄️",
         "slug": "wintertodt",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Doors_of_Dinh.png",
+        "image": "",
         "summary": "Wintertodt support plugin.",
         "details": "Write your Wintertodt details here."
       },
@@ -454,7 +454,7 @@
         "name": "Mixology",
         "icon": "⚗️",
         "slug": "mixology",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Mastering_Mixology_room.png",
+        "image": "",
         "summary": "Mixology support plugin.",
         "details": "Write your Mixology details here."
       },
@@ -462,7 +462,7 @@
         "name": "Castle Wars",
         "icon": "🏰",
         "slug": "castle-wars",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Castle_Wars.png",
+        "image": "",
         "summary": "Castle Wars support plugin.",
         "details": "Write your Castle Wars details here."
       },
@@ -470,7 +470,7 @@
         "name": "Giants Foundry",
         "icon": "⚒️",
         "slug": "giants-foundry",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Giants'_Foundry.png",
+        "image": "",
         "summary": "Giants Foundry support plugin.",
         "details": "Write your Giants Foundry details here."
       },
@@ -478,7 +478,7 @@
         "name": "Guardians",
         "icon": "🧿",
         "slug": "guardians",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Guardians_of_the_Rift.png",
+        "image": "",
         "summary": "Guardians of the Rift support plugin.",
         "details": "Write your Guardians details here."
       },
@@ -486,7 +486,7 @@
         "name": "Mahogany Homes",
         "icon": "🏡",
         "slug": "mahogany-homes",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Amy.png",
+        "image": "",
         "summary": "Mahogany Homes support plugin.",
         "details": "Write your Mahogany Homes details here."
       },
@@ -494,7 +494,7 @@
         "name": "Mage Training Arena",
         "icon": "🧙",
         "slug": "mage-training-arena",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Mage_Training_Arena.png",
+        "image": "",
         "summary": "Mage Training Arena support plugin.",
         "details": "Write your Mage Training Arena details here."
       },
@@ -502,7 +502,7 @@
         "name": "Pest Control",
         "icon": "🪲",
         "slug": "pest-control",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Pest_Control.png",
+        "image": "",
         "summary": "Pest Control support plugin.",
         "details": "Write your Pest Control details here."
       },
@@ -510,7 +510,7 @@
         "name": "Pyramid Plunder",
         "icon": "🔺",
         "slug": "pyramid-plunder",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Pyramid_Plunder.png",
+        "image": "",
         "summary": "Pyramid Plunder support plugin.",
         "details": "Write your Pyramid Plunder details here."
       }
@@ -522,18 +522,18 @@
     "description": "Utility plugins included in the Plugin Package.",
     "plugins": [
       {
-        "name": "Auto Hop",
+        "name": "World Switch",
         "icon": "🌍",
-        "slug": "auto-hop",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/World_Switcher_interface.png",
+        "slug": "world-switch",
+        "image": "",
         "summary": "World hopping support plugin.",
-        "details": "Write your Auto Hop details here."
+        "details": "Write your World Switch details here."
       },
       {
         "name": "Break Handler",
         "icon": "⏸️",
         "slug": "break-handler",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Guard_(Port_Sarim,_sleeping).png",
+        "image": "",
         "summary": "Break handling support plugin.",
         "details": "Write your Break Handler details here."
       },
@@ -541,39 +541,39 @@
         "name": "Coxscouter",
         "icon": "🔎",
         "slug": "coxscouter",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Great_Olm.png",
+        "image": "",
         "summary": "Chambers of Xeric scouting support plugin.",
         "details": "Write your Coxscouter details here."
       },
       {
-        "name": "Hotkey",
+        "name": "Keybinds",
         "icon": "⌨️",
-        "slug": "hotkey",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Interface.png",
-        "summary": "Hotkey support plugin.",
-        "details": "Write your Hotkey details here."
+        "slug": "keybinds",
+        "image": "",
+        "summary": "Keybind support plugin.",
+        "details": "Write your Keybinds details here."
       },
       {
         "name": "Loadout",
         "icon": "🎒",
         "slug": "loadout",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/3rd_age_platebody.png",
+        "image": "",
         "summary": "Loadout support plugin.",
         "details": "Write your Loadout details here."
       },
       {
-        "name": "One Click",
+        "name": "Quick Actions",
         "icon": "🖱️",
-        "slug": "one-click",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Construction_icon.png",
-        "summary": "One Click support plugin.",
-        "details": "Write your One Click details here."
+        "slug": "quick-actions",
+        "image": "",
+        "summary": "Quick action support plugin.",
+        "details": "Write your Quick Actions details here."
       },
       {
         "name": "Prayer",
         "icon": "🙏",
         "slug": "prayer",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Prayer_icon.png",
+        "image": "",
         "summary": "Prayer utility support plugin.",
         "details": "Write your Prayer details here."
       },
@@ -581,7 +581,7 @@
         "name": "Tutorial",
         "icon": "📘",
         "slug": "tutorial",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Tutorial_Island.png",
+        "image": "",
         "summary": "Tutorial Island support plugin.",
         "details": "Write your Tutorial details here."
       },
@@ -589,15 +589,15 @@
         "name": "Shopper",
         "icon": "🛒",
         "slug": "shopper",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Trader_Stan.png",
-        "summary": "Shop purchasing support plugin.",
+        "image": "",
+        "summary": "Shop requesting support plugin.",
         "details": "Write your Shopper details here."
       },
       {
         "name": "Super Profiles",
         "icon": "👤",
         "slug": "super-profiles",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Default_login_screen.png",
+        "image": "",
         "summary": "Profile management support plugin.",
         "details": "Write your Super Profiles details here."
       },
@@ -605,7 +605,7 @@
         "name": "Walker",
         "icon": "🧭",
         "slug": "walker",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/World_map_icon.png",
+        "image": "",
         "summary": "Walking support plugin.",
         "details": "Write your Walker details here."
       },
@@ -613,7 +613,7 @@
         "name": "Widgets",
         "icon": "🧩",
         "slug": "widgets",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Interface.png",
+        "image": "",
         "summary": "Widget interaction support plugin.",
         "details": "Write your Widgets details here."
       }
@@ -628,7 +628,7 @@
         "name": "Bosshelper",
         "icon": "👑",
         "slug": "bosshelper",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/TzKal-Zuk.png",
+        "image": "",
         "summary": "Bossing helper plugin.",
         "details": "Write your Bosshelper details here."
       },
@@ -636,7 +636,7 @@
         "name": "Vorkath",
         "icon": "🐉",
         "slug": "vorkath",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Vorkath.png",
+        "image": "",
         "summary": "Vorkath support plugin.",
         "details": "Write your Vorkath details here."
       },
@@ -644,7 +644,7 @@
         "name": "Zulrah",
         "icon": "🐍",
         "slug": "zulrah",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Zulrah_(serpentine).png",
+        "image": "",
         "summary": "Zulrah support plugin.",
         "details": "Write your Zulrah details here."
       },
@@ -652,7 +652,7 @@
         "name": "Demonic Gorillas",
         "icon": "🦍",
         "slug": "demonic-gorillas",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Demonic_gorilla.png",
+        "image": "",
         "summary": "Demonic Gorillas support plugin.",
         "details": "Write your Demonic Gorillas details here."
       },
@@ -660,7 +660,7 @@
         "name": "Royal Titans",
         "icon": "👑",
         "slug": "royal-titans",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Fighting_Royal_Titans.png",
+        "image": "",
         "summary": "Royal Titans support plugin.",
         "details": "Write your Royal Titans details here."
       },
@@ -668,7 +668,7 @@
         "name": "Scurrius",
         "icon": "🐀",
         "slug": "scurrius",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Scurrius.png",
+        "image": "",
         "summary": "Scurrius support plugin.",
         "details": "Write your Scurrius details here."
       },
@@ -676,7 +676,7 @@
         "name": "Tormented Demons",
         "icon": "😈",
         "slug": "tormented-demons",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/Tormented_Demon_(1).png",
+        "image": "",
         "summary": "Tormented Demons support plugin.",
         "details": "Write your Tormented Demons details here."
       },
@@ -684,7 +684,7 @@
         "name": "Fight Caves",
         "icon": "🔥",
         "slug": "fight-caves",
-        "image": "https://oldschool.runescape.wiki/w/Special:FilePath/TzHaar_Fight_Cave.png",
+        "image": "",
         "summary": "Fight Caves support plugin.",
         "details": "Write your Fight Caves details here."
       }

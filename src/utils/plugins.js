@@ -26,9 +26,7 @@ export function normalizeImageUrl(url) {
     return '';
   }
 
-  return String(url)
-    .replace('https://oldschool.runescape.wiki/images/Special:FilePath/', 'https://oldschool.runescape.wiki/w/Special:FilePath/')
-    .replace('https://oldschool.runescape.wiki/wiki/Special:FilePath/', 'https://oldschool.runescape.wiki/w/Special:FilePath/');
+  return String(url);
 }
 
 export function getPluginName(plugin) {
@@ -80,7 +78,7 @@ export function getPluginDetails(plugin, name) {
     return plugin.details;
   }
 
-  return `Detailed information for ${name} is currently being prepared. Join Discord for setup help, package questions and current support information.`;
+  return `Detailed information for ${name} is currently being prepared. Contact Support for setup help, package questions and current support information.`;
 }
 
 export function getPluginList() {

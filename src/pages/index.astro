@@ -8,8 +8,8 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="ElPlugins - Old School RuneLite Plugins"
-  description="ElPlugins - For all your Old School Plugin needs."
+  title="ElPlugins - Plugin Tools"
+  description="ElPlugins - For all your plugin needs."
 >
   <Navbar splash={true} />
 
@@ -28,7 +28,7 @@ const base = import.meta.env.BASE_URL;
 
       <div class="splash-content ocean-splash-content">
         <p class="splash-tagline">
-          For all your Old School Plugin needs
+          For all your plugin needs
         </p>
 
         <p class="splash-subtagline">
@@ -36,7 +36,7 @@ const base = import.meta.env.BASE_URL;
         </p>
 
         <div class="splash-buttons">
-          <a class="splash-button purchase" href={webstoreUrl}>
+          <a class="splash-button request" href={webstoreUrl}>
             <span class="splash-button-logo">
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7 18.5A1.5 1.5 0 1 0 7 21.5A1.5 1.5 0 0 0 7 18.5ZM17 18.5A1.5 1.5 0 1 0 17 21.5A1.5 1.5 0 0 0 17 18.5ZM4.2 4H2V2H5.8L6.4 5H22L19.8 15.2C19.6 16.2 18.7 17 17.6 17H8.2C7.1 17 6.2 16.2 6 15.1L4.2 4ZM6.8 7L8.2 15H17.6L19.2 7H6.8Z" />
@@ -44,8 +44,8 @@ const base = import.meta.env.BASE_URL;
             </span>
 
             <span class="splash-button-content">
-              <strong>Purchase Plugins</strong>
-              <span>Visit the Webshop</span>
+              <strong>View Catalogue</strong>
+              <span>Browse available tools</span>
             </span>
 
             <span class="splash-button-arrow">→</span>
@@ -59,8 +59,8 @@ const base = import.meta.env.BASE_URL;
             </span>
 
             <span class="splash-button-content">
-              <strong>Join Discord</strong>
-              <span>Home of ElPlugins</span>
+              <strong>Contact Support</strong>
+              <span>Support for ElPlugins</span>
             </span>
 
             <span class="splash-button-arrow">→</span>
@@ -140,7 +140,7 @@ const base = import.meta.env.BASE_URL;
     .splash-tagline {
       width: fit-content;
       margin: 0 auto 10px;
-      color: var(--gold-bright);
+      color: var(--accent-bright);
       font-size: clamp(1.18rem, 2.35vw, 1.9rem);
       font-weight: 950;
       letter-spacing: 0.02em;
