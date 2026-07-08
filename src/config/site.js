@@ -3,7 +3,7 @@ export const siteUrl = 'https://elplugins.com';
 export const defaultDescription = 'ElPlugins - For all your plugin needs.';
 export const defaultImagePath = '/images/elpluginshdlogo.png';
 
-export const discordUrl = 'mailto:Elliott@ElPlugins.com';
+export const discordUrl = 'https://discord.gg/Fa4BdBvg2c';
 export const webstoreUrl = `${siteUrl}/plugins/`;
 export const changelogUrl = 'mailto:Elliott@ElPlugins.com';
 
