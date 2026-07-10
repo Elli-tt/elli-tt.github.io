@@ -11,6 +11,17 @@ import {
 const base = import.meta.env.BASE_URL;
 const privacyUrl = withBasePath(base, routes.privacy);
 const contactEmail = 'Elliott@ElPlugins.com';
+
+/*
+ * REQUIRED BEFORE PUBLISHING:
+ * Replace the legal operator name and geographic business address below.
+ * Add a company number and VAT number if applicable.
+ */
+const companyNumber = '';
+const vatNumber = '';
+
+const effectiveDate = '10 July 2026';
+const lastReviewedDate = '10 July 2026';
 ---
 
 <BaseLayout
@@ -24,9 +35,9 @@ const contactEmail = 'Elliott@ElPlugins.com';
       <p class="eyebrow">Legal</p>
       <h1>Terms of Service</h1>
       <p>
-        Effective 7 July 2026. Last reviewed 7 July 2026. These terms apply to
-        ElPlugins, the app, plugins, customer support, requests and related
-        services.
+        Effective {effectiveDate}. Last reviewed {lastReviewedDate}. These terms
+        apply to the ElPlugins website, app, plugins, customer support, private
+        channels, orders and related digital services.
       </p>
 
       <div class="page-actions">
@@ -36,458 +47,1054 @@ const contactEmail = 'Elliott@ElPlugins.com';
 
     <section class="tos-page">
       <article class="tos-card">
-        <h2>Agreement to Our Legal Terms</h2>
+        <h2>Agreement to these terms</h2>
 
         <p>
-          We are ElPlugins, a trading name also referred to as "we", "us" or
-          "our". We operate the ElPlugins website, support channels, app,
-          plugins, support channels, store listings and related services that
-          refer or link to these terms.
-        </p>
-
-        <p>
-          You can contact us through the support request system or by email at
-          {' '}
-          <a href={`mailto:${contactEmail}`}>{contactEmail}</a>. Support requests
-          are the official support channel and the starting point for informal
-          dispute notices.
+          We are ElPlugins, a trading name also referred
+          to in these terms as “we”, “us” or “our”.
         </p>
 
         <p>
           These terms form a legally binding agreement between you and
-          ElPlugins. By joining, requesting access, accepting a support access,
-          requesting catalogue access, using the app, accessing private channels
-          or otherwise using the services, you confirm that you have read,
-          understood and agreed to these terms.
+          ElPlugins. They apply when you visit or use the services, create or use
+          an account, place an order, request or receive access, use the app or a
+          plugin, join a private channel, or otherwise use any service that links
+          to these terms.
         </p>
 
         <p>
-          If you do not agree to these terms, you must not request access or
-          use the services.
+          By using the services, you confirm that you have read and understood
+          these terms and agree to be bound by them. If you do not agree, you
+          must not use the services or place an order.
         </p>
 
         <p>
-          The services are intended for users who are at least 13 years old.
-          Minors must have permission from, and be supervised by, a parent or
-          guardian.
+          Nothing in these terms limits any consumer right or remedy that cannot
+          lawfully be limited or excluded.
         </p>
       </article>
 
-      <article class="tos-card">
-        <h2>1. Our Services</h2>
+      <nav class="tos-card tos-toc" aria-labelledby="terms-contents">
+        <h2 id="terms-contents">Contents</h2>
+        <ol>
+          <li><a href="#definitions">Definitions</a></li>
+          <li><a href="#eligibility">Eligibility and accounts</a></li>
+          <li><a href="#services">Our services and third-party platforms</a></li>
+          <li><a href="#orders">Orders, prices, payments and delivery</a></li>
+          <li><a href="#cancellation">Cancellation, refunds and statutory rights</a></li>
+          <li><a href="#licence">Software licence, intellectual property and HWIDs</a></li>
+          <li><a href="#lifetime">Lifetime Access and Product End of Life</a></li>
+          <li><a href="#acceptable-use">Acceptable use</a></li>
+          <li><a href="#contributions">Contributions, feedback and reviews</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#support">Support, availability, updates and maintenance</a></li>
+          <li><a href="#suspension">Suspension and termination</a></li>
+          <li><a href="#changes">Changes to the services and these terms</a></li>
+          <li><a href="#disclaimers">Disclaimers</a></li>
+          <li><a href="#liability">Liability</a></li>
+          <li><a href="#disputes">Complaints, governing law and courts</a></li>
+          <li><a href="#general">General terms</a></li>
+          <li><a href="#contact">Contact and legal information</a></li>
+        </ol>
+      </nav>
 
+      <article class="tos-card" id="definitions">
+        <h2>1. Definitions</h2>
+
+        <dl>
+          <dt>Archived Version</dt>
+          <dd>
+            The final version of a product that we retain after its Product End
+            of Life, which may have limited or disabled functionality.
+          </dd>
+
+          <dt>Consumer</dt>
+          <dd>
+            An individual acting wholly or mainly outside their trade, business,
+            craft or profession.
+          </dd>
+
+          <dt>External Change</dt>
+          <dd>
+            A change outside our reasonable control that materially affects a
+            product’s operation, compatibility, legality, security or
+            distribution, as described in Section 7.
+          </dd>
+
+          <dt>Fixed-Term Access</dt>
+          <dd>
+            Access for the period stated on the relevant product page,
+            checkout, order confirmation, invoice or support notice.
+          </dd>
+
+          <dt>Lifetime Access</dt>
+          <dd>
+            Access for the Product Lifetime of the specific product purchased,
+            as described in Section 7. It does not mean the lifetime of any
+            person or business.
+          </dd>
+
+          <dt>Product Lifetime</dt>
+          <dd>
+            The commercial and operational lifetime of a specific product,
+            ending only in accordance with Section 7.
+          </dd>
+
+          <dt>Services</dt>
+          <dd>
+            The ElPlugins website, store listings, app, plugins, keys, private
+            channels, support, documentation and related digital services.
+          </dd>
+
+          <dt>Substantial Redevelopment</dt>
+          <dd>
+            A material replacement, redesign or rewrite of a product’s codebase
+            or architecture that, because of an External Change, would in
+            substance amount to developing a materially new product rather than
+            maintaining the existing one.
+          </dd>
+        </dl>
+      </article>
+
+      <article class="tos-card" id="eligibility">
+        <h2>2. Eligibility and accounts</h2>
+
+        <h3>2.1 Age requirements</h3>
         <p>
-          ElPlugins provides plugin access, app access, customer support and
-          related digital services. The services may depend on third-party
-          platforms, third-party platforms, operating systems, payment processors,
-          hosting providers and support.
+          You must be at least 18 years old to place an order or enter into a
+          paid contract with us. A person aged 13 to 17 may use non-paid parts
+          of the services only with the permission and supervision of a parent
+          or legal guardian. Any purchase for a minor must be made by a parent
+          or legal guardian who agrees to these terms.
+        </p>
+
+        <h3>2.2 Account information</h3>
+        <p>
+          You must provide accurate, current and complete account, order and
+          support information and keep it up to date. You must keep your account,
+          keys, app access, plugin files and authentication details secure.
         </p>
 
         <p>
-          You are responsible for making sure your use of the services is lawful
-          in your location and consistent with any third-party terms that apply
-          to you.
+          You are responsible for activity carried out through your account
+          unless it results from our failure to use reasonable care and skill.
+          Tell us promptly if you believe your account or access credentials have
+          been compromised.
+        </p>
+
+        <h3>2.3 Personal use</h3>
+        <p>
+          Unless a product page expressly states otherwise, the services are
+          supplied for your personal, non-commercial use. Access is personal and
+          must not be shared, transferred or resold.
+        </p>
+
+        <h3>2.4 Restricted and private access</h3>
+        <p>
+          Access to customer-only channels, private support areas, app features
+          and non-public materials is conditional on your continuing compliance
+          with these terms.
+        </p>
+
+        <p>
+          You must not obtain or use private access through deception,
+          impersonation, false information or an undisclosed third-party
+          instruction for the purpose of unauthorised monitoring, investigation,
+          copying or enforcement activity. We may refuse or remove access where
+          we reasonably believe that access was obtained or is being used in that
+          way.
+        </p>
+
+        <p>
+          Nothing in this section prevents anyone from reporting suspected
+          unlawful conduct to a regulator, law-enforcement body or other
+          competent authority, obtaining legal advice, preserving evidence
+          lawfully, making a protected disclosure, or complying with a legal
+          obligation or court order.
         </p>
       </article>
 
-      <article class="tos-card">
-        <h2>2. Intellectual Property Rights</h2>
+      <article class="tos-card" id="services">
+        <h2>3. Our services and third-party platforms</h2>
 
+        <p>
+          We provide plugin access, app access, support and related digital
+          services. Some services depend on third-party platforms, applications,
+          games, operating systems, APIs, hosting providers, payment processors,
+          authentication systems and other external services.
+        </p>
+
+        <p>
+          Unless we expressly state otherwise, ElPlugins is independent from and
+          is not sponsored, endorsed or approved by any third-party platform or
+          rights holder. Third-party names and trade marks belong to their
+          respective owners.
+        </p>
+
+        <p>
+          You are responsible for ensuring that your use of the services is
+          lawful in your location and complies with any third-party terms that
+          apply to you. We do not authorise you to breach a third party’s terms,
+          bypass technical restrictions unlawfully, infringe intellectual
+          property rights or use the services for any illegal purpose.
+        </p>
+
+        <p>
+          Product descriptions, compatibility details, required software,
+          functionality, access duration, HWID limits and material restrictions
+          shown before purchase form part of your contract with us.
+        </p>
+      </article>
+
+      <article class="tos-card" id="orders">
+        <h2>4. Orders, prices, payments and delivery</h2>
+
+        <h3>4.1 Pre-contract information</h3>
+        <p>
+          Before you place an order, we will provide the main characteristics of
+          the product or service, the total price or how it is calculated,
+          accepted payment methods, access duration, material compatibility
+          information, relevant restrictions and any applicable cancellation
+          information.
+        </p>
+
+        <p>
+          You are responsible for checking the order details and correcting any
+          errors before payment. The final checkout action will make clear that
+          placing the order creates an obligation to pay.
+        </p>
+
+        <h3>4.2 Prices and taxes</h3>
+        <p>
+          Prices, packages and accepted currencies may change before an order is
+          accepted. Taxes, payment-provider fees and currency-conversion charges
+          may apply depending on your location and payment method. The total
+          amount payable will be shown or explained before you place the order.
+        </p>
+
+        <h3>4.3 Order acceptance</h3>
+        <p>
+          An order is an offer to purchase the relevant access. A contract is
+          formed when we send an order confirmation, provide the relevant
+          entitlement, or otherwise expressly accept the order.
+        </p>
+
+        <p>
+          We may reject or cancel an order before delivery because of a genuine
+          pricing error, lack of availability, suspected fraud, payment failure,
+          legal or security risk, or an apparent breach of these terms. If we
+          cancel after taking payment and before supplying the order, we will
+          refund the amount paid.
+        </p>
+
+        <h3>4.4 Delivery</h3>
+        <p>
+          Digital access is treated as delivered when the relevant key, file,
+          app access, plugin access, account entitlement, private-channel access
+          or other agreed means of access has been provided.
+        </p>
+
+        <p>
+          We will provide an order confirmation and a copy or durable record of
+          the applicable contract information by email or another format you can
+          save. Contact support if you have paid but have not received access
+          within the stated delivery period.
+        </p>
+
+        <h3>4.5 Access periods</h3>
+        <p>
+          Fixed-Term Access lasts for the period stated before purchase and does
+          not renew automatically unless automatic renewal is expressly offered
+          and accepted.
+        </p>
+
+        <p>
+          Lifetime Access is governed by Section 7. It does not refer to your
+          lifetime, the lifetime of any other person, or the lifetime of
+          ElPlugins or its owner.
+        </p>
+      </article>
+
+      <article class="tos-card" id="cancellation">
+        <h2>5. Cancellation, refunds and statutory rights</h2>
+
+        <h3>5.1 Immediate supply of digital content</h3>
+        <p>
+          Where you ask us to supply digital content immediately during a
+          statutory cancellation period, we may require you to give express
+          consent for supply to begin and to acknowledge that you will lose your
+          right to cancel once supply begins. This consent and acknowledgement
+          must be obtained separately at checkout or through another clear
+          process; agreement to these terms alone is not treated as that consent.
+        </p>
+
+        <p>
+          Where the law gives you a cancellation right and the required consent
+          or acknowledgement has not been properly obtained, that right is not
+          excluded by these terms.
+        </p>
+
+        <h3>5.2 Change-of-mind refunds</h3>
+        <p>
+          Except where a statutory cancellation right applies or we expressly
+          offer a separate refund policy, we do not provide change-of-mind
+          refunds after digital access has been supplied.
+        </p>
+
+        <h3>5.3 Faulty, misdescribed or non-conforming digital content</h3>
+        <p>
+          Consumers retain all mandatory rights relating to digital content and
+          services, including rights where content is not of satisfactory
+          quality, is not fit for a disclosed purpose, is not as described, or a
+          service is not performed with reasonable care and skill.
+        </p>
+
+        <p>
+          Depending on the circumstances and applicable law, available remedies
+          may include repair, replacement, repeat performance, a price reduction
+          or a refund. Nothing in these terms replaces or restricts those
+          remedies.
+        </p>
+
+        <h3>5.4 Duplicate charges and payment errors</h3>
+        <p>
+          We will refund confirmed duplicate charges and proven
+          payment-processing errors. We may ask for reasonable evidence of the
+          transaction.
+        </p>
+
+        <h3>5.5 Payment disputes</h3>
+        <p>
+          Where reasonably possible, contact support before opening a chargeback
+          or payment dispute so that we have an opportunity to investigate.
+          Nothing in this section prevents you from exercising a legal right or
+          using a payment-provider dispute process in good faith.
+        </p>
+      </article>
+
+      <article class="tos-card" id="licence">
+        <h2>6. Software licence, intellectual property and HWIDs</h2>
+
+        <h3>6.1 Ownership</h3>
         <p>
           We own or license the intellectual property rights in the services,
-          including source code, software, app functionality, plugins,
+          including the source code, object code, app functionality, plugins,
           website content, text, graphics, logos, designs, documentation and
           related materials.
         </p>
 
+        <h3>6.2 Licence grant</h3>
         <p>
-          Subject to your compliance with these terms, we grant you a limited,
-          personal, revocable, non-exclusive and non-transferable licence to
-          access and use the services you have properly requestd or otherwise
-          been granted access to.
+          Subject to payment and compliance with these terms, we grant you a
+          limited, personal, non-exclusive, non-transferable and revocable
+          licence to access and use the purchased service for the applicable
+          access period. The licence may expire, be suspended, restricted or
+          revoked only as permitted by these terms.
         </p>
 
         <p>
-          You must not copy, sell, rent, share, sublicense, publish, distribute,
-          decompile, reverse engineer, modify, bypass protection for, or exploit
-          any part of the services except where we have expressly allowed it in
-          writing or applicable law prevents us from restricting it.
+          For Lifetime Access, the active access period is the Product Lifetime
+          described in Section 7, followed by any Archived Product Access
+          available under that section.
+        </p>
+
+        <h3>6.3 Licence restrictions</h3>
+        <p>
+          Unless applicable law prevents the restriction or we have expressly
+          authorised the activity in writing, you must not:
+        </p>
+
+        <ul>
+          <li>copy, sell, rent, share, sublicense, publish or distribute the services;</li>
+          <li>share or transfer keys, files, account access or access entitlements;</li>
+          <li>decompile, disassemble or reverse engineer the services;</li>
+          <li>remove ownership notices or bypass licence, payment, HWID or security controls;</li>
+          <li>modify or create derivative works from the services; or</li>
+          <li>use the services to provide a commercial service to another person.</li>
+        </ul>
+
+        <h3>6.4 HWID rules</h3>
+        <p>
+          One HWID means one device, such as a PC, laptop or server. Activating a
+          plugin binds it to that device for 30 days. Each later activation on
+          that device restarts the 30-day period. You may run multiple plugin
+          instances on an authorised HWID unless the relevant product page says
+          otherwise, but use remains personal.
+        </p>
+
+        <p>
+          To remove an HWID before the 30-day period ends, you may request an
+          immediate reset for the fee disclosed at the time of the request. The
+          current standard fee is USD $5. Creating or using another account to
+          evade HWID limits, reset fees or enforcement is prohibited.
+        </p>
+
+        <p>
+          Hardware changes, including CPU or motherboard changes, may create a
+          new HWID. Where that happens, you must wait until the existing binding
+          expires or request an immediate reset.
+        </p>
+
+        <p>Unless the product page or an order-specific notice states otherwise:</p>
+
+        <ul>
+          <li>Package access for 30, 60 or 90 days, or Lifetime Access: 2 HWIDs.</li>
+          <li>PVM access for 30, 60 or 90 days, or Lifetime Access: 1 HWID.</li>
+          <li>Combined Package and PVM access for 30, 60 or 90 days: 1 HWID.</li>
+        </ul>
+
+        <h3>6.5 Compatibility and updates</h3>
+        <p>
+          Updates may be required to continue using a product. We do not
+          guarantee compatibility with every current or future platform version,
+          application, operating system, device, hardware configuration,
+          third-party service or update.
+        </p>
+
+        <p>
+          Routine bug fixes, patches, maintenance, minor refactoring and ordinary
+          compatibility updates do not by themselves end a Product Lifetime.
+          Where an External Change would require Substantial Redevelopment,
+          Section 7 applies.
         </p>
       </article>
 
-      <article class="tos-card">
-        <h2>3. User Accounts and Representations</h2>
+      <article class="tos-card" id="lifetime">
+        <h2>7. Lifetime Access and Product End of Life</h2>
 
-        <p>By using the services, you represent and agree that:</p>
+        <h3>7.1 Meaning of Lifetime Access</h3>
+        <p>
+          Where a product is described or sold as providing “Lifetime Access”,
+          this means access for the Product Lifetime of that specific product.
+        </p>
+
+        <p>
+          “Lifetime” does not mean the natural lifetime of the customer, any
+          other individual, ElPlugins, its owner, employees or contractors.
+          Lifetime Access is personal, non-transferable and non-inheritable.
+        </p>
+
+        <p>
+          Lifetime Access does not mean that the product will exist or operate
+          forever. It does not guarantee perpetual development, updates, support,
+          uninterrupted availability or compatibility with every future
+          platform, system or third-party service.
+        </p>
+
+        <h3>7.2 Product Lifetime</h3>
+        <p>
+          The Product Lifetime begins when the product is first made
+          commercially available and continues until a Product End of Life
+          occurs under this section. Your Lifetime Access begins when your access
+          entitlement is delivered and continues for the remainder of that
+          Product Lifetime, subject to these terms.
+        </p>
+
+        <h3>7.3 External Change</h3>
+        <p>
+          An External Change is a material change outside our reasonable control
+          affecting a product’s operation, compatibility, legality, security or
+          distribution. This may include a material change to:
+        </p>
 
         <ul>
-          <li>Your registration, support, support and request information is accurate and kept up to date.</li>
-          <li>You have legal capacity to agree to these terms.</li>
-          <li>You are at least 13 years old, and if you are a minor you have parent or guardian permission.</li>
-          <li>You will keep account, app, key and access information secure.</li>
-          <li>You will not use assisted or unapproved access methods unless we expressly allow them.</li>
-          <li>You will not use the services for illegal, abusive or unauthorised purposes.</li>
-          <li>Your use of the services will not violate applicable law or regulation.</li>
+          <li>a third-party platform, application, game or service;</li>
+          <li>an API, software dependency, protocol or data format;</li>
+          <li>an operating system, security system or authentication system;</li>
+          <li>a hosting, infrastructure or distribution service;</li>
+          <li>third-party technical requirements, terms or licences;</li>
+          <li>applicable law, regulation or regulatory requirements; or</li>
+          <li>another external system or dependency on which the product materially relies.</li>
+        </ul>
+
+        <h3>7.4 Substantial Redevelopment</h3>
+        <p>
+          Substantial Redevelopment means that, because of an External Change,
+          keeping the product functioning and compatible would require the
+          replacement, redesign or rewriting of a material part of its codebase
+          or architecture and would, in substance, amount to developing a
+          materially new product rather than maintaining the existing one.
+        </p>
+
+        <p>
+          Substantial Redevelopment does not include routine maintenance,
+          ordinary bug fixes, patches, minor code changes, minor refactoring or
+          ordinary compatibility updates.
+        </p>
+
+        <p>
+          We will assess reasonably and in good faith whether Substantial
+          Redevelopment is required. Relevant factors include:
+        </p>
+
+        <ul>
+          <li>the amount and complexity of code that must be replaced or rewritten;</li>
+          <li>whether the existing architecture can reasonably be retained;</li>
+          <li>whether material dependencies or components must be replaced;</li>
+          <li>whether the product needs a material redesign;</li>
+          <li>legal, technical and security risks; and</li>
+          <li>whether the resulting software would in substance be a materially new product.</li>
         </ul>
 
         <p>
-          If information you provide is false, inaccurate, incomplete or
-          misleading, we may suspend, restrict or terminate access.
-        </p>
-      </article>
-
-      <article class="tos-card">
-        <h2>4. Restricted Access and Eligibility</h2>
-
-        <p>
-          Access to private support channels, support areas, customer-only
-          communities, app access, plugin access and any non-public
-          ElPlugins services is conditional on your continuing eligibility under
-          these terms.
+          Cost or commercial preference alone will not amount to Substantial
+          Redevelopment where the work would otherwise be routine maintenance or
+          an ordinary compatibility update.
         </p>
 
+        <h3>7.5 Product End of Life</h3>
         <p>
-          You must not access, request access to, view, copy, monitor, archive,
-          screenshot, forward, disclose, report or distribute private ElPlugins
-          content if you are acting for, employed by, contracted by, instructed
-          by, affiliated with or representing any third-party rights holder,
-          third-party rights holder, platform operator, anti-cheat provider, legal
-          representative, investigator, enforcement agent, contractor or other
-          third party for the purpose of monitoring, investigating, enforcing
-          against or taking action in relation to ElPlugins, its users, its
-          services or its community.
+          We may declare a Product End of Life only where:
+        </p>
+
+        <ol>
+          <li>an External Change has occurred; and</li>
+          <li>
+            we reasonably and in good faith determine that keeping the product
+            operational would require Substantial Redevelopment.
+          </li>
+        </ol>
+
+        <p>
+          We are not required to undertake Substantial Redevelopment as part of
+          an existing Lifetime Access entitlement.
         </p>
 
         <p>
-          By requesting access, accepting a support access, requesting catalogue access,
-          using the app, joining private channels or otherwise accessing
-          non-public services, you represent that you are acting only in a
-          personal capacity and that you are not subject to any conflict of
-          interest or third-party instruction that would make your access
-          unauthorised under this section.
+          Where Substantial Redevelopment is required, we may develop and offer
+          the substantially redeveloped software as a separate successor
+          product. Existing Lifetime Access does not automatically include the
+          successor product unless we expressly state otherwise.
         </p>
 
         <p>
-          If this representation is false, misleading, incomplete or later
-          becomes inaccurate, your access is unauthorised and may be suspended,
-          restricted or terminated immediately without refund, to the fullest
-          extent permitted by law. We may also remove access where we reasonably
-          believe continued access creates legal, security, operational, abuse,
-          confidentiality or community safety risk.
+          A Product Lifetime also ends if ElPlugins permanently ceases operating
+          and permanently ceases supplying all products and related services.
         </p>
-      </article>
 
-      <article class="tos-card">
-        <h2>5. Requests, Payments and Delivery</h2>
-
+        <h3>7.6 No artificial discontinuation</h3>
         <p>
-          We may accept payment through Stripe-supported methods, store checkout
-          methods, supported checkout methods. Available payment methods may change
-          at any time.
+          We will not end a Product Lifetime merely to rename, rebrand, repackage
+          or resell substantially the same product as a new product.
         </p>
 
         <p>
-          You must provide current, complete and accurate request information.
-          Prices, packages, availability and accepted currencies may change at
-          any time. Taxes, fees or currency conversion costs may apply depending
-          on your payment method and location.
+          A change to a product’s name, branding, version number, price, delivery
+          method or packaging does not by itself create a separate product or end
+          its Product Lifetime.
         </p>
 
         <p>
-          A request is treated as delivered when the relevant support access,
-          app access, key, subtoolion, plugin access or other access
-          entitlement has been provided.
+          A successor may be treated as a separate product where an External
+          Change required Substantial Redevelopment and the successor has a
+          materially rewritten codebase, materially different architecture or
+          other material technical differences, even if it serves a similar
+          purpose or provides similar core functionality.
         </p>
 
+        <h3>7.7 End-of-life notice</h3>
         <p>
-          Subtoolions and package access are fixed-term access periods unless
-          we clearly state otherwise. They do not guaranteedally renew. You are
-          responsible for renewing access manually before or after expiry.
+          Where reasonably practicable, we will publish at least 30 days’ notice
+          before Product End of Life. Shorter or immediate notice may be given
+          where an urgent legal, security, technical or third-party platform
+          issue makes that reasonably necessary.
         </p>
 
-        <p>
-          Sales are final once access has been delivered. Refunds are not
-          provided except where required by law, where a duplicate charge is
-          confirmed, or where a proven payment processing error occurred.
-        </p>
-        <p>
-          Payment handling is managed through supported checkout or support-assisted methods. Available methods may change, and payment-specific fees or processing times may apply.
-        </p>
-
-        <p>
-          We may refuse, cancel, correct or limit any order where there is a
-          pricing error, stock or access issue, suspected fraud, abuse, payment
-          dispute, technical problem or breach of these terms.
-        </p>
-      </article>
-
-      <article class="tos-card">
-        <h2>6. Software Licence and HWID Rules</h2>
-
-        <p>
-          The app, plugins and related software are licensed, not sold. You
-          receive a personal, limited, revocable, non-transferable licence to use
-          them only for your own access during the relevant active access period.
-        </p>
-
-        <p>
-          You must not share, resell, rent, leak, transfer or make available any
-          key, plugin, app file, account access, support access, media,
-          configuration or other access entitlement. Access is linked to your
-          support account and may also be linked to hardware identifiers.
-        </p>
-
-        <p>
-          One HWID means one device, including a PC, laptop or server. Activating
-          a plugin binds it to that device for 30 days, and each later use resets
-          the 30-day timer. You may run unlimited plugin instances on an allowed
-          HWID, but plugins remain for personal use only.
-        </p>
-
-        <p>
-          To remove a HWID, you must either wait 30 days without activating the
-          plugin or pay a $5 reset fee, for an immediate reset. HWIDs are linked to your
-          support account. Creating a new account may avoid a reset fee, but it
-          does not allow you to avoid enforcement, payment or abuse checks.
-        </p>
-
-        <p>
-          Hardware changes, including CPU or motherboard changes, can change
-          your HWID. If that happens, you must wait 30 days or pay the $5 reset
-          fee before using the plugin on the changed HWID.
-        </p>
-
-        <p>Unless a product page or support notice says otherwise, HWID limits are:</p>
+        <p>Where reasonably possible, the notice will identify:</p>
 
         <ul>
-          <li>Package access for 30, 60, 90 days or lifetime: 2 HWIDs.</li>
-          <li>PVM access for 30, 60, 90 days or lifetime: 1 HWID.</li>
-          <li>Package and PVM combined access for 30, 60 or 90 days: 1 HWID.</li>
+          <li>the affected product;</li>
+          <li>the Product End-of-Life date;</li>
+          <li>the general nature of the External Change;</li>
+          <li>why continued operation would require Substantial Redevelopment;</li>
+          <li>how eligible customers can request the Archived Version; and</li>
+          <li>whether a separate successor product is available.</li>
         </ul>
 
         <p>
-          Updates may be required to continue using the services. We do not
-          guarantee compatibility with every third-party platform version, third-party platform, app,
-          operating system, device, hardware setup, third-party service or future
-          update.
+          We are not required to disclose source code, confidential information,
+          security-sensitive information or information restricted by a third
+          party.
         </p>
-      </article>
 
-      <article class="tos-card">
-        <h2>7. Prohibited Activities</h2>
+        <h3>7.8 Archived Product Access</h3>
+        <p>
+          After Product End of Life, a customer who purchased Lifetime Access
+          may request the final Archived Version through the official support
+          system.
+        </p>
 
-        <p>You agree not to:</p>
+        <p>
+          While ElPlugins continues operating, we will retain and make the
+          Archived Version available to eligible Lifetime Access customers at no
+          additional charge unless providing it:
+        </p>
 
         <ul>
-          <li>Share, sell, transfer, leak or resell keys, plugins, subtoolions, files, support access or app access.</li>
-          <li>Copy, adapt, decompile, disassemble, decipher, bypass, tamper with or reverse engineer software or protection systems.</li>
-          <li>Use tools, scrapers, assisted tools or data extraction tools against the services unless approved.</li>
-          <li>Interfere with security features, access controls, payment checks, HWID checks or abuse-prevention systems.</li>
-          <li>Submit false, misleading, abusive or bad-faith reports, disputes, support requests or payment claims.</li>
-          <li>Open chargebacks or payment disputes without first trying to resolve the issue through support request support.</li>
-          <li>Advertise personal services, competing services or unauthorised commercial activity through our platform.</li>
-          <li>Affiliate with cracking, hacking, leaking, credential-sharing, key-sharing or similar communities or services.</li>
-          <li>Harass, threaten, abuse, impersonate or mislead staff, customers or other users.</li>
-          <li>Upload malware, spam, disruptive content or material that creates an undue burden on the services.</li>
-          <li>Use the services in a way that violates law, regulation, third-party rights or these terms.</li>
+          <li>would be unlawful;</li>
+          <li>would infringe third-party rights;</li>
+          <li>is prohibited by a binding third-party restriction;</li>
+          <li>would create a material security risk; or</li>
+          <li>is no longer technically possible despite our reasonable efforts.</li>
         </ul>
 
         <p>
-          Depending on the severity, evidence and risk, we may warn, suspend,
-          restrict, revoke or terminate access. Serious or repeated breaches may
-          result in immediate removal without refund.
+          We may provide the Archived Version by download, manual delivery or
+          another reasonable method. We may require reasonable proof of purchase
+          and account ownership.
+        </p>
+
+        <p>
+          Archived Product Access provides the final available version of the
+          original product only. It does not require us to develop, update,
+          maintain, repair or support that version.
+        </p>
+
+        <p>The Archived Version may:</p>
+
+        <ul>
+          <li>have reduced, disabled or restricted functionality;</li>
+          <li>no longer interact with third-party platforms or services;</li>
+          <li>no longer receive updates, fixes or technical support;</li>
+          <li>be incompatible with current or future systems;</li>
+          <li>require an older platform, application or operating-system version;</li>
+          <li>have online, server-side, authentication or integration features disabled;</li>
+          <li>be unable to perform some or all of its original functions; or</li>
+          <li>cease functioning entirely because of the External Change.</li>
+        </ul>
+
+        <p>
+          We may remove or disable functionality where reasonably necessary
+          because of legal, security, technical or third-party restrictions.
+          Archived Product Access does not require us to maintain servers, APIs,
+          authentication systems, integrations or other live infrastructure
+          solely for an archived product.
+        </p>
+
+        <p>
+          The Archived Version remains subject to the licence restrictions,
+          HWID rules and acceptable-use provisions in these terms.
+        </p>
+
+        <h3>7.9 Temporary problems</h3>
+        <p>
+          Temporary downtime, maintenance, outages, compatibility problems,
+          suspended sales, interrupted third-party services or delays in
+          releasing an update do not by themselves constitute Product End of
+          Life.
+        </p>
+
+        <p>
+          Product End of Life occurs only when we give notice under this section
+          or permanently cease all relevant business operations.
         </p>
       </article>
 
-      <article class="tos-card">
-        <h2>8. Contributions and Reviews</h2>
+      <article class="tos-card" id="acceptable-use">
+        <h2>8. Acceptable use</h2>
+
+        <p>You must not:</p>
+
+        <ul>
+          <li>share, sell, transfer, leak, rent or resell keys, files, subscriptions, support access or app access;</li>
+          <li>use false information, impersonation or deception to obtain access;</li>
+          <li>copy, adapt, decompile, disassemble, decipher or reverse engineer the services except where applicable law permits it;</li>
+          <li>bypass or interfere with payment checks, licence controls, security features, HWID controls or abuse-prevention systems;</li>
+          <li>use bots, scrapers or automated extraction tools against the services without written permission;</li>
+          <li>upload malware, spam or content intended to disrupt or overload the services;</li>
+          <li>use the services to facilitate unauthorised access, credential theft, piracy, infringement or other unlawful conduct;</li>
+          <li>submit fraudulent, knowingly false, abusive or bad-faith payment claims, reports or support requests;</li>
+          <li>harass, threaten, abuse, impersonate or unlawfully discriminate against staff or other users;</li>
+          <li>advertise unauthorised commercial or competing services through our private channels; or</li>
+          <li>use the services in a way that violates applicable law, third-party rights or these terms.</li>
+        </ul>
 
         <p>
-          The services may let you submit messages, reviews, feedback, support
-          content, screenshots, suggestions or other materials. You remain
-          responsible for what you submit and must have the rights needed to
+          Enforcement will be proportionate to the nature, severity, evidence
+          and risk of the conduct. We may issue a warning, restrict functionality,
+          suspend access or terminate access under Section 12.
+        </p>
+      </article>
+
+      <article class="tos-card" id="contributions">
+        <h2>9. Contributions, feedback and reviews</h2>
+
+        <p>
+          The services may allow you to submit messages, reviews, feedback,
+          screenshots, suggestions or other materials. You remain responsible
+          for what you submit and must have the rights and permissions needed to
           submit it.
         </p>
 
         <p>
-          You grant us a limited, non-exclusive, worldwide, royalty-free licence
-          to host, store, display, reproduce, moderate, edit, remove and use your
-          contributions only as reasonably needed to operate, provide, protect,
-          support and improve the services.
+          You grant us a non-exclusive, worldwide, royalty-free licence to host,
+          store, reproduce, display, moderate, edit and use your contribution
+          only as reasonably necessary to operate, provide, protect, support,
+          promote and improve the services.
         </p>
 
         <p>
           We do not claim ownership of your contributions. We may remove or
-          moderate contributions at any time, especially where they are false,
-          abusive, illegal, misleading, discriminatory, threatening, obscene,
-          spam, infringing or otherwise unsuitable.
+          moderate content that we reasonably believe is unlawful, infringing,
+          abusive, threatening, discriminatory, obscene, misleading, spam or
+          otherwise unsuitable for the service.
+        </p>
+
+        <p>
+          Reviews must reflect your genuine experience. We will not prevent you
+          from publishing an honest review or making a lawful complaint.
         </p>
       </article>
 
-      <article class="tos-card">
-        <h2>9. Privacy</h2>
+      <article class="tos-card" id="privacy">
+        <h2>10. Privacy</h2>
 
         <p>
-          We handle personal information according to our
+          We handle personal information in accordance with our
           {' '}
           <a href={privacyUrl}>Privacy Policy</a>. The Privacy Policy explains
-          what information we collect, how we use it, which third-party services
-          may process it, and how privacy requests can be made.
+          what information we collect, why we use it, which third parties may
+          process it, how long it is kept and how privacy rights can be
+          exercised.
         </p>
       </article>
 
-      <article class="tos-card">
-        <h2>10. Support, Availability and Maintenance</h2>
+      <article class="tos-card" id="support">
+        <h2>11. Support, availability, updates and maintenance</h2>
 
+        <h3>11.1 Support</h3>
         <p>
-          Support is provided through Support requests on a reasonable-efforts
-          basis. We do not guarantee any specific response time, resolution time
-          or outcome.
+          Support is provided through the official support request system on a
+          reasonable-efforts basis. Unless we expressly agree otherwise, we do
+          not guarantee a particular response time, resolution time or outcome.
+        </p>
+
+        <h3>11.2 Availability</h3>
+        <p>
+          The services may be temporarily unavailable, interrupted, delayed or
+          limited because of maintenance, updates, outages, third-party service
+          failures, security work, payment issues, compatibility changes or
+          operational reasons.
         </p>
 
         <p>
-          The services may be unavailable, interrupted, delayed, limited or
-          changed because of maintenance, updates, outages, third-party services,
-          security work, payment issues, compatibility changes or operational
-          reasons.
+          We do not guarantee uninterrupted uptime or continuous compatibility.
+          Where appropriate, we may offer an extension or credit for significant
+          downtime, but this is discretionary unless applicable law or an
+          express service commitment requires otherwise.
+        </p>
+
+        <h3>11.3 Updates and changes</h3>
+        <p>
+          We may provide patches, fixes, updates or replacement builds. Updates
+          may change features where reasonably necessary for security,
+          compatibility, legal compliance or continued operation, provided that
+          we do not materially reduce a paid product’s core functionality during
+          its access period without a valid reason and an appropriate remedy
+          where required by law.
         </p>
 
         <p>
-          We do not guarantee uptime or continuous compatibility. We may, at our
-          discretion, offer extensions or credits for significant downtime, but
-          these are not guaranteed and are not guaranteed.
-        </p>
-      </article>
-
-      <article class="tos-card">
-        <h2>11. Termination</h2>
-
-        <p>
-          These terms apply while you access or use the services. We may suspend,
-          restrict, revoke or terminate your access if you breach these terms,
-          create risk for ElPlugins or other users, abuse payment or support
-          processes, or where we need to protect the services.
-        </p>
-
-        <p>
-          Termination does not remove obligations that should reasonably survive,
-          including payment obligations, licence restrictions, intellectual
-          property protections, disclaimers, liability limits and dispute terms.
-        </p>
-      </article>
-
-      <article class="tos-card">
-        <h2>12. Changes and Corrections</h2>
-
-        <p>
-          We may update services, packages, prices, features, compatibility
-          details and these terms from time to time. We may correct errors,
-          inaccuracies or omissions, including descriptions, pricing,
-          availability and access information.
-        </p>
-
-        <p>
-          Updated terms take effect when posted unless we state a later date.
-          Continuing to use the services after changes are posted means you
-          accept the updated terms.
+          Temporary unavailability, incompatibility or interruption does not by
+          itself end a Product Lifetime. Product End of Life is governed only by
+          Section 7.
         </p>
       </article>
 
-      <article class="tos-card">
-        <h2>13. Disclaimers</h2>
+      <article class="tos-card" id="suspension">
+        <h2>12. Suspension and termination</h2>
+
+        <h3>12.1 Suspension or termination for cause</h3>
+        <p>
+          We may suspend, restrict or terminate an individual account or
+          entitlement where we reasonably believe that the user:
+        </p>
+
+        <ul>
+          <li>has materially or repeatedly breached these terms;</li>
+          <li>has engaged in fraud, payment abuse or deliberate circumvention;</li>
+          <li>creates a material legal, security or operational risk;</li>
+          <li>has used the services for unlawful or harmful conduct; or</li>
+          <li>has provided materially false information relevant to eligibility or enforcement.</li>
+        </ul>
 
         <p>
-          The services are provided on an as-is and as-available basis. To the
-          fullest extent permitted by law, we disclaim warranties and conditions
-          of any kind, whether express, implied or statutory, including implied
-          warranties of merchantability, fitness for a particular purpose,
-          non-infringement and uninterrupted availability.
+          Where reasonably possible, we will explain the reason and give an
+          opportunity to correct a remediable breach before termination.
+          Immediate suspension or termination may occur where the issue is
+          serious, repeated, fraudulent, unlawful or presents an urgent risk.
+        </p>
+
+        <h3>12.2 Effect of termination for breach</h3>
+        <p>
+          Where access is lawfully terminated because of your material breach,
+          you will not be entitled to a change-of-mind refund or Archived Product
+          Access, unless applicable law requires otherwise.
+        </p>
+
+        <h3>12.3 Termination not caused by you</h3>
+        <p>
+          If we permanently terminate paid Fixed-Term Access before the end of
+          its term for a reason not caused by you and outside Section 7, we will
+          provide a proportionate refund or another remedy required by law.
         </p>
 
         <p>
-          You are responsible for your own use of the services, your device,
-          accounts, third-party platform obligations and any third-party
-          consequences connected with your use.
-        </p>
-      </article>
-
-      <article class="tos-card">
-        <h2>14. Limitation of Liability</h2>
-
-        <p>
-          To the fullest extent permitted by law, ElPlugins will not be liable
-          for indirect, incidental, special, consequential, exemplary or punitive
-          losses, or for loss of profit, revenue, data, goodwill, access,
-          opportunity or business.
+          Product End of Life is not an individual termination for breach and is
+          governed separately by Section 7.
         </p>
 
+        <h3>12.4 Terms that continue</h3>
         <p>
-          To the fullest extent permitted by law, our total liability for any
-          claim connected with the services is limited to the amount you paid to
-          ElPlugins for the affected service in the 30 days before the claim
-          arose.
-        </p>
-
-        <p>
-          Nothing in these terms limits liability where it would be unlawful to
-          do so.
-        </p>
-      </article>
-
-      <article class="tos-card">
-        <h2>15. Disputes, Governing Law and Courts</h2>
-
-        <p>
-          Before starting formal proceedings, you and ElPlugins agree to try to
-          resolve disputes informally for at least 30 days through the support
-          ticket system, unless urgent legal action is required.
-        </p>
-
-        <p>
-          These terms and any dispute or claim connected with them, their subject
-          matter or formation are governed by the laws of England and Wales.
-        </p>
-
-        <p>
-          The courts of England and Wales will have exclusive jurisdiction over
-          disputes connected with these terms or the services, except where
-          applicable consumer law gives you mandatory rights in another court.
+          Provisions concerning intellectual property, licence restrictions,
+          archived products, payments already due, liability, disputes and any
+          provision that is intended by its nature to continue will survive
+          expiry or termination.
         </p>
       </article>
 
-      <article class="tos-card">
-        <h2>16. Miscellaneous</h2>
+      <article class="tos-card" id="changes">
+        <h2>13. Changes to the services and these terms</h2>
 
+        <h3>13.1 Service and package changes</h3>
         <p>
-          These terms, together with any policies or product rules we post,
-          represent the agreement between you and ElPlugins for the services.
-          Our failure to enforce a term does not waive our right to enforce it
-          later.
+          We may change future prices, packages, features, compatibility details
+          and availability. A price change will not alter an order already
+          accepted unless you expressly agree or the change is required by law.
+        </p>
+
+        <h3>13.2 Changes to these terms</h3>
+        <p>
+          We may update these terms to reflect changes in law, regulation,
+          security, technology, payment methods, service operation or our
+          business practices, or to improve clarity.
         </p>
 
         <p>
-          If any part of these terms is found invalid or unenforceable, the rest
-          remains in effect. You may not transfer your rights or obligations
-          under these terms without our written permission.
+          We will post the revised terms with a new effective date. Where a
+          change materially affects an existing paid entitlement, we will give
+          reasonable advance notice where practicable.
+        </p>
+
+        <p>
+          A change will not retrospectively convert Lifetime Access into
+          Fixed-Term Access, shorten an existing access period, remove an accrued
+          right or materially reduce a paid entitlement unless the change is
+          required by law, necessary to address an urgent security or technical
+          risk, or expressly agreed by you.
+        </p>
+
+        <p>
+          If you do not accept a material change that applies to an ongoing
+          service, you may stop using the affected service. Any additional
+          remedy will depend on the nature of the change and applicable law.
+        </p>
+
+        <h3>13.3 Existing Lifetime Access purchases</h3>
+        <p>
+          Section 7 applies to Lifetime Access purchased on or after the
+          effective date shown at the top of these terms.
+        </p>
+
+        <p>
+          For Lifetime Access purchased before that date, Section 7 applies only
+          to the extent that it clarifies the original agreement and does not
+          remove or reduce any contractual or statutory right already acquired,
+          unless the customer expressly agrees otherwise.
         </p>
       </article>
 
-      <article class="tos-card">
-        <h2>17. Contact Us</h2>
+      <article class="tos-card" id="disclaimers">
+        <h2>14. Disclaimers</h2>
 
         <p>
-          For support or complaints, open a support request:
+          Nothing in this section limits any statutory guarantee, warranty,
+          condition, right or remedy that cannot lawfully be limited.
+        </p>
+
+        <p>
+          Subject to that qualification, the services are provided on an
+          “as available” basis. We do not promise that every service will be
+          uninterrupted, error-free or compatible with every device, system or
+          third-party platform.
+        </p>
+
+        <p>
+          You are responsible for your own device, accounts, backups, platform
+          obligations and lawful use of the services.
+        </p>
+
+        <p>
+          Archived Versions are supplied in the condition described in Section
+          7. They may be restricted, incompatible, partly functional or
+          non-functional. Access to an Archived Version is not a promise that it
+          will continue to perform its original functions.
+        </p>
+      </article>
+
+      <article class="tos-card" id="liability">
+        <h2>15. Liability</h2>
+
+        <h3>15.1 Liability that is not excluded</h3>
+        <p>
+          Nothing in these terms excludes or limits liability for death or
+          personal injury caused by negligence, fraud or fraudulent
+          misrepresentation, deliberate misconduct, or any liability that cannot
+          lawfully be excluded or limited.
+        </p>
+
+        <h3>15.2 Consumers</h3>
+        <p>
+          If you are a Consumer, we are responsible for loss or damage that is a
+          foreseeable result of our breach of these terms or our failure to use
+          reasonable care and skill. We are not responsible for loss or damage
+          that was not foreseeable.
+        </p>
+
+        <p>
+          The services are supplied for personal use. We are not responsible to
+          a Consumer for business losses, including loss of profit, revenue,
+          business opportunity or business interruption.
+        </p>
+
+        <h3>15.3 Business users</h3>
+        <p>
+          If you use the services for business purposes, then, to the fullest
+          extent permitted by law, we will not be liable for indirect or
+          consequential loss, loss of profit, revenue, business, opportunity,
+          goodwill or data.
+        </p>
+
+        <p>
+          Subject to Section 15.1, our total aggregate liability to a business
+          user arising from or connected with an affected service will not
+          exceed the greater of:
+        </p>
+
+        <ul>
+          <li>the total amount paid for that affected service in the 12 months before the event giving rise to the claim; or</li>
+          <li>GBP £100.</li>
+        </ul>
+      </article>
+
+      <article class="tos-card" id="disputes">
+        <h2>16. Complaints, governing law and courts</h2>
+
+        <h3>16.1 Complaints and informal resolution</h3>
+        <p>
+          Contact us through the official support request system or by email if
+          you have a complaint. Before starting formal proceedings, you and
+          ElPlugins agree to try in good faith to resolve the dispute informally
+          for up to 30 days, unless urgent legal action is reasonably required.
+        </p>
+
+        <h3>16.2 Governing law</h3>
+        <p>
+          These terms and any dispute or claim connected with them, their
+          subject matter or formation are governed by the laws of England and
+          Wales.
+        </p>
+
+        <h3>16.3 Courts</h3>
+        <p>
+          If you are a Consumer resident in the United Kingdom, you may bring
+          proceedings in the courts of the part of the United Kingdom in which
+          you live. You may also have mandatory rights to bring proceedings in
+          another country where you are resident.
+        </p>
+
+        <p>
+          If you are not a Consumer, the courts of England and Wales will have
+          exclusive jurisdiction over disputes connected with these terms or the
+          services.
+        </p>
+      </article>
+
+      <article class="tos-card" id="general">
+        <h2>17. General terms</h2>
+
+        <h3>17.1 Entire agreement and order of priority</h3>
+        <p>
+          These terms, the applicable product page, checkout information, order
+          confirmation, Privacy Policy and any product-specific rules form the
+          agreement between you and ElPlugins.
+        </p>
+
+        <p>
+          If there is a conflict, the order confirmation and any expressly
+          agreed product-specific term take priority for that order, followed by
+          these terms, unless applicable law requires otherwise.
+        </p>
+
+        <h3>17.2 No waiver</h3>
+        <p>
+          A delay or failure to enforce a right does not waive that right or
+          prevent us from enforcing it later.
+        </p>
+
+        <h3>17.3 Severability</h3>
+        <p>
+          If a provision is found unlawful or unenforceable, it will be removed
+          or limited only to the minimum extent necessary, and the remaining
+          provisions will continue in effect.
+        </p>
+
+        <h3>17.4 Transfer</h3>
+        <p>
+          You may not transfer your account, licence, Lifetime Access or other
+          rights under these terms without our written permission.
+        </p>
+
+        <p>
+          We may transfer our rights and obligations to another organisation
+          that takes over the relevant business or service, provided that the
+          transfer does not reduce your mandatory rights or materially reduce an
+          existing paid entitlement. We will notify affected users where
+          reasonably practicable.
+        </p>
+
+        <h3>17.5 Third-party rights</h3>
+        <p>
+          Unless these terms expressly say otherwise, a person who is not a
+          party to this agreement has no right to enforce it.
+        </p>
+
+        <h3>17.6 Language</h3>
+        <p>
+          These terms are written in English. Where a translation is provided,
+          the English version will prevail to the extent permitted by law.
+        </p>
+      </article>
+
+      <article class="tos-card" id="contact">
+        <h2>18. Contact and legal information</h2>
+
+        <p>
+          For support, cancellation requests or complaints, open a support
+          request:
           {' '}
           <a href={discordUrl}>{discordUrl}</a>.
         </p>
 
         <p>
-          For legal or contact purposes, email
+          For legal notices and general contact, email
           {' '}
           <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
         </p>
 
-        <p>ElPlugins</p>
+        <address>
+          <strong>Trading name:</strong> ElPlugins<br />
+          {companyNumber && (
+            <>
+              <strong>Company number:</strong> {companyNumber}<br />
+            </>
+          )}
+          {vatNumber && (
+            <>
+              <strong>VAT number:</strong> {vatNumber}<br />
+            </>
+          )}
+        </address>
       </article>
     </section>
   </main>
@@ -500,6 +1107,7 @@ const contactEmail = 'Elliott@ElPlugins.com';
       display: grid;
       gap: 20px;
       max-width: 1160px;
+      margin: 0 auto;
     }
 
     .tos-card {
@@ -510,6 +1118,7 @@ const contactEmail = 'Elliott@ElPlugins.com';
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
+      scroll-margin-top: 24px;
     }
 
     .tos-card h2 {
@@ -517,10 +1126,21 @@ const contactEmail = 'Elliott@ElPlugins.com';
       font-size: clamp(1.45rem, 2.4vw, 2.1rem);
     }
 
+    .tos-card h3 {
+      margin: 1.6rem 0 0.55rem;
+      font-size: 1.12rem;
+    }
+
     .tos-card p,
-    .tos-card li {
+    .tos-card li,
+    .tos-card dd,
+    .tos-card address {
       color: var(--muted);
       line-height: 1.72;
+    }
+
+    .tos-card address {
+      font-style: normal;
     }
 
     .tos-card a {
@@ -530,9 +1150,40 @@ const contactEmail = 'Elliott@ElPlugins.com';
       text-underline-offset: 4px;
     }
 
-    .tos-card ul {
+    .tos-card ul,
+    .tos-card ol {
       margin: 16px 0 0;
-      padding-left: 20px;
+      padding-left: 24px;
+    }
+
+    .tos-card li + li {
+      margin-top: 0.45rem;
+    }
+
+    .tos-card dl {
+      display: grid;
+      gap: 0.4rem 1rem;
+      margin: 0;
+    }
+
+    .tos-card dt {
+      margin-top: 0.9rem;
+      color: var(--text);
+      font-weight: 900;
+    }
+
+    .tos-card dd {
+      margin: 0;
+    }
+
+    .tos-toc ol {
+      columns: 2;
+      column-gap: 2.5rem;
+    }
+
+    .tos-toc li {
+      break-inside: avoid;
+      margin-bottom: 0.5rem;
     }
 
     @media (max-width: 760px) {
@@ -543,6 +1194,10 @@ const contactEmail = 'Elliott@ElPlugins.com';
 
       .tos-card {
         padding: 24px;
+      }
+
+      .tos-toc ol {
+        columns: 1;
       }
     }
   </style>
