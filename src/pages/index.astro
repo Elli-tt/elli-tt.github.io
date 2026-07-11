@@ -139,6 +139,13 @@ const base = import.meta.env.BASE_URL;
       margin-bottom: 0;
     }
 
+    @media (min-width: 1201px) {
+      .ocean-splash .splash-buttons {
+        grid-template-columns: minmax(0, 380px);
+        justify-content: center;
+      }
+    }
+
     .bubble {
       position: absolute;
       z-index: 1;
